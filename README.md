@@ -1,4 +1,4 @@
-# Text Tree Edit Distance: A Language Model-Based Metric for Text Hierarchies.
+# Automatic Hierarchical Summarization of Scientific Texts
 
 **Author:** Fedor Sobolevsky
 
