@@ -1,0 +1,330 @@
+\documentclass[aspectratio=169]{beamer}
+\beamertemplatenavigationsymbolsempty
+\usecolortheme{lily}
+\setbeamertemplate{blocks}[rounded=true, shadow=true]
+\setbeamertemplate{footline}[page number]
+%
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel} % Removed Russian
+\usepackage{amssymb,amsfonts,amsmath,mathtext}
+\usepackage{subfig}
+\usepackage[all]{xy} % xy package for diagrams
+\usepackage{array}
+\usepackage{tikz}
+\usepackage{multicol}% many columns in slide
+\usepackage{hyperref}% urls
+\usepackage{hhline}%tables
+% Your figures are here:
+\graphicspath{ {fig/} {../fig/} }
+
+\newcommand\argmin{\mathop{\arg\min}}
+% \newcommand{\T}{^{\text{\tiny\sffamily\upshape\mdseries T}}}
+\newcommand{\hchi}{\hat{\boldsymbol{\chi}}}
+\newcommand{\hphi}{\hat{\boldsymbol{\varphi}}}
+\newcommand{\bchi}{\boldsymbol{\chi}}
+\newcommand{\A}{\mathbf{A}}
+\newcommand{\bb}{\mathbf{b}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\T}{\mathcal{T}}
+\newcommand{\W}{\mathbf{W}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\V}{\mathbb{V}}
+\newcommand{\x}{\mathbf{x}}
+\newcommand{\y}{\mathbf{y}}
+\newcommand{\Y}{\mathbf{Y}}
+\newcommand{\X}{\mathbf{X}}
+\newcommand{\Z}{\mathbf{Z}}
+\newcommand{\hx}{\hat{x}}
+\newcommand{\hX}{\hat{\X}}
+\newcommand{\hy}{\hat{y}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\N}{\mathcal{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\p}{p(\cdot)}
+\newcommand{\cc}{\mathbf{c}}
+\newcommand{\m}{\mathbf{m}}
+\newcommand{\bt}{\mathbf{t}}
+\newcommand{\e}{\mathbf{e}}
+\newcommand{\h}{\mathbf{h}}
+\newcommand{\q}{q(\cdot)}
+\newcommand{\uu}{\mathbf{u}}
+\newcommand{\vv}{\mathbf{v}}
+\newcommand{\dd}{\partial}
+\renewcommand{\S}{\mathcal{S}}
+
+\newtheorem{Th}{Theorem} % Changed from Russian
+
+%----------------------------------------------------------------------------------------------------------
+\title[\hbox to 56mm]{Text Tree Edit Distance: Comparing Text Hierarchies Using Language Models} % Translated title
+\author[F.\,A.~Sobolevskii]{Sobolevskii F.\,A.$^{1}$, Ph.\,D. Vorontsov K.\,V.$^{1, 2}$} % Translated author
+\institute{$^{1}$Moscow Institute of Physics and Technology \\ $^{2}$M.\,V.\,Lomonosov Moscow State University} % Translated institute
+\date{2025}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{ % all template changes are local to this group.
+    \setbeamertemplate{navigation symbols}{}
+    \begin{frame}<article:0>[plain]
+        \begin{tikzpicture}[remember picture,overlay]
+            \node[at=(current page.center)] {
+                \includegraphics[keepaspectratio,
+                                 width=\paperwidth,
+                                 height=\paperheight]{img/APEIE_Presentation_template.png}
+            };
+        \end{tikzpicture}
+     \end{frame}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Research Motivation}
+
+% \begin{columns}
+%     \column{0.5\textwidth}
+%     \begin{block}{Research Goals:}
+%         \begin{enumerate}
+%             \item Propose a method for comparing text trees that considers various aspects of their differences;
+%             \item Investigate the theoretical properties of the proposed metric;
+%             \item Compare the proposed method with existing methods for assessing the similarity of text trees.
+%         \end{enumerate}
+    % \end{block}
+
+    % \column{0.5\textwidth}
+    \centering\includegraphics[width=0.6\linewidth]{img/map_example.png}
+
+    % \vspace{20pt}
+    An example of a text tree~--- a hierarchical summary of this study in the form of a \textit{mind map}
+    \vspace{20pt}
+
+    \textbf{Problem:} How to compare hierarchical summaries, considering both their structure and semantics?
+% \end{columns}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Hierarchical Summarization Problem Statement}
+
+Let $\mathcal{S}$ be the \textit{set of texts} over a given vocabulary.
+
+\textbf{Text tree}~--- a tree $T = (V, E)$, where $E \subset V^2$ and for each $v\in V$ a text $s(v)\in\mathcal{S}$ is defined.
+
+$\mathcal{T}$~--- the considered \textit{set of text trees}.
+
+\vspace{10pt}
+
+\textbf{Task:} Find a mapping $f: D\mapsto T$ that constructs a hierarchical summary $T\in\mathcal{T}$ from a document $D$, minimally different from a reference summary $T^*$ of $D$ constructed by an expert:
+$$
+\rho(f(D), T^*)\longrightarrow\min_f.
+$$
+\textbf{Question:} How do we choose the metric $\rho: \T^2\rightarrow\R_+$?
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Proposed Metric~--- \textit{TTED}}
+
+\textit{\textbf{TTED} (text tree edit distance)}~--- tree edit distance\footnote{\textit{Zhang Kaizhong, Statman Richard, Shasha Dennis.} On the Editing Distance Between Unordered Labeled Trees (1992)}, where the cost of edit operations is:
+
+a) \textit{replacement} of vertex $v$ with $v'$: $r(s(v), s(v'))$;
+
+b) \textit{addition/removal} of vertex $v$: $r(s(v), \lambda)$;
+
+where $\lambda$~--- empty string.
+
+\vspace{10pt}
+
+\textit{Semantic distance} $r$ can be measured as the distance between \textit{embeddings} (vector representations) of texts, obtained using a language model $\text{LM}: \S \rightarrow \R^n$:
+$$
+\forall s, s'\in\mathcal{S} \quad r(s, s') = \rho_n(\text{LM}(s), \text{LM}(s')),
+$$
+where $\rho_n$~--- a metric in $\R^n$.
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Baseline Text Tree Comparison Method}
+
+In the study of \textit{Zhang et al., 2024}\footnote{\textit{Zhang Zhuowei, Hu Mengting, Bai Yinhao, and Zhang Zhen.} Coreference Graph Guidance for Mind-Map Generation (2024)} the similarity of text trees $T=(V, E)$ and $T'=(V',E')$ is defined as
+$$
+\text{Sim}(T, T') = \max\limits_{P\subset E\times E'} \sum\limits_{(e, e')\in P}\sum\limits_{i=0,1}\text{ROUGE}(e_i, e'_i).
+$$
+where $P$~--- a one-to-one mapping of edges of $T$ to edges of $T'$ (the optimal one is found by a greedy algorithm), ROUGE$(v, v')$~--- the averaged ROUGE-1, ROUGE-2, and ROUGE-L similarity score of $s(v)$ and $s(v')$.
+
+\vspace{5pt}
+
+For consistency, the distance measure used is
+$$
+\rho(T, T') = \sqrt{\text{Sim}(T, T) + \text{Sim}(T', T') - \text{Sim}(T, T') - \text{Sim}(T', T)}.
+$$
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Aspects of Text Tree Difference}
+
+Let for $T\in\mathcal{T}$ the following sets of trees be defined:
+
+\begin{enumerate}
+\item $P(T)$~--- trees differing from $T$ only in paraphrasing;
+
+\item $S(T)$~--- trees differing from $T$ only in structure;
+
+\item $M(T)$~--- trees differing from $T$ only in semantics (in meaning/content).
+\end{enumerate}
+Idea: for an adequate metric $\rho$ on $\mathcal{T}$ it should hold that
+$$
+\langle\rho(T, T')\rangle_{T'\in P(T)} \ll \langle\rho(T, T'')\rangle_{T''\in S(T)},
+$$
+$$
+\langle\rho(T, T')\rangle_{T'\in P(T)} \ll \langle\rho(T, T''')\rangle_{T'''\in M(T)}.
+$$
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Metric Quality Criteria}
+
+Consider a sample $\mathcal{D} = \{T, T'_1, \dots, T'_p, T''_1, \dots, T''_s, T'''_1, \dots, T'''_m\}$, where $T\in \mathcal{T}$, $T'_i\in P(T)$, $T''_j\in S(T)$, $T'''_k\in M(T)$.
+
+Quality coefficients of metric $\rho$ on sample $\mathcal{D}$:
+$$
+R^\mathcal{D}_S(\rho) = \frac{1}{sp}\sum\limits_{i=1}^p\sum\limits_{j=1}^s\frac{\rho(T, T'_i)}{\rho(T, T_j'')},
+\quad R^\mathcal{D}_M(\rho) = \frac{1}{mp}\sum\limits_{i=1}^p\sum\limits_{k=1}^m\frac{\rho(T, T'_i)}{\rho(T, T_k''')}.
+$$
+$R^\mathcal{D}_S(\rho)$~--- sensitivity of metric $\rho$ to \textbf{paraphrasing} relative to \textbf{structure};
+
+$R^\mathcal{D}_M(\rho)$~--- sensitivity to \textbf{paraphrasing} relative to \textbf{semantics}.
+
+Optimization problem:
+\begin{equation*} \label{optimization_problem}
+    R_S^\mathcal{D}(\rho) \longrightarrow \min_\rho, \quad R_M^\mathcal{D}(\rho) \longrightarrow \min_\rho.
+\end{equation*}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Method Testing~--- Results}
+\vspace{5pt}
+\begin{columns}
+\column{0.5\textwidth}
+\centering
+a) Average values of the baseline similarity coefficient
+    \includegraphics[width=\textwidth]{img/baseline_sim_size_graph.png}
+
+$\text{Sim}(\cdot, \cdot)$ reflects differences in semantics and paraphrasing similarly, noticeably less so for structure.
+
+\column{0.5\textwidth}
+\centering
+b) Average values of the TTED distance
+    \includegraphics[width=\textwidth]{img/mpnet_size_graph.png}
+
+TTED reflects differences in paraphrasing noticeably less than in structure and semantics, reflected similarly.
+\end{columns}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Metric Testing~--- Results}
+
+\vspace{20pt}
+\centering
+Results of tests for the baseline distance measure and TTED with different encoder models for text embedding generation on synthetic data
+
+\vspace{10pt}
+\begin{tabular}{c|c|c} 
+        \textbf{Method} & \textbf{$R_S^\mathcal{D}(\rho)$} & \textbf{$R_M^\mathcal{D}(\rho)$} \\ \hline
+        Baseline & 2.05$\pm$0.79 & 0.96$\pm$0.10 \\ \hline
+        TTED with DistilRoBERTa & 0.58$\pm$0.22 & 0.53$\pm$0.11 \\ \hline
+        TTED with SPECTER & 0.69$\pm$0.35 & 0.46$\pm$0.14 \\ \hline
+        TTED with MPNet & \textbf{0.44$\pm$0.12} & 0.48$\pm$0.11 \\ \hline
+        TTED with fine-tuned MPNet & 0.61$\pm$0.78 & \textbf{0.45$\pm$0.12}
+    \end{tabular}
+\vspace{10pt}
+
+Significant differences compared to insignificant ones are reflected better by TTED than by the baseline method.
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Testing TTED Modifications}
+
+\centering
+Dependence of quality coefficients on the \textbf{metric for comparing embeddings} in TTED
+
+\vspace{5pt}
+    \begin{tabular}{c|c|c|c}
+        $r(x, y)$ & $\overline{\rho}_1$, $|T| = 10$ & $\overline{\rho}_3$, $|T| = 10$ & $R_M^\mathcal{D}(\rho)$ \\ \hline
+        $\sqrt{1 - S_C(x, y)}$ & 3.89$\pm$0.71 & 8.41$\pm$0.80 & \textbf{0.48$\pm$0.11} \\ \hline
+        $||x-y||_2$ & 5.50$\pm$1,00 & 11.89$\pm$1.14 & \textbf{0.48$\pm$0.11} \\ \hline
+        $||x-y||_1$ & 119.70$\pm$21.60 & 259.05$\pm$25.12 & \textbf{0.48$\pm$0.11}
+    \end{tabular}
+\vspace{10pt}
+
+Dependence of quality coefficients on the use of \textbf{context} in TTED
+
+\vspace{5pt}
+    \begin{tabular}{c|c|c} 
+        \textbf{Method} & $R_S^\mathcal{D}(\rho)$ & $R_M^\mathcal{D}(\rho)$ \\ \hline
+        Without context & 0.44$\pm$0.12 & 0.48$\pm$0.11 \\ \hline
+        With context & \textbf{0.43$\pm$0.19} & \textbf{0.35$\pm$0.08}
+    \end{tabular}
+
+\vspace{10pt}
+The optimal and most interpretable TTED configuration is the one with the fine-tuned MPNet encoder, distance based on cosine similarity, and using texts from parent vertices as context.
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Computation Time}
+
+\centering
+Average computation times for different distances between full binary text trees of various depth $d$
+
+\vspace{5pt}
+\includegraphics[width=0.6\textwidth]{img/computation_times.png}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}{Main Results}
+
+\begin{enumerate}
+    \item A new metric on the set of text trees~--- TTED~--- has been proposed.
+    \item It is shown that TTED reflects significant differences between text trees better than the previously used similarity coefficient.
+    \item An optimal configuration for TTED has been selected.
+    \item The proposed metric can be used to assess quality in tasks of hierarchical summarization, mind map construction, and other tasks of automatic generation of text hierarchies.
+\end{enumerate}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{References}
+
+\begin{itemize}
+    \item \textit{Zhang Z., Hu M., et al.} Coreference Graph Guidance for Mind-Map Generation // Proceedings of the AAAI Conference on Artificial Intelligence. — 2024. — Vol. 38. — P. 19623–19631.
+    \item \textit{Zhang K., Statman R., Shasha D.} On the editing distance between unordered labeled trees. // Information processing letters. 1992 May 25; 42(3): 133-9.
+    \item \textit{Vrbanec T., Meštrović A.} Comparison study of unsupervised paraphrase detection: Deep learning — The key for semantic similarity detection. // Expert systems. 2023 Nov; 40(9): e13386.
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{document}

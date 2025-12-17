@@ -1,0 +1,254 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage[skip=6pt, indent=13.6pt]{parskip}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ left=16mm,
+ top=19mm,
+ right=16mm,
+ bottom=25.4mm
+ }
+
+\newcommand{\T}{\mathcal{T}}
+\newcommand{\R}{\mathbb{R}}
+
+\begin{document}
+
+\title{Text Tree Edit Distance: A Language Model-Based Metric for Text Hierarchies 
+
+\vspace{32pt}}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Fedor Sobolevsky}
+\IEEEauthorblockA{\textit{Department of Applied Mathematics and Computer Science} \\
+\textit{Moscow Institute of Physics and Technology}\\
+Moscow, Russia \\
+sobolevskii.fa@phystech.edu}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Konstantin Vorontsov}
+\IEEEauthorblockA{\textit{Institute of Artificial Intelligence} \\
+\textit{M. V. Lomonosov Moscow State University}\\
+Moscow, Russia \\
+k.v.vorontsov@phystech.edu}
+}
+
+\maketitle
+
+\begin{abstract}
+    Text trees as a data structure occur in numerous machine learning tasks like hierarchical summarization and automatic mind map generation. One of the main methods of quality evaluation in these tasks is comparison with reference hierarchies created by experts. The method used so far to compare text hierarchies, as shown in this work, poorly accounts for their structure and text semantics relative to phrasing. To address this issue, we propose a new metric on the set of text trees~--- text tree edit distance (TTED), based on tree edit distance with semantic distance between texts measured using a large language model. To evaluate how the metric reflects different aspects of text tree difference, we introduce special quality coefficients that reflect the sensitivity of a metric to paraphrasing relative to structural and semantic differences of text trees. Using these coefficients, we conduct extensive testing of the proposed metric and its modifications compared to a baseline used in previous works to compare text hierarchies, which shows that TTED indeed captures significant differences between text trees more accurately than the previously used method. We also provide a practical implementation of TTED for further usage.
+\end{abstract}
+\begin{IEEEkeywords}
+\textit{text trees, mind map, hierarchical summarization, tree edit distance, large language models, Zhang-Shasha algorithm}
+\end{IEEEkeywords}
+
+\section{Introduction}
+In this work, we propose and implement a method for comparing text hierarchies, or text trees, i.e. trees whose vertex labels are text fragments. These include, for example, mind maps (salient sentence-based mind maps, SSM, and key snippet-based mind maps, KSM  \cite{wei2019revealing}), hierarchical document summaries \cite{christensen2014hierarchical} and other hierarchies containing textual information. Such data structures occur in automatic structured summarization of text documents \cite{wei2019revealing, christensen2014hierarchical, jain2024structsum, zhang2024coreference}. The hierarchical organization of textual information in a document summary has been proven to be a way of improving information acquisition and retention \cite{christensen2014hierarchical, jain2024structsum}, and we consider it a potential way to efficiently acquire new information from, for example, scientific literature, going from key points to more specific details. A example of a hierarchical summary based on our study is presented in Fig.~\ref{fig:example}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{img/map_example.png}
+    \caption{An example of a hierarchical summary based on our study}
+    \label{fig:example}
+\end{figure}
+
+One of the problems in hierarchical text summarization is the evaluation of generated hierarchical summaries. The standard approach to evaluating the quality of a hierarchical summary, as in summarization in general, is to compare the generated summary with a summary of the same document created by an expert. However, for comparing text hierarchies, there currently are no standard metrics, which complicates the comparison of different summarization methods. In existing automatic approaches to evaluating hierarchical summarization, text trees are typically compared separately by structure as trees and as sets of text using, for example, the ROUGE similarity metrics \cite{wei2019revealing, zhang2024coreference}. This approach, however, does not account for the interrelation between structure of text trees and their textual contents, and  statistical metrics like ROUGE may not account for text semantics \cite{fabbri2021summeval}. The low informativity of the similarity function used in \cite{zhang2024coreference} will be shown below. This and the absence of other reproducible metrics for hierarchical summarization evaluation necessitate the development of a new metric for this task.
+
+To date, there are many ways to compare hierarchies, which are used in various fields where the task of determining the proximity of trees arises~--- for example, in computational biology \cite{lin2011metric, pazos2001similarity}. Among the widely used metrics, one can highlight Robinson-Foulds distance \cite{robinson1981comparison}, the Jaccard coefficient \cite{jaccard1901distribution}, tree edit distance \cite{zhang1989simple}, and others. In this work, we will focus on the latter metric, tree edit distance, as one of the most widely used distance functions for tree comparison \cite{akutsu2010tree}.
+
+Tree edit distance was first proposed in \cite{zhang1989simple} as the minimal cost of tree editing operations (adding, deleting, and updating a vertex) to obtain one tree from another given the cost of editing operations. The authors, K.\,Zhang and D.\,Shasha, also proposed an algorithm for its efficient computation for ordered trees, which now goes by its authors' names. In \cite{zhang1992editing}, Zhang and Shasha considered the case of unordered trees; they showed that for unordered trees, the problem of finding the edit distance becomes NP-hard, but for smaller trees, a modification of their algorithm is still applicable. This metric was chosen as the basis for the one proposed in this work due to its interpretability, extensive study, and versatility due to the arbitrariness in choosing the costs of editing operations.
+
+\section{Theory}
+\subsection{Problem Statement}\label{metric_requirements}
+The object of this study is text trees, i.e., trees whose vertices are labeled by text fragments. Let us define this object formally. Let a vocabulary $\mathcal{W}$ and the corresponding set $\mathcal{S}$ of texts over this vocabulary be given:
+\begin{equation}
+\forall s\in\mathcal{S}\quad s = \left(w_j\right)_{j=1}^{|s|}, \quad w_j\in \mathcal{W}.
+\end{equation}
+
+Let us define a text tree $T = (V, E)$, $E\subset V^2$, for each vertex $v\in V$ of which a text $s(v)\in \mathcal{S}$ is assigned. We will denote the considered set of text trees as $\mathcal{T}$. To define an adequate metric on $\mathcal{T}$, let us formulate some requirements for an arbitrary metric on the set of text trees. Let a function of semantic distance between texts be given: $r: \mathcal{S}^2 \rightarrow [0, +\infty)$. For vertices $v, v'\in V$ of tree $T=(V, E)$, we will denote $r(v, v') := r(s(v), s(v'))$, and $r(v) := r(s(v), \lambda)$, where $\lambda$ is an empty string. We will then define a distance function $\rho: \mathcal{T}^2 \rightarrow [0, +\infty)$ satisfying the following requirements:
+\begin{enumerate}
+    \item $\rho(\cdot,\cdot)$ is a correct metric, i.\,e. it is symmetrical, positive for unequal arguments and satisfies the triangle inequality.
+    \item Let $T, T'\in\mathcal{T}$. There exists some non-decreasing function $f: [0,+\infty) \rightarrow [0,+\infty)$, such that:
+    \begin{enumerate}
+        \item If $T'$ is obtained from $T$ by adding a vertex $v$ to $T$, then $\rho(T, T') = f(r(v))$;
+        \item If $T'$ is obtained from $T$ by deleting a vertex $v$ from $T$, then $\rho(T, T') = f(r(v))$;
+        \item If $T'$ is obtained from $T$ by replacing a vertex $v$ with $v'$, then $\rho(T, T')= f(r(v, v'))$.
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{Metric Informativity} \label{metric_quality}
+Let us now specify some requirements for the significance of differences between text trees reflected by a distance function. Firstly, it is natural to require that the metric reflect differences between text trees both in \textit{structure} and \textit{semantics} of their text contents. Secondly, an informative metric should weakly react to insignificant differences~--- for example, to \textit{paraphrasing} of texts in the tree vertices. Therefore, distances between trees obtained from each other by paraphrasing should on average be significantly smaller than distances between trees differing in structure and/or semantics.
+
+Let us formalize these requirements. Let $T\in\T$ be an arbitrary text tree. Let $P(T)$ be the set of trees that can be obtained from $T$ by paraphrasing texts in its vertices, $S(T)$~--- the set of trees composed of the same set of vertices with the same texts in them as $T$ (but with different tree structure), $M(T)$~--- the set of trees with the same structure as $T$ but with different semantics of the texts in the vertices. For concreteness, let us define the latter set as the set $\mathcal{T}_{\sim T}$ of trees with the same structure as $T$, excluding the tree $T$ itself and its paraphrases: $M(T) = \mathcal{T}_{\sim T} \setminus (P(T)\cup \{T\})$.
+
+Consider a sample $\mathcal{D}$ of the following form: 
+\begin{equation}
+\mathcal{D} = \{T, T'_1, \dots, T'_p, T''_1, \dots, T''_s, T'''_1, \dots, T'''_m\},
+\end{equation}
+where $T\in \mathcal{T}$, $T'_i\in P(T)$, $T''_j\in S(T)$, $T'''_k\in M(T)$. We introduce the following quality coefficients for metric $\rho$, defined by the sample $\mathcal{D}$:
+\begin{equation}
+R^\mathcal{D}_S(\rho) = \frac{1}{sp}\sum\limits_{i=1}^p\sum\limits_{j=1}^s\frac{\rho(T, T'_i)}{\rho(T, T_j'')},
+\end{equation}
+\begin{equation}
+    \quad R^\mathcal{D}_M(\rho) = \frac{1}{mp}\sum\limits_{i=1}^p\sum\limits_{k=1}^m\frac{\rho(T, T'_i)}{\rho(T, T_k''')}.
+\end{equation}
+Then the task of finding the most informative metric in terms of reflecting significant differences of text trees can be formalized as an optimization problem of the following form:
+\begin{equation} \label{optimization_problem}
+    R_S^\mathcal{D}(\rho) \longrightarrow \min_\rho, \quad R_M^\mathcal{D}(\rho) \longrightarrow \min_\rho.
+\end{equation}
+
+
+\section{Methods}
+
+\subsection{Metric for Text Trees Comparison}
+
+Let us analyze the requirements for a metric for comparing text trees formulated in Section \ref{metric_requirements}. From the requirement that $\rho$ satisfies the triangle inequality, it naturally follows that $\rho(T, T')$ will correspond to the set of tree edit operations of least cost allowing to obtain one tree from the other. It is worth noting that the function $\rho$ defined this way is a correct metric, provided that $f(r(\cdot, \cdot))$ is a metric. The requirements set in \ref{metric_requirements} are satisfied by tree edit distance with costs of editing operations defined by semantic distance between texts in the vertices with $f(r) = r$. Thus, let us define a new metric on the set of text trees~--- \textit{text tree edit distance} (TTED). To compute TTED, one can use the Zhang-Shasha algorithm, namely its variants for ordered \cite{zhang1989simple} and unordered \cite{zhang1992editing} trees depending on the specifics of the given application.
+
+To measure semantic distance between texts in tree vertices, we propose to use the distance between vector representations (embeddings) of the texts obtained using some pre-selected language model. Suppose we are given a language model $\text{LM}: \mathcal{S} \rightarrow \R^n$ that maps text fragments to some finite-dimensional vectors (embeddings). Then we can define for $s, s'\in\mathcal{S}$ the semantic distance between them as $r(s, s') = \rho_n(\text{LM}(s), \text{LM}(s'))$, where $\rho_n$ is a metric in $\R^n$. As a similarity function for normalized embeddings, one can use, for example, cosine similarity $S_C$, as proposed in \cite{vrbanec2023comparison}. In this case, the corresponding distance function can be defined as $\rho_n(A, B) = \sqrt{1 - S_C(A, B)}$. Also, in this work, the application of standard $L_1$- and $L_2$-metrics as $\rho_n$ in TTED will be investigated.
+
+\subsection{Baseline method} For comparison, consider the text tree similarity function used in works \cite{wei2019revealing, hu2021efficient, zhang2024coreference} to evaluate the similarity of automatically generated mind maps with reference ones. For text trees $T=(V, E)$ and $T'=(V',E')$, the similarity function is defined as:
+\begin{equation}
+\text{Sim}(T, T') = \max\limits_{P\subset E\times E'} \sum\limits_{(e, e')\in P}\left(\text{R}(e_0, e'_0) + \text{R}(e_1, e_1')\right).
+\end{equation}
+where $P$ is a one-to-one mapping of edges of $T$ to edges of $T'$ and R$(v, v')$ is the averaged ROUGE-1, ROUGE-2, and ROUGE-L \cite{lin2004rouge} similarity score of $s(v)$ and $s(v')$.
+
+It should be noted that the baseline method uses a similarity function, not a metric on $\T$. Since TTED is a distance function, to compare these methods, one should construct a distance function from $\text{Sim}(\cdot,\cdot)$. This can be done by constructing a pseudometric by analogy with the kernel method \cite{scholkopf2000kernel}: 
+\begin{equation}
+\rho_\text{base}(T,T') = \sqrt{k(T, T) + k(T',T')-k(T,T') - k(T', T)},
+\end{equation}
+where $k=\text{Sim}$. This definition of the baseline distance function, firstly, automatically guarantees the following properties:
+\begin{itemize}
+    \item Symmetry: $\forall T,T'\in\T$ $\rho_\text{base}(T,T') = \rho_\text{base}(T',T)$;
+    \item Positivity: $\forall T,T'\in\T$ $\rho_\text{base}(T,T') \geq 0$, and $\rho_\text{base}(T,T') = 0 \Leftrightarrow T=T'$.
+\end{itemize}
+Secondly, the triangle inequality for $\rho_\text{base}$ will also hold provided that $\text{Sim}(\cdot, \cdot)$ is a positive definite kernel, but for the similarity function used in \cite{zhang2024coreference} this is not the case.
+
+\subsection{Experimental Setup.}
+To test the proposed method in comparison with the baseline, we compute distances on multiple samples $\mathcal{D}_k$, consisting, according to the definition from Section \ref{metric_quality}, of the following elements:
+\begin{enumerate}
+    \item a text tree $T$;
+    \item trees whose texts in the vertices are \textit{paraphrases} of the corresponding vertices of $T$~--- subsample $\mathcal{T}_1$ from $P(T)$ (\texttt{paraphrase});
+    \item trees that are formed from the vertices of $T$ but with different \textit{structure}~--- subsample $\mathcal{T}_2$ from $S(T)$ (\texttt{structure});
+    \item trees that are identical to $T$ in structure but significantly differ in \textit{meaning} of the texts in their vertices~--- subsample $\mathcal{T}_3$ from $M(T)$ (\texttt{meaning}).
+\end{enumerate}
+The goal is to find among the proposed metrics such a metric $\rho$ for which the quality coefficients $R_S^\mathcal{D}(\rho)$ and $R_M^\mathcal{D}(\rho)$ will be minimal according to optimization problems \eqref{optimization_problem}. Also we introduce the notation $\overline{\rho}_i$ for the average distance between $T$ and trees from subsample $\mathcal{T}_i$. Then a qualitative indicator of the informativity of a metric $\rho$ will be a significantly smaller value of $\overline{\rho}_1$ compared to the values of $\overline{\rho}_2$ and $\overline{\rho}_3$.
+
+\subsection{Experimental Data.} To create a sample for testing the metrics' sensitivity to different aspects of text tree difference, we utilize the generative model DeepSeek V3 \cite{liu2024deepseek}. The data generation process consisted of the following stages:
+\begin{enumerate}
+    \item Creation of a base tree $T$ using the neural network;
+    \item Generation of modifications of this tree using the neural network;
+    \item Manual verification of the generated text trees for compliance with our requirements.
+\end{enumerate}
+This data generation methodology significantly reduced the time spent on creating the sample and reduced human bias in the data, while maintaining control over their quality. As a result, we created a sample consisting of trees of sizes from 5 to 25 vertices and their modifications of each type discussed above. The test dataset, as well as prompts used to generate it, are provided in the project repository\footnote{\texttt{https://github.com/intsystems/text-tree-distance}}.
+
+\subsection{Implementation.} The algorithm for TTED computation was implemented using the Python library \texttt{edist}. Language models used to model text semantics were taken from the \texttt{sentence-transformers} library\footnote{\texttt{https://huggingface.co/sentence-transformers/}}. The following language models were used:
+\begin{itemize}
+    \item Fine-tuned DistilRoBERTa v2;
+    \item SPECTER \cite{cohan2020specter};
+    \item MPNet \cite{song2020mpnet};
+    \item Fine-tuned MPNet.
+\end{itemize}
+
+The implementation of the baseline method is taken from the official repository of the article \cite{zhang2024coreference}. This implementation was adapted to work with the tree format used in our work, but the main logic of the method was left unchanged. All the code allowing to reproduce the results of our experiments is available in our project's repository.
+
+\subsection{Algorithm Modifications}
+To improve the quality of TTED and compute it efficiently, we implement the following heuristics:
+\paragraph{Context usage} Often in practice, it is inaccurate to compare texts without considering their context. For example, the sentences ``The article discusses it.'' and ``The article discusses the method for text tree comparison.'' are effectively equivalent if the parent vertex of the first contains the sentence ``A new method for text tree comparison is proposed.'' To address this, in our implementation of TTED we add the option to preliminarily append all sentences from parent vertices as context before the text in a vertex and then compare text embeddings obtained taking this context into account.
+\paragraph{Precomputation} Repeated computation of embeddings using a neural network model can be very time-consuming for large trees, so in our implementation we precompute embeddings for all texts and distances between them beforehand and then use the precomputed values in the Zhang-Shasha algorithm afterwards.
+
+\section{Experimental Results}
+\subsection{Metric Testing}
+The results of testing various language models with embedding distance based on cosine similarity in comparison to the baseline method are presented in Table~\ref{tab:model_results}. The distance estimates obtained using the baseline method and TTED using the MPNet encoder are presented in Fig.~\ref{fig:baseline} and \ref{fig:results} respectively.
+
+\begin{table}[h]
+    \centering
+    \caption{Quality coefficients for baseline and TTED with different language models}
+    \begin{tabular}{|c|c|c|} \hline
+        \textbf{Model} & \textbf{$R_S^\mathcal{D}(\rho)$} & \textbf{$R_M^\mathcal{D}(\rho)$} \\ \hline
+        Baseline & 2.05$\pm$0.79 & 0.96$\pm$0.10 \\ \hline
+        TTED with DistilRoBERTa & 0.58$\pm$0.22 & 0.53$\pm$0.11 \\ \hline
+        TTED with SPECTER & 0.69$\pm$0.35 & 0.46$\pm$0.14 \\ \hline
+        TTED with MPNet & \textbf{0.44$\pm$0.12} & 0.48$\pm$0.11 \\ \hline
+        TTED with fine-tuned MPNet & 0.61$\pm$0.78 & \textbf{0.45$\pm$0.12} \\ \hline
+    \end{tabular}
+    \label{tab:model_results}
+\end{table}
+
+From Fig.~\ref{fig:results} and the values of $R_D^S(\rho)$ in Table~\ref{tab:model_results}, it can be seen that TTED shows significantly larger distance values for trees differing in semantics and structure than for trees that are paraphrases of each other. This supports the claim that TTED reflects significant differences of text trees much more than insignificant ones. Moreover, for most of the tested encoder models, the distances between trees differing in structure and semantics on average are fairly close. This suggests that TTED balances different aspects of text tree difference. We suggest using the MPNet encoder module in TTED as it produces balanced and low values of \textbf{$R_S^\mathcal{D}(\rho)$} and \textbf{$R_M^\mathcal{D}(\rho)$} as can be seen in Table~\ref{tab:model_results}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{img/baseline_sim_graph.png}
+    \caption{Baseline similarities for different tree sizes}
+    \label{fig:baseline}
+\end{figure}~
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{img/mpnet_graph.png}
+    \caption{TTED distances with MPNet encoder for different tree sizes}
+    \label{fig:results}
+\end{figure}
+
+For comparison, consider the values obtained using the baseline method (Fig.~\ref{fig:baseline}, Table~\ref{tab:model_results}). We see a different picture: first of all, structural differences are reflected much weaker by this method than differences of texts in the vertices, including in wording, hence the value $R^\mathcal{D}_S(\rho_\text{baseline}) > 1$. This can also be seen in Fig.~\ref{fig:baseline} in much larger values of mean similarity between structurally different trees. Moreover, differences in semantics are on average reflected by the baseline similarity function similarly to differences in phrasing. This can also be seen in the value of $R^\mathcal{D}_M$ being close to 1. Here, of course, we should note that $R^\mathcal{D}_S$ and $R^\mathcal{D}_M$ for the baseline method are calculated using the pseudometric we constructed based on $\overline{\text{Sim}}$, but the values presented in Fig.~\ref{fig:baseline} also allow us to make the same conclusion about low informativity of the baseline similarity function.
+
+\subsection{Testing Algorithm Modifications}
+Using the TTED version with the MPNet encoder, we experimented with different embedding distances and context usage when computing embeddings. The results of these experiments are presented in Tables~\ref{tab:modification_results} and~\ref{tab:context_results}. It can be seen that the type of metric used for measuring the distance between embeddings does not visibly affect the value of the $R^\mathcal{D}_M$ quality coefficient, but the distance values can differ greatly in order of magnitude depending on the choice of metric. In further experiments, the metric based on cosine similarity will be preferred, as it gives the most interpretable values (with its use, the distance between embeddings is a number from 0 to 1). It should be noted though that it is necessary to normalize embedding vectors in order for this distance function to be a correct metric. 
+
+\begin{table}[h]
+    \centering
+    \caption{Average TTED values for different embedding distances}
+    \begin{tabular}{|c|c|c|c|} \hline
+        $r(x, y)$ & $\overline{\rho}_1$, $|T| = 10$ & $\overline{\rho}_3$, $|T| = 10$ & $R_M^\mathcal{D}(\rho)$ \\ \hline
+        $\sqrt{1 - S_C(x, y)}$ & 3.89$\pm$0.71 & 8.41$\pm$0.80 & \textbf{0.48$\pm$0.11} \\ \hline
+        $||x-y||_2$ & 5.50$\pm$1,00 & 11.89$\pm$1.14 & \textbf{0.48$\pm$0.11} \\ \hline
+        $||x-y||_1$ & 119.70$\pm$21.60 & 259.05$\pm$25.12 & \textbf{0.48$\pm$0.11} \\ \hline
+    \end{tabular}
+    \label{tab:modification_results}
+\end{table}
+
+From Table~\ref{tab:context_results}, it can be seen that using context as a heuristic for the TTED computation algorithm indeed gives a slight improvement in the informativity of the metric, which justifies its use in the future. It should be noted though that we cannot guarantee that this modification of TTED satisfies the requirement of being a correct metric on $\T$.
+
+\begin{table}[h]
+    \centering
+    \caption{Quality coefficients with and without the context usage heuristic}
+    \begin{tabular}{|c|c|c|} \hline
+        \textbf{Method} & $R_S^\mathcal{D}(\rho)$ & $R_M^\mathcal{D}(\rho)$ \\ \hline
+        Without context & 0.44$\pm$0.12 & 0.48$\pm$0.11 \\ \hline
+        With context & \textbf{0.43$\pm$0.19} & \textbf{0.35$\pm$0.08} \\ \hline
+    \end{tabular}
+    \label{tab:context_results}
+\end{table}
+
+\section{Conclusion}
+\subsection{Discussion of Results.}
+In this work we proposed a new metric for text hierarchy comparison~--- TTED. This metric has been proven to be more informative in terms of reflecting significant text tree differences than an existing method used to compare text hierarchies. With a quality choice of the encoder model for approximating semantic similarity in TTED, we managed to obtain significantly better values of the proposed quality coefficients than the baseline method; a qualitative investigation of the obtained results also indicates the superiority of TTED. All this justifies the applicability of this metric for comparing text hierarchies; in particular, for evaluating the quality of automatic hierarchical knowledge organization and summarization. The proposed heuristics for TTED can be used to enhance the method.
+
+\subsection{Research Limitations.}
+Our study of TTED has a number of limitations. First, there are more aspects of similarity of text trees than just structure and semantics. We plan to formalize and investigate such aspects in the future. Also, it should be taken into account that asymptotically the Zhang-Shasha algorithm for unordered trees is quite resource-intensive and could potentially make TTED a non-optimal metric for large text trees; the boundaries of its applicability in terms of the size of the trees compared remain to be determined. We limit our test data to relatively small mind maps on scientific subjects, but the potential scope of usage of TTED is, of course, much broader.
+
+% \addcontentsline{toc}{section}{\protect\numberline{}References}
+\bibliographystyle{ieeetr}
+\bibliography{references}
+
+% \begin{thebibliography}{00}
+% \bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
+% \bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
+% \bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
+% \bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
+% \bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
+% \bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
+% \bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
+% \end{thebibliography}
+% \vspace{12pt}
+% \color{red}
+% IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
+
+\end{document}
