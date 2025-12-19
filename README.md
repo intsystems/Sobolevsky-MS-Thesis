@@ -18,7 +18,7 @@ It is recommended to use a fresh virtual environment of choice. For example:
 ```
 python -m venv tted
 source tted/bin/activate # for Linux
-tted/bin/activate/bat # for Windows
+tted/bin/activate.bat # for Windows
 ```
 
 The code and required dependencies can be install with the following code (it is recommended to use a fresh virtual environment of choice):
