@@ -2,7 +2,7 @@
 
 **Author:** Fedor Sobolevsky
 
-**Scientific supervisor:** Ph. D. Konstantin Vorontsov
+**Scientific supervisor:** D. Sc. Konstantin Vorontsov
 
 ## Abstract 
 In an age of exponential growth in the amount of available information in the world, the task of structuring and systematizing scientific knowledge, as well as increasing its accessibility, is becoming especially urgent. A structured organization of the main ideas and results from a scientific publication can speed up the process of gaining knowledge from it. Hierarchical summaries are one of the types of structured text representation that allows you to move from the main to the details when studying a topic. Since human processing of scientific texts in order to create a hierarchical summary takes a lot of time, it becomes necessary to develop automatic hierarchical summarization methods that are not inferior in quality to manual summarization. 
