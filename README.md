@@ -21,7 +21,7 @@ source tted/bin/activate # for Linux
 tted/bin/activate.bat # for Windows
 ```
 
-The code and required dependencies can be install with the following code (it is recommended to use a fresh virtual environment of choice):
+The code and required dependencies can be install with the following code:
 ```
 git clone https://github.com/intsystems/Sobolevsky-MS-Thesis
 cd ./Sobolevsky-MS-Thesis/code
