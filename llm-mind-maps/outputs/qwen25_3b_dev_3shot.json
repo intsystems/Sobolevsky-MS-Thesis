@@ -1,0 +1,811 @@
+[
+  {
+    "article_id": "a3",
+    "original_path": "data/dev_full_original/a3.story",
+    "reference_path": "data/a_labeling_dev/a3.story",
+    "few_shot": {
+      "count": 3,
+      "article_ids": [
+        "a19",
+        "a28",
+        "a29"
+      ]
+    },
+    "sentences": [
+      "(CNN) -- Since news first broke about the shooting at a Connecticut elementary school, people began wondering how something so horrible could happen.",
+      "Within a few hours, before the magnitude of the tragedy was fully known, reports began to surface that the shooter, Adam Lanza, was autistic or had Asperger's syndrome in addition to a possible personality or anxiety disorder such as obessive-compulsive disorder.",
+      "A relative told investigators that Lanza had a form of autism, according to a law enforcement official, who spoke under condition of anonymity due to the sensitive nature of the investigation. CNN has not been able to confirm independently whether Lanza was diagnosed with autism or Asperger's syndrome, a higher-functioning form of autism.",
+      "Russ Hanoman, a friend of Lanza's mother, told CNN that Lanza had Asperger's syndrome and that he was \"very withdrawn emotionally.\"",
+      "However, national autism organizations cautioned against speculation about a link between violence and autism or Asperger's.",
+      "While the motive for this crime is still unknown and may never be fully understood, what is clear, according to experts, is that autism cannot be blamed.",
+      "\"There is absolutely no evidence or any reliable research that suggests a linkage between autism and planned violence,\" the Autism Society said in a statement. \"To imply or suggest that some linkage exists is wrong and is harmful to more than 1.5 million law-abiding, nonviolent and wonderful individuals who live with autism each day.\"",
+      "Man with Asperger's shares thoughts on Sandy Hook shooting",
+      "Peter Bell of Autism Speaks said, \"Autism did not cause this horror.\" Bell, executive vice president for programs and services for the advocacy and research group, is also the father of a son with autism.",
+      "Bell said it's not unusual to want to figure out why someone would commit such a heinous crime, but he also cautioned people to do so responsibly.",
+      "And by definition, he said, people with a diagnosis of autism or Asperger's are not inclined to commit an act of violence. The likelihood of this happening would be no different than the rest of the population, he added.",
+      "With autism, no longer invisible",
+      "One in 88 children in the United States have autism, according to the latest estimates from the Centers for Disease Control and Prevention. Boys with autism outnumber girls 5 to 1, according to the CDC; 1 in 54 boys in the United States have autism.",
+      "Autism spectrum disorders, including Asperger's syndrome, are a range of developmental disorders of the brain.",
+      "They can cause significant social impairments, communication problems and restricted, repetitive and stereotyped patterns of behavior.",
+      "It's important for the public to know that the gunman's actions can't be linked with autism spectrum disorders, said Dr. Max Wiznitzer, a pediatric neurologist and autism expert at Rainbow Babies and Children's Hospital in Cleveland.",
+      "\"Aggression and violence in the ASD population is reactive, not preplanned and deliberate,\" he said.",
+      "For example, sometimes children with autism will get violent because they are sick or frustrated and unable to communicate how they feel.",
+      "Wiznitzer also said that violence among autism spectrum disorder patients is \"sometimes due to ASD features such as desire for sameness but usually related to a co-existing disorder such as anxiety or ADHD (attention-deficit hyperactive disorder).\"",
+      "Commenters and CNN iReporters also weighed in on the issue.",
+      "\"I have Asperger's, a very mild form of autism,\" said one comenter, oblivion328. \"Though as an adult I no longer exhibit any of the associated behaviors aside from some manageable social anxiety, I recall very well having tantrums as a child. I sincerely doubt if you put a gun in my hand during such an episode I'd start shooting people. Most autistics are more likely to harm themselves than anyone around them really.\"",
+      "\"When you talk about autism or anything on the autism spectrum, you're talking about a neural disorder,\" said CNN's Dr. Sanjay Gupta. \"I think the terms do matter here. Second of all, just this whole idea that it's linked with violence in some way and specifically pre-planned violence, I think we can dispense with that.\"",
+      "What concerns advocacy groups such as Autism Speaks, the Autism Society and the Autism Research Initiative is that linking autism with violence will once again stigmatize people with autism and turn back the clock on progress made so far.",
+      "\"Please do not judge any individual with autism based on what is being said about a killer of innocent children and teachers,\" the Autism Society said in its statement.",
+      "A blood test for autism?",
+      "Bell said he is concerned that linking autism to this crime could even endanger innocent people and that the community will begin to fear those with autism.",
+      "\"We worked so hard to try (integrate them) into our communities, give them opportunities to be employees, to be able to live in our neighborhoods, and if people do jump to conclusions, we really risk taking significant steps backward for people in this population,\" he said.",
+      "In a statement, Autistic Global Initiative Director Valerie Paradiz said, \"The autism community has long labored toward building understanding, awareness and trust within communities throughout the United States and the world.",
+      "\"As adults with autism living productive, peaceful lives, we urge the media and professionals who participate in speculative interviews about the motives of the accused shooter to refrain from misleading comments about autism and other neurodevelopmental disabilities. ... (M)isinformation could easily trigger increased prejudice and misunderstanding.\"",
+      "CNN's Dr. Sanjay Gupta and Danielle Dellorto contributed to this report."
+    ],
+    "generation": {
+      "raw_output": "[0] (CNN) -- Since news first broke about the shooting at a Connecticut elementary school, people began wondering how something so horrible could happen.\n1. [1] Within a few hours, before the magnitude of the tragedy was fully known, reports began to surface that the shooter, Adam Lanza, was autistic or had Asperger's syndrome in addition to a possible personality or anxiety disorder such as obessive-compulsive disorder.\n2. [2] A relative told investigators that Lanza had a form of autism, according to a law enforcement official, who spoke under condition of anonymity due to the sensitive nature of the investigation. CNN has not been able to confirm independently whether Lanza was diagnosed with autism or Asperger's syndrome, a higher-functioning form of autism.\n3. [4] However, national autism organizations cautioned against speculation about a link between violence and autism or Asperger's.\n4. [5] While the motive for this crime is still unknown and may never be fully understood, what is clear, according to experts, is that autism cannot be blamed.\n5. [6] \"There is absolutely no evidence or any reliable research that suggests a linkage between autism and planned violence,\" the Autism Society said in a statement. \"To imply or suggest that some linkage exists is wrong and is harmful to more than 1.5 million law-abiding, nonviolent and wonderful individuals who live with autism each day.\"\n6. [8] Peter Bell of Autism Speaks said, \"Autism did not cause this horror.\" Bell, executive vice president for programs and services for the advocacy and research group, is also the father of a son with autism.\n7. [9] Bell said it's not unusual to want to figure out why someone would commit such a heinous crime, but he also cautioned people to do so responsibly.\n8. [10] And by definition, he said, people with a diagnosis of autism or Asperger's are not inclined to commit an act of violence. The likelihood of this happening would be no different than the rest of the population, he added.\n9. [12] One in 88 children in the United States have autism, according to the latest estimates from the Centers for Disease Control and Prevention. Boys with autism outnumber girls 5 to 1, according to the CDC; 1 in 54 boys in the United States have autism.\n10. [13] Autism spectrum disorders, including Asperger's syndrome, are a range of developmental disorders of the brain.\n11. [14] They can cause significant social impairments, communication problems and restricted, repetitive and stereotyped patterns of behavior.\n12. [15] It's important for the public to know that the gunman's actions can't be linked with autism spectrum disorders, said Dr. Max Wiznitzer, a pediatric neurologist and autism expert at Rainbow Babies and Children's Hospital in Cleveland.\n13. [16] \"Aggression and violence in the ASD population is reactive, not preplanned and deliberate,\" he said.\n14. [18] Wiznitzer also said that violence among autism spectrum disorder patients is \"sometimes due to ASD features such as desire for sameness but usually related to a co-existing disorder such as anxiety or ADHD (attention-deficit hyperactive disorder).\"\n15. [20] \"I have Asperger's, a very mild form of autism,\" said one comenter, oblivion328. \"Though as an adult I no longer exhibit any of the associated behaviors aside from some manageable social anxiety, I recall very well having tantrums as a child. I sincerely doubt if you put a gun in my hand during such an episode I'd start shooting people. Most autistics are more likely to harm themselves than anyone around them really.\"\n16. [21] \"When you talk about autism or anything on the autism spectrum, you're talking about a neural disorder,\" said CNN's Dr. Sanjay Gupta. \"I think the terms do matter here. Second of all, just this whole idea that it's linked with violence in some way and specifically pre-planned violence, I think we can dispense with that.\"\n17. [23] \"Please do not judge any individual with autism based on what is being said about a killer of innocent children and teachers,\" the Autism Society said in its statement.\n18. [25] Bell said he is concerned that linking autism to this crime could even endanger innocent people and that the community will begin to fear those with autism.\n19. [26] \"We worked so hard to try (integrate them) into our communities, give them opportunities to be employees, to be able to live in our neighborhoods, and if people do jump to conclusions, we really risk taking significant steps backward for people in this population,\" he said.\n20. [27] In a statement, Autistic Global Initiative Director Valerie Paradiz said, \"The autism community has long labored toward building understanding, awareness and trust within communities throughout the United States and the world.\n21. [28] \"As adults with autism living productive, peaceful lives, we urge the media and professionals who participate in speculative interviews about the motives of the accused shooter to refrain from misleading comments about autism and other neurodevelopmental disabilities. ... (M)isinformation could easily trigger increased prejudice and misunderstanding.\"\n22. [29] CNN's Dr. Sanjay Gupta and Danielle Dellorto contributed to this report.",
+      "attempts": [
+        "[0] (CNN) -- Since news first broke about the shooting at a Connecticut elementary school, people began wondering how something so horrible could happen.\n1. [1] Within a few hours, before the magnitude of the tragedy was fully known, reports began to surface that the shooter, Adam Lanza, was autistic or had Asperger's syndrome in addition to a possible personality or anxiety disorder such as obessive-compulsive disorder.\n2. [2] A relative told investigators that Lanza had a form of autism, according to a law enforcement official, who spoke under condition of anonymity due to the sensitive nature of the investigation. CNN has not been able to confirm independently whether Lanza was diagnosed with autism or Asperger's syndrome, a higher-functioning form of autism.\n3. [4] However, national autism organizations cautioned against speculation about a link between violence and autism or Asperger's.\n4. [5] While the motive for this crime is still unknown and may never be fully understood, what is clear, according to experts, is that autism cannot be blamed.\n5. [6] \"There is absolutely no evidence or any reliable research that suggests a linkage between autism and planned violence,\" the Autism Society said in a statement. \"To imply or suggest that some linkage exists is wrong and is harmful to more than 1.5 million law-abiding, nonviolent and wonderful individuals who live with autism each day.\"\n6. [8] Peter Bell of Autism Speaks said, \"Autism did not cause this horror.\" Bell, executive vice president for programs and services for the advocacy and research group, is also the father of a son with autism.\n7. [9] Bell said it's not unusual to want to figure out why someone would commit such a heinous crime, but he also cautioned people to do so responsibly.\n8. [10] And by definition, he said, people with a diagnosis of autism or Asperger's are not inclined to commit an act of violence. The likelihood of this happening would be no different than the rest of the population, he added.\n9. [12] One in 88 children in the United States have autism, according to the latest estimates from the Centers for Disease Control and Prevention. Boys with autism outnumber girls 5 to 1, according to the CDC; 1 in 54 boys in the United States have autism.\n10. [13] Autism spectrum disorders, including Asperger's syndrome, are a range of developmental disorders of the brain.\n11. [14] They can cause significant social impairments, communication problems and restricted, repetitive and stereotyped patterns of behavior.\n12. [15] It's important for the public to know that the gunman's actions can't be linked with autism spectrum disorders, said Dr. Max Wiznitzer, a pediatric neurologist and autism expert at Rainbow Babies and Children's Hospital in Cleveland.\n13. [16] \"Aggression and violence in the ASD population is reactive, not preplanned and deliberate,\" he said.\n14. [18] Wiznitzer also said that violence among autism spectrum disorder patients is \"sometimes due to ASD features such as desire for sameness but usually related to a co-existing disorder such as anxiety or ADHD (attention-deficit hyperactive disorder).\"\n15. [20] \"I have Asperger's, a very mild form of autism,\" said one comenter, oblivion328. \"Though as an adult I no longer exhibit any of the associated behaviors aside from some manageable social anxiety, I recall very well having tantrums as a child. I sincerely doubt if you put a gun in my hand during such an episode I'd start shooting people. Most autistics are more likely to harm themselves than anyone around them really.\"\n16. [21] \"When you talk about autism or anything on the autism spectrum, you're talking about a neural disorder,\" said CNN's Dr. Sanjay Gupta. \"I think the terms do matter here. Second of all, just this whole idea that it's linked with violence in some way and specifically pre-planned violence, I think we can dispense with that.\"\n17. [23] \"Please do not judge any individual with autism based on what is being said about a killer"
+      ],
+      "mindmap": {
+        "root": 0,
+        "selected": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          12,
+          13,
+          14,
+          15,
+          16,
+          18,
+          20,
+          21,
+          23,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            0,
+            10
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            0,
+            13
+          ],
+          [
+            0,
+            14
+          ],
+          [
+            0,
+            15
+          ],
+          [
+            0,
+            16
+          ],
+          [
+            0,
+            18
+          ],
+          [
+            0,
+            20
+          ],
+          [
+            0,
+            21
+          ],
+          [
+            0,
+            23
+          ],
+          [
+            0,
+            25
+          ],
+          [
+            0,
+            26
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            28
+          ],
+          [
+            0,
+            29
+          ]
+        ]
+      },
+      "rendered": "[0] (CNN) -- Since news first broke about the shooting at a Connecticut elementary school, people began wondering how something so horrible could happen.\n1. [1] Within a few hours, before the magnitude of the tragedy was fully known, reports began to surface that the shooter, Adam Lanza, was autistic or had Asperger's syndrome in addition to a possible personality or anxiety disorder such as obessive-compulsive disorder.\n2. [2] A relative told investigators that Lanza had a form of autism, according to a law enforcement official, who spoke under condition of anonymity due to the sensitive nature of the investigation. CNN has not been able to confirm independently whether Lanza was diagnosed with autism or Asperger's syndrome, a higher-functioning form of autism.\n3. [4] However, national autism organizations cautioned against speculation about a link between violence and autism or Asperger's.\n4. [5] While the motive for this crime is still unknown and may never be fully understood, what is clear, according to experts, is that autism cannot be blamed.\n5. [6] \"There is absolutely no evidence or any reliable research that suggests a linkage between autism and planned violence,\" the Autism Society said in a statement. \"To imply or suggest that some linkage exists is wrong and is harmful to more than 1.5 million law-abiding, nonviolent and wonderful individuals who live with autism each day.\"\n6. [8] Peter Bell of Autism Speaks said, \"Autism did not cause this horror.\" Bell, executive vice president for programs and services for the advocacy and research group, is also the father of a son with autism.\n7. [9] Bell said it's not unusual to want to figure out why someone would commit such a heinous crime, but he also cautioned people to do so responsibly.\n8. [10] And by definition, he said, people with a diagnosis of autism or Asperger's are not inclined to commit an act of violence. The likelihood of this happening would be no different than the rest of the population, he added.\n9. [12] One in 88 children in the United States have autism, according to the latest estimates from the Centers for Disease Control and Prevention. Boys with autism outnumber girls 5 to 1, according to the CDC; 1 in 54 boys in the United States have autism.\n10. [13] Autism spectrum disorders, including Asperger's syndrome, are a range of developmental disorders of the brain.\n11. [14] They can cause significant social impairments, communication problems and restricted, repetitive and stereotyped patterns of behavior.\n12. [15] It's important for the public to know that the gunman's actions can't be linked with autism spectrum disorders, said Dr. Max Wiznitzer, a pediatric neurologist and autism expert at Rainbow Babies and Children's Hospital in Cleveland.\n13. [16] \"Aggression and violence in the ASD population is reactive, not preplanned and deliberate,\" he said.\n14. [18] Wiznitzer also said that violence among autism spectrum disorder patients is \"sometimes due to ASD features such as desire for sameness but usually related to a co-existing disorder such as anxiety or ADHD (attention-deficit hyperactive disorder).\"\n15. [20] \"I have Asperger's, a very mild form of autism,\" said one comenter, oblivion328. \"Though as an adult I no longer exhibit any of the associated behaviors aside from some manageable social anxiety, I recall very well having tantrums as a child. I sincerely doubt if you put a gun in my hand during such an episode I'd start shooting people. Most autistics are more likely to harm themselves than anyone around them really.\"\n16. [21] \"When you talk about autism or anything on the autism spectrum, you're talking about a neural disorder,\" said CNN's Dr. Sanjay Gupta. \"I think the terms do matter here. Second of all, just this whole idea that it's linked with violence in some way and specifically pre-planned violence, I think we can dispense with that.\"\n17. [23] \"Please do not judge any individual with autism based on what is being said about a killer of innocent children and teachers,\" the Autism Society said in its statement.\n18. [25] Bell said he is concerned that linking autism to this crime could even endanger innocent people and that the community will begin to fear those with autism.\n19. [26] \"We worked so hard to try (integrate them) into our communities, give them opportunities to be employees, to be able to live in our neighborhoods, and if people do jump to conclusions, we really risk taking significant steps backward for people in this population,\" he said.\n20. [27] In a statement, Autistic Global Initiative Director Valerie Paradiz said, \"The autism community has long labored toward building understanding, awareness and trust within communities throughout the United States and the world.\n21. [28] \"As adults with autism living productive, peaceful lives, we urge the media and professionals who participate in speculative interviews about the motives of the accused shooter to refrain from misleading comments about autism and other neurodevelopmental disabilities. ... (M)isinformation could easily trigger increased prejudice and misunderstanding.\"\n22. [29] CNN's Dr. Sanjay Gupta and Danielle Dellorto contributed to this report.",
+      "generation_status": "ok"
+    },
+    "evaluation": {
+      "article_id": "a3",
+      "num_reference_pairs": 26,
+      "scores": {
+        "rouge_1": 0.26528604526790384,
+        "rouge_2": 0.24558626555950575,
+        "rouge_l": 0.2880348067577135,
+        "rouge_mean": 0.2788268970603286
+      }
+    }
+  },
+  {
+    "article_id": "a30",
+    "original_path": "data/dev_full_original/a30.story",
+    "reference_path": "data/a_labeling_dev/a30.story",
+    "few_shot": {
+      "count": 3,
+      "article_ids": [
+        "a19",
+        "a28",
+        "a29"
+      ]
+    },
+    "sentences": [
+      "It's official: U.S. President Barack Obama wants lawmakers to weigh in on whether to use military force in Syria.",
+      "Obama sent a letter to the heads of the House and Senate on Saturday night, hours after announcing that he believes military action against Syrian targets is the right step to take over the alleged use of chemical weapons.",
+      "The proposed legislation from Obama asks Congress to approve the use of military force \"to deter, disrupt, prevent and degrade the potential for future uses of chemical weapons or other weapons of mass destruction.\"",
+      "It's a step that is set to turn an international crisis into a fierce domestic political battle.",
+      "There are key questions looming over the debate: What did U.N. weapons inspectors find in Syria? What happens if Congress votes no? And how will the Syrian government react?",
+      "In a televised address from the White House Rose Garden earlier Saturday, the president said he would take his case to Congress, not because he has to -- but because he wants to.",
+      "\"While I believe I have the authority to carry out this military action without specific congressional authorization, I know that the country will be stronger if we take this course, and our actions will be even more effective,\" he said. \"We should have this debate, because the issues are too big for business as usual.\"",
+      "Obama said top congressional leaders had agreed to schedule a debate when the body returns to Washington on September 9. The Senate Foreign Relations Committee will hold a hearing over the matter on Tuesday, Sen. Robert Menendez said.",
+      "Transcript: Read Obama's full remarks",
+      "Syrian crisis: Latest developments",
+      "U.N. inspectors leave Syria",
+      "Obama's remarks came shortly after U.N. inspectors left Syria, carrying evidence that will determine whether chemical weapons were used in an attack early last week in a Damascus suburb.",
+      "\"The aim of the game here, the mandate, is very clear -- and that is to ascertain whether chemical weapons were used -- and not by whom,\" U.N. spokesman Martin Nesirky told reporters on Saturday.",
+      "But who used the weapons in the reported toxic gas attack in a Damascus suburb on August 21 has been a key point of global debate over the Syrian crisis.",
+      "Top U.S. officials have said there's no doubt that the Syrian government was behind it, while Syrian officials have denied responsibility and blamed jihadists fighting with the rebels.",
+      "British and U.S. intelligence reports say the attack involved chemical weapons, but U.N. officials have stressed the importance of waiting for an official report from inspectors.",
+      "The inspectors will share their findings with U.N. Secretary-General Ban Ki-moon Ban, who has said he wants to wait until the U.N. team's final report is completed before presenting it to the U.N. Security Council.",
+      "The Organization for the Prohibition of Chemical Weapons, which nine of the inspectors belong to, said Saturday that it could take up to three weeks to analyze the evidence they collected.",
+      "\"It needs time to be able to analyze the information and the samples,\" Nesirky said.",
+      "He noted that Ban has repeatedly said there is no alternative to a political solution to the crisis in Syria, and that \"a military solution is not an option.\"",
+      "Bergen: Syria is a problem from hell for the U.S.",
+      "Obama: 'This menace must be confronted'",
+      "Obama's senior advisers have debated the next steps to take, and the president's comments Saturday came amid mounting political pressure over the situation in Syria. Some U.S. lawmakers have called for immediate action while others warn of stepping into what could become a quagmire.",
+      "Some global leaders have expressed support, but the British Parliament's vote against military action earlier this week was a blow to Obama's hopes of getting strong backing from key NATO allies.",
+      "On Saturday, Obama proposed what he said would be a limited military action against Syrian President Bashar al-Assad. Any military attack would not be open-ended or include U.S. ground forces, he said.",
+      "Syria's alleged use of chemical weapons earlier this month \"is an assault on human dignity,\" the president said.",
+      "A failure to respond with force, Obama argued, \"could lead to escalating use of chemical weapons or their proliferation to terrorist groups who would do our people harm. In a world with many dangers, this menace must be confronted.\"",
+      "Syria missile strike: What would happen next?",
+      "Map: U.S. and allied assets around Syria",
+      "Obama decision came Friday night",
+      "On Friday night, the president made a last-minute decision to consult lawmakers.",
+      "What will happen if they vote no?",
+      "It's unclear. A senior administration official told CNN that Obama has the authority to act without Congress -- even if Congress rejects his request for authorization to use force.",
+      "Obama on Saturday continued to shore up support for a strike on the al-Assad government.",
+      "He spoke by phone with French President Francois Hollande before his Rose Garden speech.",
+      "\"The two leaders agreed that the international community must deliver a resolute message to the Assad regime -- and others who would consider using chemical weapons -- that these crimes are unacceptable and those who violate this international norm will be held accountable by the world,\" the White House said.",
+      "Meanwhile, as uncertainty loomed over how Congress would weigh in, U.S. military officials said they remained at the ready.",
+      "5 key assertions: U.S. intelligence report on Syria",
+      "Syria: Who wants what after chemical weapons horror",
+      "Reactions mixed to Obama's speech",
+      "A spokesman for the Syrian National Coalition said that the opposition group was disappointed by Obama's announcement.",
+      "\"Our fear now is that the lack of action could embolden the regime and they repeat his attacks in a more serious way,\" said spokesman Louay Safi. \"So we are quite concerned.\"",
+      "Some members of Congress applauded Obama's decision.",
+      "House Speaker John Boehner, Majority Leader Eric Cantor, Majority Whip Kevin McCarthy and Conference Chair Cathy McMorris Rodgers issued a statement Saturday praising the president.",
+      "\"Under the Constitution, the responsibility to declare war lies with Congress,\" the Republican lawmakers said. \"We are glad the president is seeking authorization for any military action in Syria in response to serious, substantive questions being raised.\"",
+      "More than 160 legislators, including 63 of Obama's fellow Democrats, had signed letters calling for either a vote or at least a \"full debate\" before any U.S. action.",
+      "British Prime Minister David Cameron, whose own attempt to get lawmakers in his country to support military action in Syria failed earlier this week, responded to Obama's speech in a Twitter post Saturday.",
+      "\"I understand and support Barack Obama's position on Syria,\" Cameron said.",
+      "An influential lawmaker in Russia -- which has stood by Syria and criticized the United States -- had his own theory.",
+      "\"The main reason Obama is turning to the Congress: the military operation did not get enough support either in the world, among allies of the US or in the United States itself,\" Alexei Pushkov, chairman of the international-affairs committee of the Russian State Duma, said in a Twitter post.",
+      "In the United States, scattered groups of anti-war protesters around the country took to the streets Saturday.",
+      "\"Like many other Americans...we're just tired of the United States getting involved and invading and bombing other countries,\" said Robin Rosecrans, who was among hundreds at a Los Angeles demonstration.",
+      "What do Syria's neighbors think?",
+      "Why Russia, China, Iran stand by Assad",
+      "Syria's government unfazed",
+      "After Obama's speech, a military and political analyst on Syrian state TV said Obama is \"embarrassed\" that Russia opposes military action against Syria, is \"crying for help\" for someone to come to his rescue and is facing two defeats -- on the political and military levels.",
+      "Syria's prime minister appeared unfazed by the saber-rattling.",
+      "\"The Syrian Army's status is on maximum readiness and fingers are on the trigger to confront all challenges,\" Wael Nader al-Halqi said during a meeting with a delegation of Syrian expatriates from Italy, according to a banner on Syria State TV that was broadcast prior to Obama's address.",
+      "An anchor on Syrian state television said Obama \"appeared to be preparing for an aggression on Syria based on repeated lies.\"",
+      "A top Syrian diplomat told the state television network that Obama was facing pressure to take military action from Israel, Turkey, some Arabs and right-wing extremists in the United States.",
+      "\"I think he has done well by doing what Cameron did in terms of taking the issue to Parliament,\" said Bashar Jaafari, Syria's ambassador to the United Nations.",
+      "Both Obama and Cameron, he said, \"climbed to the top of the tree and don't know how to get down.\"",
+      "The Syrian government has denied that it used chemical weapons in the August 21 attack, saying that jihadists fighting with the rebels used them in an effort to turn global sentiments against it.",
+      "British intelligence had put the number of people killed in the attack at more than 350.",
+      "On Saturday, Obama said \"all told, well over 1,000 people were murdered.\" U.S. Secretary of State John Kerry on Friday cited a death toll of 1,429, more than 400 of them children. No explanation was offered for the discrepancy.",
+      "Iran: U.S. military action in Syria would spark 'disaster'",
+      "Opinion: Why strikes in Syria are a bad idea"
+    ],
+    "generation": {
+      "raw_output": "[0] It's official: U.S. President Barack Obama wants lawmakers to weigh in on whether to use military force in Syria.\n1. [1] Obama sent a letter to the heads of the House and Senate on Saturday night, hours after announcing that he believes military action against Syrian targets is the right step to take over the alleged use of chemical weapons.\n2. [3] The proposed legislation from Obama asks Congress to approve the use of military force \"to deter, disrupt, prevent and degrade the potential for future uses of chemical weapons or other weapons of mass destruction.\"\n3. [4] There are key questions looming over the debate: What did U.N. weapons inspectors find in Syria? What happens if Congress votes no? And how will the Syrian government react?\n4. [6] While I believe I have the authority to carry out this military action without specific congressional authorization, I know that the country will be stronger if we take this course, and our actions will be even more effective,\" he said. \"We should have this debate, because the issues are too big for business as usual.\"\n5. [7] Obama said top congressional leaders had agreed to schedule a debate when the body returns to Washington on September 9. The Senate Foreign Relations Committee will hold a hearing over the matter on Tuesday, Sen. Robert Menendez said.\n6. [12] In a televised address from the White House Rose Garden earlier Saturday, the president said he would take his case to Congress, not because he has to -- but because he wants to.\n7. [13] The inspectors will share their findings with U.N. Secretary-General Ban Ki-moon Ban, who has said he wants to wait until the U.N. team's final report is completed before presenting it to the U.N. Security Council.\n8. [14] Top U.S. officials have said there's no doubt that the Syrian government was behind it, while Syrian officials have denied responsibility and blamed jihadists fighting with the rebels.\n9. [15] British and U.S. intelligence reports say the attack involved chemical weapons, but U.N. officials have stressed the importance of waiting for an official report from inspectors.\n10. [16] The inspectors will share their findings with U.N. Secretary-General Ban Ki-moon Ban, who has said he wants to wait until the U.N. team's final report is completed before presenting it to the U.N. Security Council.\n11. [17] The Organization for the Prohibition of Chemical Weapons, which nine of the inspectors belong to, said Saturday that it could take up to three weeks to analyze the evidence they collected.\n12. [18] \"It needs time to be able to analyze the information and the samples,\" Nesirky said.\n13. [19] He noted that Ban has repeatedly said there is no alternative to a political solution to the crisis in Syria, and that \"a military solution is not an option.\"\n14. [20] Bergen: Syria is a problem from hell for the U.S.\n15. [21] Obama: 'This menace must be confronted'\n16. [22] Obama's senior advisers have debated the next steps to take, and the president's comments Saturday came amid mounting political pressure over the situation in Syria. Some U.S. lawmakers have called for immediate action while others warn of stepping into what could become a quagmire.\n17. [23] Some global leaders have expressed support, but the British Parliament's vote against military action earlier this week was a blow to Obama's hopes of getting strong backing from key NATO allies.\n18. [24] On Saturday, Obama proposed what he said would be a limited military action against Syrian President Bashar al-Assad. Any military attack would not be open-ended or include U.S. ground forces, he said.\n19. [25] Syria's alleged use of chemical weapons earlier this month \"is an assault on human dignity,\" the president said.\n20. [26] A failure to respond with force, Obama argued, \"could lead to escalating use of chemical weapons or their proliferation to terrorist groups who would do our people harm. In a world with many dangers, this menace must be confronted.\"\n21. [27] Syria missile strike: What would happen next?\n22. [28] Map: U.S. and allied assets around Syria\n23. [29] Obama decision came Friday night\n24. [30] On Friday night, the president made a last-minute decision to consult lawmakers.\n25. [31] What will happen if they vote no?\n26. [32] It's unclear. A senior administration official told CNN that Obama has the authority to act without Congress -- even if Congress rejects his request for authorization to use force.\n27. [34] He spoke by phone with French President Francois Hollande before his Rose Garden speech.\n28. [35] \"The two leaders agreed that the international community must deliver a resolute message to the Assad regime -- and others who would consider using chemical weapons -- that these crimes are unacceptable and those who violate this international norm will be held accountable by the world,\" the White House said.\n29. [36] Meanwhile, as uncertainty loomed over how Congress would weigh in, U.S. military officials said they remained at the ready.\n30. [37] 5 key assertions: U.S. intelligence report on Syria\n31. [38] Syria: Who wants what after chemical weapons horror\n32. [39] Reactions mixed to Obama's speech\n33. [40] A spokesman for the Syrian National Coalition said that the opposition group was disappointed by Obama's announcement.\n34. [41] \"Our fear now is that the lack of action could embolden the regime and they repeat his attacks in a more serious way,\" said spokesman Louay Safi. \"So we are quite concerned.\"\n35. [42] Some members of Congress applauded Obama's decision.\n36. [43] House Speaker John Boehner, Majority Leader Eric Cantor, Majority Whip Kevin McCarthy and Conference Chair Cathy McMorris Rodgers issued a statement Saturday praising the president.\n37. [44] \"Under the Constitution, the responsibility to declare war lies with Congress,\" the Republican lawmakers said. \"We are glad the president is seeking authorization for any military action in Syria in response to serious, substantive questions being raised.\"\n38. [45] More than 160 legislators, including 63 of Obama's fellow Democrats, had signed letters calling for either a vote or at least a \"full debate\" before any U.S. action.\n39. [46] British Prime Minister David Cameron, whose own attempt to get lawmakers in his country to support military action in Syria failed earlier this week, responded to Obama's speech in a Twitter post Saturday.\n40. [47] \"I understand and support Barack Obama's position on Syria,\" Cameron said.\n41. [48] An influential lawmaker in Russia -- which has stood by Syria and criticized the United States -- had his own theory.\n42. [49] \"The main reason Obama is turning to the Congress: the military operation did not get enough support either in the world, among allies of the US or in the United States itself,\" Alexei Pushkov, chairman of the international-affairs committee of the Russian State Duma, said in a Twitter post.\n43. [50] In the United States, scattered groups of anti-war protesters around the country took to the streets Saturday.\n44. [51] \"Like many other Americans...we're just tired of the United States getting involved and invading and bombing other countries,\" said Robin Rosecrans, who was among hundreds at a Los Angeles demonstration.\n45. [52] What do Syria's neighbors think?\n46. [53] Why Russia, China, Iran stand by Assad\n47. [54] Syria's government unfazed\n48. [55] After Obama's speech, a military and political analyst on Syrian state TV said Obama is \"embarrassed\" that Russia opposes military action against Syria, is \"crying for help\" for someone to come to his rescue and is facing two defeats -- on the political and military levels.\n49. [56] Syria's prime minister appeared unfazed by the saber-rattling.\n50. [57] \"The Syrian Army's status is on maximum readiness and fingers are on the trigger to confront all challenges,\" Wael Nader al-Halqi said during a meeting with a delegation of Syrian expatriates from Italy, according to a banner on Syria State TV that was broadcast prior to Obama's address.\n51. [58] An anchor on Syrian state television said Obama \"appeared to be preparing for an aggression on Syria based on repeated lies.\"\n52. [59] A top Syrian diplomat told the state television network that Obama \"appeared to be preparing for an aggression on Syria based on repeated lies.\"\n60. [60] \"I think he has done well by doing what Cameron did in terms of taking the issue to Parliament,\" said Bashar Jaafari, Syria's ambassador to the United Nations.\n61. [61] Both Obama and Cameron, he said, \"climbed to the top of the tree and don't know how to get down.\"\n62. [63] The Syrian government has denied that it used chemical weapons in the August 21 attack, saying that jihadists fighting with the rebels used them in an effort to turn global sentiments against it.\n63. [64] On Saturday, Obama said \"all told, well over 1,000 people were murdered.\" U.S. Secretary of State John Kerry on Friday cited a death toll of",
+      "attempts": [
+        "[0] It's official: U.S. President Barack Obama wants lawmakers to weigh in on whether to use military force in Syria.\n1. [1] Obama sent a letter to the heads of the House and Senate on Saturday night, hours after announcing that he believes military action against Syrian targets is the right step to take over the alleged use of chemical weapons.\n2. [3] The proposed legislation from Obama asks Congress to approve the use of military force \"to deter, disrupt, prevent and degrade the potential for future uses of chemical weapons or other weapons of mass destruction.\"\n3. [4] There are key questions looming over the debate: What did U.N. weapons inspectors find in Syria? What happens if Congress votes no? And how will the Syrian government react?\n4. [6] While I believe I have the authority to carry out this military action without specific congressional authorization, I know that the country will be stronger if we take this course, and our actions will be even more effective,\" he said. \"We should have this debate, because the issues are too big for business as usual.\"\n5. [7] Obama said top congressional leaders had agreed to schedule a debate when the body returns to Washington on September 9. The Senate Foreign Relations Committee will hold a hearing over the matter on Tuesday, Sen. Robert Menendez said.\n6. [12] In a televised address from the White House Rose Garden earlier Saturday, the president said he would take his case to Congress, not because he has to -- but because he wants to.\n7. [13] The inspectors will share their findings with U.N. Secretary-General Ban Ki-moon Ban, who has said he wants to wait until the U.N. team's final report is completed before presenting it to the U.N. Security Council.\n8. [14] Top U.S. officials have said there's no doubt that the Syrian government was behind it, while Syrian officials have denied responsibility and blamed jihadists fighting with the rebels.\n9. [15] British and U.S. intelligence reports say the attack involved chemical weapons, but U.N. officials have stressed the importance of waiting for an official report from inspectors.\n10. [16] The inspectors will share their findings with U.N. Secretary-General Ban Ki-moon Ban, who has said he wants to wait until the U.N. team's final report is completed before presenting it to the U.N. Security Council.\n11. [17] The Organization for the Prohibition of Chemical Weapons, which nine of the inspectors belong to, said Saturday that it could take up to three weeks to analyze the evidence they collected.\n12. [18] \"It needs time to be able to analyze the information and the samples,\" Nesirky said.\n13. [19] He noted that Ban has repeatedly said there is no alternative to a political solution to the crisis in Syria, and that \"a military solution is not an option.\"\n14. [20] Bergen: Syria is a problem from hell for the U.S.\n15. [21] Obama: 'This menace must be confronted'\n16. [22] Obama's senior advisers have debated the next steps to take, and the president's comments Saturday came amid mounting political pressure over the situation in Syria. Some U.S. lawmakers have called for immediate action while others warn of stepping into what could become a quagmire.\n17. [23] Some global leaders have expressed support, but the British Parliament's vote against military action earlier this week was a blow to Obama's hopes of getting strong backing from key NATO allies.\n18. [24] On Saturday, Obama proposed what he said would be a limited military action against Syrian President Bashar al-Assad. Any military attack would not be open-ended or include U.S. ground forces, he said.\n19. [25] Syria's alleged use of chemical weapons earlier this month \"is an assault on human dignity,\" the president said.\n20. [26] A failure to respond with force, Obama argued, \"could lead to escalating use of chemical weapons or their proliferation to terrorist groups who would do our people harm. In a world with many dangers, this menace must be confronted.\"\n21. [27] Syria missile "
+      ],
+      "mindmap": {
+        "root": 0,
+        "selected": [
+          0,
+          1,
+          3,
+          4,
+          6,
+          7,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          63,
+          64
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            0,
+            13
+          ],
+          [
+            0,
+            14
+          ],
+          [
+            0,
+            15
+          ],
+          [
+            0,
+            16
+          ],
+          [
+            0,
+            17
+          ],
+          [
+            0,
+            18
+          ],
+          [
+            0,
+            19
+          ],
+          [
+            0,
+            20
+          ],
+          [
+            0,
+            21
+          ],
+          [
+            0,
+            22
+          ],
+          [
+            0,
+            23
+          ],
+          [
+            0,
+            24
+          ],
+          [
+            0,
+            25
+          ],
+          [
+            0,
+            26
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            28
+          ],
+          [
+            0,
+            29
+          ],
+          [
+            0,
+            30
+          ],
+          [
+            0,
+            31
+          ],
+          [
+            0,
+            32
+          ],
+          [
+            0,
+            34
+          ],
+          [
+            0,
+            35
+          ],
+          [
+            0,
+            36
+          ],
+          [
+            0,
+            37
+          ],
+          [
+            0,
+            38
+          ],
+          [
+            0,
+            39
+          ],
+          [
+            0,
+            40
+          ],
+          [
+            0,
+            41
+          ],
+          [
+            0,
+            42
+          ],
+          [
+            0,
+            43
+          ],
+          [
+            0,
+            44
+          ],
+          [
+            0,
+            45
+          ],
+          [
+            0,
+            46
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            48
+          ],
+          [
+            0,
+            49
+          ],
+          [
+            0,
+            50
+          ],
+          [
+            0,
+            51
+          ],
+          [
+            0,
+            52
+          ],
+          [
+            0,
+            53
+          ],
+          [
+            0,
+            54
+          ],
+          [
+            0,
+            55
+          ],
+          [
+            0,
+            56
+          ],
+          [
+            0,
+            57
+          ],
+          [
+            0,
+            58
+          ],
+          [
+            0,
+            59
+          ],
+          [
+            0,
+            60
+          ],
+          [
+            0,
+            61
+          ],
+          [
+            0,
+            63
+          ],
+          [
+            0,
+            64
+          ]
+        ]
+      },
+      "rendered": "[0] It's official: U.S. President Barack Obama wants lawmakers to weigh in on whether to use military force in Syria.\n1. [1] Obama sent a letter to the heads of the House and Senate on Saturday night, hours after announcing that he believes military action against Syrian targets is the right step to take over the alleged use of chemical weapons.\n2. [3] It's a step that is set to turn an international crisis into a fierce domestic political battle.\n3. [4] There are key questions looming over the debate: What did U.N. weapons inspectors find in Syria? What happens if Congress votes no? And how will the Syrian government react?\n4. [6] \"While I believe I have the authority to carry out this military action without specific congressional authorization, I know that the country will be stronger if we take this course, and our actions will be even more effective,\" he said. \"We should have this debate, because the issues are too big for business as usual.\"\n5. [7] Obama said top congressional leaders had agreed to schedule a debate when the body returns to Washington on September 9. The Senate Foreign Relations Committee will hold a hearing over the matter on Tuesday, Sen. Robert Menendez said.\n6. [12] \"The aim of the game here, the mandate, is very clear -- and that is to ascertain whether chemical weapons were used -- and not by whom,\" U.N. spokesman Martin Nesirky told reporters on Saturday.\n7. [13] But who used the weapons in the reported toxic gas attack in a Damascus suburb on August 21 has been a key point of global debate over the Syrian crisis.\n8. [14] Top U.S. officials have said there's no doubt that the Syrian government was behind it, while Syrian officials have denied responsibility and blamed jihadists fighting with the rebels.\n9. [15] British and U.S. intelligence reports say the attack involved chemical weapons, but U.N. officials have stressed the importance of waiting for an official report from inspectors.\n10. [16] The inspectors will share their findings with U.N. Secretary-General Ban Ki-moon Ban, who has said he wants to wait until the U.N. team's final report is completed before presenting it to the U.N. Security Council.\n11. [17] The Organization for the Prohibition of Chemical Weapons, which nine of the inspectors belong to, said Saturday that it could take up to three weeks to analyze the evidence they collected.\n12. [18] \"It needs time to be able to analyze the information and the samples,\" Nesirky said.\n13. [19] He noted that Ban has repeatedly said there is no alternative to a political solution to the crisis in Syria, and that \"a military solution is not an option.\"\n14. [20] Bergen: Syria is a problem from hell for the U.S.\n15. [21] Obama: 'This menace must be confronted'\n16. [22] Obama's senior advisers have debated the next steps to take, and the president's comments Saturday came amid mounting political pressure over the situation in Syria. Some U.S. lawmakers have called for immediate action while others warn of stepping into what could become a quagmire.\n17. [23] Some global leaders have expressed support, but the British Parliament's vote against military action earlier this week was a blow to Obama's hopes of getting strong backing from key NATO allies.\n18. [24] On Saturday, Obama proposed what he said would be a limited military action against Syrian President Bashar al-Assad. Any military attack would not be open-ended or include U.S. ground forces, he said.\n19. [25] Syria's alleged use of chemical weapons earlier this month \"is an assault on human dignity,\" the president said.\n20. [26] A failure to respond with force, Obama argued, \"could lead to escalating use of chemical weapons or their proliferation to terrorist groups who would do our people harm. In a world with many dangers, this menace must be confronted.\"\n21. [27] Syria missile strike: What would happen next?\n22. [28] Map: U.S. and allied assets around Syria\n23. [29] Obama decision came Friday night\n24. [30] On Friday night, the president made a last-minute decision to consult lawmakers.\n25. [31] What will happen if they vote no?\n26. [32] It's unclear. A senior administration official told CNN that Obama has the authority to act without Congress -- even if Congress rejects his request for authorization to use force.\n27. [34] He spoke by phone with French President Francois Hollande before his Rose Garden speech.\n28. [35] \"The two leaders agreed that the international community must deliver a resolute message to the Assad regime -- and others who would consider using chemical weapons -- that these crimes are unacceptable and those who violate this international norm will be held accountable by the world,\" the White House said.\n29. [36] Meanwhile, as uncertainty loomed over how Congress would weigh in, U.S. military officials said they remained at the ready.\n30. [37] 5 key assertions: U.S. intelligence report on Syria\n31. [38] Syria: Who wants what after chemical weapons horror\n32. [39] Reactions mixed to Obama's speech\n33. [40] A spokesman for the Syrian National Coalition said that the opposition group was disappointed by Obama's announcement.\n34. [41] \"Our fear now is that the lack of action could embolden the regime and they repeat his attacks in a more serious way,\" said spokesman Louay Safi. \"So we are quite concerned.\"\n35. [42] Some members of Congress applauded Obama's decision.\n36. [43] House Speaker John Boehner, Majority Leader Eric Cantor, Majority Whip Kevin McCarthy and Conference Chair Cathy McMorris Rodgers issued a statement Saturday praising the president.\n37. [44] \"Under the Constitution, the responsibility to declare war lies with Congress,\" the Republican lawmakers said. \"We are glad the president is seeking authorization for any military action in Syria in response to serious, substantive questions being raised.\"\n38. [45] More than 160 legislators, including 63 of Obama's fellow Democrats, had signed letters calling for either a vote or at least a \"full debate\" before any U.S. action.\n39. [46] British Prime Minister David Cameron, whose own attempt to get lawmakers in his country to support military action in Syria failed earlier this week, responded to Obama's speech in a Twitter post Saturday.\n40. [47] \"I understand and support Barack Obama's position on Syria,\" Cameron said.\n41. [48] An influential lawmaker in Russia -- which has stood by Syria and criticized the United States -- had his own theory.\n42. [49] \"The main reason Obama is turning to the Congress: the military operation did not get enough support either in the world, among allies of the US or in the United States itself,\" Alexei Pushkov, chairman of the international-affairs committee of the Russian State Duma, said in a Twitter post.\n43. [50] In the United States, scattered groups of anti-war protesters around the country took to the streets Saturday.\n44. [51] \"Like many other Americans...we're just tired of the United States getting involved and invading and bombing other countries,\" said Robin Rosecrans, who was among hundreds at a Los Angeles demonstration.\n45. [52] What do Syria's neighbors think?\n46. [53] Why Russia, China, Iran stand by Assad\n47. [54] Syria's government unfazed\n48. [55] After Obama's speech, a military and political analyst on Syrian state TV said Obama is \"embarrassed\" that Russia opposes military action against Syria, is \"crying for help\" for someone to come to his rescue and is facing two defeats -- on the political and military levels.\n49. [56] Syria's prime minister appeared unfazed by the saber-rattling.\n50. [57] \"The Syrian Army's status is on maximum readiness and fingers are on the trigger to confront all challenges,\" Wael Nader al-Halqi said during a meeting with a delegation of Syrian expatriates from Italy, according to a banner on Syria State TV that was broadcast prior to Obama's address.\n51. [58] An anchor on Syrian state television said Obama \"appeared to be preparing for an aggression on Syria based on repeated lies.\"\n52. [59] A top Syrian diplomat told the state television network that Obama was facing pressure to take military action from Israel, Turkey, some Arabs and right-wing extremists in the United States.\n53. [60] \"I think he has done well by doing what Cameron did in terms of taking the issue to Parliament,\" said Bashar Jaafari, Syria's ambassador to the United Nations.\n54. [61] Both Obama and Cameron, he said, \"climbed to the top of the tree and don't know how to get down.\"\n55. [63] British intelligence had put the number of people killed in the attack at more than 350.\n56. [64] On Saturday, Obama said \"all told, well over 1,000 people were murdered.\" U.S. Secretary of State John Kerry on Friday cited a death toll of 1,429, more than 400 of them children. No explanation was offered for the discrepancy.",
+      "generation_status": "ok"
+    },
+    "evaluation": {
+      "article_id": "a30",
+      "num_reference_pairs": 31,
+      "scores": {
+        "rouge_1": 0.4748802076690274,
+        "rouge_2": 0.407298600324257,
+        "rouge_l": 0.45841928187745007,
+        "rouge_mean": 0.4557354818581042
+      }
+    }
+  },
+  {
+    "article_id": "a36",
+    "original_path": "data/dev_full_original/a36.story",
+    "reference_path": "data/a_labeling_dev/a36.story",
+    "few_shot": {
+      "count": 3,
+      "article_ids": [
+        "a19",
+        "a28",
+        "a29"
+      ]
+    },
+    "sentences": [
+      "(CNN) -- The death toll mounted Thursday as survivors struggled to regain a semblance of the normalcy that Superstorm Sandy swept away this week when it struck the Northeast.",
+      "In some cases, tempers grew short.",
+      "\"We're gonna die down here!\" wailed Donna Solli to Sen. Chuck Schumer as he toured her waterlogged neighborhood in New York's Staten Island with a group of reporters. \"When is the government coming?\"",
+      "Solli said residents needed gas, food and clothes. \"We're gonna freeze,\" she said on a day when the 50-degree temperature was predicted to drop to the low 40s. \"We've got 90-year-old people!\"",
+      "The Democratic senator from New York said he understood and hugged her.",
+      "Solli said her basement was flooded and her refrigerator was upside down. \"I stayed here because I have an elderly dog,\" she told a reporter. \"We nearly drowned.\"",
+      "Solli added that she had had little to eat. \"One slice of pizza in 48 hours.\"",
+      "As he surveyed the damage in the neighborhood, the politician told a reporter, \"This is the worst thing I've ever seen, and it's killing me what these people have to go through. We'll get whatever federal help we can, that's for sure.\"",
+      "Afterward, a senior administration official told CNN that a convoy of 10 Red Cross trucks filled with food, water and medicine arrived Thursday evening on Staten Island.",
+      "Secretary of Homeland Security Janet Napolitano and FEMA Deputy Administrator Richard Serino were to travel Friday to Staten Island to meet with state and local officials and view the response and recovery efforts, the White House said.",
+      "Some people were not complaining.",
+      "About 90 miles north of Staten Island, the mayor of Danbury, Connecticut, Mark D. Boughton, was visiting a special-needs shelter on Wednesday night when he met a 106-year-old woman who had cancer and was in hospice.",
+      "\"She's happy to be alive,\" he tweeted. \"Every day is a gift.\"",
+      "Contacted by telephone, Boughton said the cheerfulness of the lifelong resident of Danbury had inspired him. \"The essence of it was, look, you gotta make each day count,\" he said. \"You don't know when your time comes.\"",
+      "In Sandy's wake, at least 157 people died, at least 88 of them in the United States, two in Canada and 67 in the Caribbean.",
+      "Among them were two children whose bodies were found Thursday. The boys, ages 2 and 4, had been riding with their mother, Glenda Moore, on Staten Island when the storm surge swamped their SUV, authorities said.",
+      "Police said Moore gave them this account: When her Ford Explorer was blown into a hole, she got out, took out her children and carried them to a nearby tree. There, she held on to the boys, Brandon and Connor, as rain poured and hurricane-strength winds gusted. After hours, she walked with her children to a nearby house to seek help. A man opened the door but refused to let them in. Desperate, she went to his back porch and threw a flower pot at the window in an attempt to get inside. But she was not able to do so. Meanwhile, her children were swept away.",
+      "Their bodies were found nearby on Thursday.",
+      "Relatives said Moore was too distraught to speak with CNN.",
+      "The owner of the house, who asked that he not be identified, disputed Moore's account, saying he saw only a man. \"He didn't come to the door, he came on the stairs at the back of the house, and he was standing at the bottom of the stairs,\" said the man. \"He took a concrete flower pot and threw it through the door.\"",
+      "The man at the door, he said, didn't ask to enter the house, but instead asked the owner of the house to leave it in order to help.",
+      "\"What could I do to help him?\" he asked. \"I'm wearing the same clothes ... the same shorts and flip-flops I had that night. And I was going to come out?\"",
+      "The man told CNN he sat up for the rest of the night, with his back against the door in the kitchen. He said the deaths were a tragedy, but that the woman was at fault. \"She shouldn't have been out,\" he continued. \"She shouldn't have been out on the road.\"",
+      "There was nothing he could have done, he added. \"I'm not a rescue worker ... If I would have been outside, I would have been dead.\"",
+      "Interactive: Remembering the victims",
+      "Sandy claimed at least 37 lives in New York City, Mayor Michael Bloomberg told reporters Thursday.",
+      "Victims fall to Mother Nature's wrath",
+      "Authorities in nine states worked to restore basic services such as public transit and electricity.",
+      "In New York City, nearly 500,000 customers were without power. In Manhattan, many of the 220,000 customers without electricity were south of Midtown's 34th Street. Parts of Queens and Staten Island also had no electricity Thursday. \"Restoring power will take a lot of time,\" the mayor said.",
+      "Gov. Andrew Cuomo, in a letter to utilities, warned of consequences if authorities discover that they failed to prepare properly. \"Under such circumstances, I would direct the Public Service Commission to commence a proceeding to revoke your certificates,\" he wrote.",
+      "That message was not lost on its intended targets. \"We're doing our damnedest to get our power back as quickly as possible,\" said John Miksad, senior vice president of electric operations at Con Ed.",
+      "New York's vast transit network remains hobbled. The Metropolitan Transit Authority said 14 of the city's 23 subway lines were running and a flotilla of 4,000 buses was attempting to take up the slack. For some, Thursday's commute into Manhattan from the outer boroughs took five hours.",
+      "Bloomberg predicted that would ease as tunnels are cleared of water, power is restored to subway lines and ferries resume service.",
+      "Electricity or not: Tale of two cities",
+      "Getting water out of the tunnels is \"one of the main orders of business right now,\" Cuomo said.",
+      "Broadway theaters reopened Thursday, and organizers vowed to hold the New York City Marathon as scheduled on Sunday. Event organizer Mary Wittenberg said the race wouldn't divert resources from the recovery.",
+      "Sandy's effects, state by state",
+      "Three days after Sandy barreled ashore in southern New Jersey, search-and-rescue crews were going door-to-door in some neighborhoods looking for people, particularly the elderly, who may have been stranded by the power outages, the debris and remaining floodwater.",
+      "Sandy killed at least six people in New Jersey, said Gov. Chris Christie, who had warned people in low-lying areas to evacuate.",
+      "Dangling crane secure, engineers say",
+      "Christie asked for patience as crews worked to restore electricity to more than 2 million power company customers.",
+      "The federal government shipped 1 million meals Thursday to New York, where National Guard troops were distributing them to people in need, Cuomo told reporters.",
+      "Mobile networks team up to help",
+      "The storm dumped up to 3 feet of snow in West Virginia and Maryland, leaving thousands without power.",
+      "Nearly 3.5 million customers across the eastern United States were still in the dark Thursday, down from nearly 8 million in its immediate aftermath.",
+      "How to help",
+      "By Thursday, Sandy's remnants had headed into Canada.",
+      "The National Weather Service predicted a nor'easter next week from the mid-Atlantic states into New England. But the forecast said the storm would be far weaker than Sandy.",
+      "CNN's Chelsea J. Carter, Tom Watkins, Joe Sterling and Melissa Gray contributed to this report."
+    ],
+    "generation": {
+      "raw_output": "[0] (CNN) -- The death toll mounted Thursday as survivors struggled to regain a semblance of the normalcy that Superstorm Sandy swept away this week when it struck the Northeast.\n1. [1] In some cases, tempers grew short.\n1.1. [2] In Staten Island, Donna Solli, a 90-year-old woman with an elderly dog, complained to Sen. Chuck Schumer about the lack of food, gas, and clothing.\n1.2. [3] Solli said her basement was flooded and her refrigerator was upside down. \"I stayed here because I have an elderly dog,\" she told a reporter.\n1.3. [4] The Democratic senator from New York said he understood and hugged her.\n2. [7] As he surveyed the damage in the neighborhood, the politician told a reporter, \"This is the worst thing I've ever seen, and it's killing me what these people have to go through. We'll get whatever federal help we can, that's for sure.\"\n3. [9] Secretary of Homeland Security Janet Napolitano and FEMA Deputy Administrator Richard Serino were to travel Friday to Staten Island to meet with state and local officials and view the response and recovery efforts, the White House said.\n4. [11] About 90 miles north of Staten Island, the mayor of Danbury, Connecticut, Mark D. Boughton, was visiting a special-needs shelter on Wednesday night when he met a 106-year-old woman who had cancer and was in hospice.\n4.1. [12] \"She's happy to be alive,\" he tweeted. \"Every day is a gift.\"\n5. [14] In Sandy's wake, at least 157 people died, at least 88 of them in the United States, two in Canada and 67 in the Caribbean.\n5.1. [16] Among them were two children whose bodies were found Thursday. The boys, ages 2 and 4, had been riding with their mother, Glenda Moore, on Staten Island when the storm surge swamped their SUV, authorities said.\n5.2. [17] Their bodies were found nearby on Thursday.\n6. [18] Contacted by telephone, Boughton said the cheerfulness of the lifelong resident of Danbury had inspired him. \"The essence of it was, look, you gotta make each day count,\" he said. \"You don't know when your time comes.\"\n7. [20] The owner of the house, who asked that he not be identified, disputed Moore's account, saying he saw only a man. \"He didn't come to the door, he came on the stairs at the back of the house, and he was standing at the bottom of the stairs,\" said the man. \"He took a concrete flower pot and threw it through the door.\"\n8. [21] \"What could I do to help him?\" he asked. \"I'm wearing the same clothes ... the same shorts and flip-flops I had that night. And I was going to come out?\"\n9. [22] The man told CNN he sat up for the rest of the night, with his back against the door in the kitchen. He said the deaths were a tragedy, but that the woman was at fault. \"She shouldn't have been out,\" he continued. \"She shouldn't have been out on the road.\"\n10. [23] There was nothing he could have done, he added. \"I'm not a rescue worker ... If I would have been outside, I would have been dead.\"\n11. [25] Sandy claimed at least 37 lives in New York City, Mayor Michael Bloomberg told reporters Thursday.\n12. [27] Authorities in nine states worked to restore basic services such as public transit and electricity.\n13. [28] In New York City, nearly 500,000 customers were without power. In Manhattan, many of the 220,000 customers without electricity were south of Midtown's 34th Street. Parts of Queens and Staten Island also had no electricity Thursday. \"Restoring power will take a lot of time,\" the mayor said.\n14. [30] That message was not lost on its intended targets. \"We're doing our damnedest to get our power back as quickly as possible,\" said John Miksad, senior vice president of electric operations at Con Ed.\n15. [32] Bloomberg predicted that would ease as tunnels are cleared of water, power is restored to subway lines and ferries resume service.\n16. [34] Getting water out of the tunnels is \"one of the main orders of business right now,\" Cuomo said.\n17. [36] Sandy killed at least six people in New Jersey, said Gov. Chris Christie, who had warned people in low-lying areas to evacuate.\n18. [38] Christie asked for patience as crews worked to restore electricity to more than 2 million power company customers.\n19. [40] The federal government shipped 1 million meals Thursday to New York, where National Guard troops were distributing them to people in need, Cuomo told reporters.\n20. [42] Mobile networks team up to help\n21. [44] Nearly 3.5 million customers across the eastern United States were still in the dark Thursday, down from nearly 8 million in its immediate aftermath.\n22. [45] How to help\n23. [47] The storm dumped up to 3 feet of snow in West Virginia and Maryland, leaving thousands without power.\n24. [48] CNN's Chelsea J. Carter, Tom Watkins, Joe Sterling and Melissa Gray contributed to this report.",
+      "attempts": [
+        "[0] (CNN) -- The death toll mounted Thursday as survivors struggled to regain a semblance of the normalcy that Superstorm Sandy swept away this week when it struck the Northeast.\n1. [1] In some cases, tempers grew short.\n1.1. [2] In Staten Island, Donna Solli, a 90-year-old woman with an elderly dog, complained to Sen. Chuck Schumer about the lack of food, gas, and clothing.\n1.2. [3] Solli said her basement was flooded and her refrigerator was upside down. \"I stayed here because I have an elderly dog,\" she told a reporter.\n1.3. [4] The Democratic senator from New York said he understood and hugged her.\n2. [7] As he surveyed the damage in the neighborhood, the politician told a reporter, \"This is the worst thing I've ever seen, and it's killing me what these people have to go through. We'll get whatever federal help we can, that's for sure.\"\n3. [9] Secretary of Homeland Security Janet Napolitano and FEMA Deputy Administrator Richard Serino were to travel Friday to Staten Island to meet with state and local officials and view the response and recovery efforts, the White House said.\n4. [11] About 90 miles north of Staten Island, the mayor of Danbury, Connecticut, Mark D. Boughton, was visiting a special-needs shelter on Wednesday night when he met a 106-year-old woman who had cancer and was in hospice.\n4.1. [12] \"She's happy to be alive,\" he tweeted. \"Every day is a gift.\"\n5. [14] In Sandy's wake, at least 157 people died, at least 88 of them in the United States, two in Canada and 67 in the Caribbean.\n5.1. [16] Among them were two children whose bodies were found Thursday. The boys, ages 2 and 4, had been riding with their mother, Glenda Moore, on Staten Island when the storm surge swamped their SUV, authorities said.\n5.2. [17] Their bodies were found nearby on Thursday.\n6. [18] Contacted by telephone, Boughton said the cheerfulness of the lifelong resident of Danbury had inspired him. \"The essence of it was, look, you gotta make each day count,\" he said. \"You don't know when your time comes.\"\n7. [20] The owner of the house, who asked that he not be identified, disputed Moore's account, saying he saw only a man. \"He didn't come to the door, he came on the stairs at the back of the house, and he was standing at the bottom of the stairs,\" said the man. \"He took a concrete flower pot and threw it through the door.\"\n8. [21] \"What could I do to help him?\" he asked. \"I'm wearing the same clothes ... the same shorts and flip-flops I had that night. And I was going to come out?\"\n9. [22] The man told CNN he sat up for the rest of the night, with his back against the door in the kitchen. He said the deaths were a tragedy, but that the woman was at fault. \"She shouldn't have been out,\" he continued. \"She shouldn't have been out on the road.\"\n10. [23] There was nothing he could have done, he added. \"I'm not a rescue worker ... If I would have been outside, I would have been dead.\"\n11. [25] Sandy claimed at least 37 lives in New York City, Mayor Michael Bloomberg told reporters Thursday.\n12. [27] Authorities in nine states worked to restore basic services such as public transit and electricity.\n13. [28] In New York City, nearly 500,000 customers were without power. In Manhattan, many of the 220,000 customers without electricity were south of Midtown's 34th Street. Parts of Queens and Staten Island also had no electricity Thursday. \"Restoring power will take a lot of time,\" the mayor said.\n14. [30] That message was not lost on its intended targets. \"We're doing our damnedest to get our power back as quickly as possible,\" said John Miksad, senior vice president of electric operations at Con Ed.\n15. [32] Bloomberg predicted that would ease as tunnels are cleared of water, power is restored to subway lines and ferries resume service.\n16. [34] Getting water out of the tunnels is \"one of the main orders of business right now,\" Cuomo said.\n17. [36] Sandy killed at least six people in New Jersey, said Gov. Chris Christie, who had warned people in lo"
+      ],
+      "mindmap": {
+        "root": 0,
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          7,
+          9,
+          11,
+          12,
+          14,
+          16,
+          17,
+          18,
+          20,
+          21,
+          22,
+          23,
+          25,
+          27,
+          28,
+          30,
+          32,
+          34,
+          36,
+          38,
+          40,
+          42,
+          44,
+          45,
+          47,
+          48
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            0,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            0,
+            14
+          ],
+          [
+            14,
+            16
+          ],
+          [
+            14,
+            17
+          ],
+          [
+            0,
+            18
+          ],
+          [
+            0,
+            20
+          ],
+          [
+            0,
+            21
+          ],
+          [
+            0,
+            22
+          ],
+          [
+            0,
+            23
+          ],
+          [
+            0,
+            25
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            28
+          ],
+          [
+            0,
+            30
+          ],
+          [
+            0,
+            32
+          ],
+          [
+            0,
+            34
+          ],
+          [
+            0,
+            36
+          ],
+          [
+            0,
+            38
+          ],
+          [
+            0,
+            40
+          ],
+          [
+            0,
+            42
+          ],
+          [
+            0,
+            44
+          ],
+          [
+            0,
+            45
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            48
+          ]
+        ]
+      },
+      "rendered": "[0] (CNN) -- The death toll mounted Thursday as survivors struggled to regain a semblance of the normalcy that Superstorm Sandy swept away this week when it struck the Northeast.\n1. [1] In some cases, tempers grew short.\n1.1. [2] \"We're gonna die down here!\" wailed Donna Solli to Sen. Chuck Schumer as he toured her waterlogged neighborhood in New York's Staten Island with a group of reporters. \"When is the government coming?\"\n1.2. [3] Solli said residents needed gas, food and clothes. \"We're gonna freeze,\" she said on a day when the 50-degree temperature was predicted to drop to the low 40s. \"We've got 90-year-old people!\"\n1.3. [4] The Democratic senator from New York said he understood and hugged her.\n2. [7] As he surveyed the damage in the neighborhood, the politician told a reporter, \"This is the worst thing I've ever seen, and it's killing me what these people have to go through. We'll get whatever federal help we can, that's for sure.\"\n3. [9] Secretary of Homeland Security Janet Napolitano and FEMA Deputy Administrator Richard Serino were to travel Friday to Staten Island to meet with state and local officials and view the response and recovery efforts, the White House said.\n4. [11] About 90 miles north of Staten Island, the mayor of Danbury, Connecticut, Mark D. Boughton, was visiting a special-needs shelter on Wednesday night when he met a 106-year-old woman who had cancer and was in hospice.\n4.1. [12] \"She's happy to be alive,\" he tweeted. \"Every day is a gift.\"\n5. [14] In Sandy's wake, at least 157 people died, at least 88 of them in the United States, two in Canada and 67 in the Caribbean.\n5.1. [16] Police said Moore gave them this account: When her Ford Explorer was blown into a hole, she got out, took out her children and carried them to a nearby tree. There, she held on to the boys, Brandon and Connor, as rain poured and hurricane-strength winds gusted. After hours, she walked with her children to a nearby house to seek help. A man opened the door but refused to let them in. Desperate, she went to his back porch and threw a flower pot at the window in an attempt to get inside. But she was not able to do so. Meanwhile, her children were swept away.\n5.2. [17] Their bodies were found nearby on Thursday.\n6. [18] Relatives said Moore was too distraught to speak with CNN.\n7. [20] The man at the door, he said, didn't ask to enter the house, but instead asked the owner of the house to leave it in order to help.\n8. [21] \"What could I do to help him?\" he asked. \"I'm wearing the same clothes ... the same shorts and flip-flops I had that night. And I was going to come out?\"\n9. [22] The man told CNN he sat up for the rest of the night, with his back against the door in the kitchen. He said the deaths were a tragedy, but that the woman was at fault. \"She shouldn't have been out,\" he continued. \"She shouldn't have been out on the road.\"\n10. [23] There was nothing he could have done, he added. \"I'm not a rescue worker ... If I would have been outside, I would have been dead.\"\n11. [25] Sandy claimed at least 37 lives in New York City, Mayor Michael Bloomberg told reporters Thursday.\n12. [27] Authorities in nine states worked to restore basic services such as public transit and electricity.\n13. [28] In New York City, nearly 500,000 customers were without power. In Manhattan, many of the 220,000 customers without electricity were south of Midtown's 34th Street. Parts of Queens and Staten Island also had no electricity Thursday. \"Restoring power will take a lot of time,\" the mayor said.\n14. [30] That message was not lost on its intended targets. \"We're doing our damnedest to get our power back as quickly as possible,\" said John Miksad, senior vice president of electric operations at Con Ed.\n15. [32] Bloomberg predicted that would ease as tunnels are cleared of water, power is restored to subway lines and ferries resume service.\n16. [34] Getting water out of the tunnels is \"one of the main orders of business right now,\" Cuomo said.\n17. [36] Sandy's effects, state by state\n18. [38] Sandy killed at least six people in New Jersey, said Gov. Chris Christie, who had warned people in low-lying areas to evacuate.\n19. [40] Christie asked for patience as crews worked to restore electricity to more than 2 million power company customers.\n20. [42] Mobile networks team up to help\n21. [44] Nearly 3.5 million customers across the eastern United States were still in the dark Thursday, down from nearly 8 million in its immediate aftermath.\n22. [45] How to help\n23. [47] The National Weather Service predicted a nor'easter next week from the mid-Atlantic states into New England. But the forecast said the storm would be far weaker than Sandy.\n24. [48] CNN's Chelsea J. Carter, Tom Watkins, Joe Sterling and Melissa Gray contributed to this report.",
+      "generation_status": "ok"
+    },
+    "evaluation": {
+      "article_id": "a36",
+      "num_reference_pairs": 29,
+      "scores": {
+        "rouge_1": 0.225609580417739,
+        "rouge_2": 0.17597582697906383,
+        "rouge_l": 0.21742881464031152,
+        "rouge_mean": 0.19771626820159324
+      }
+    }
+  }
+]

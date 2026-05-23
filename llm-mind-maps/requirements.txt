@@ -1,0 +1,9 @@
+torch
+transformers
+accelerate
+sentencepiece
+numpy
+tqdm
+nltk
+rouge
+bitsandbytes

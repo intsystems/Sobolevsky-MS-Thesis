@@ -1,0 +1,2101 @@
+[
+  {
+    "article_id": "a29",
+    "original_path": "data/dev_full_original/a29.story",
+    "reference_path": "data/a_labeling_dev/a29.story",
+    "few_shot": {
+      "count": 2,
+      "article_ids": [
+        "a19",
+        "a28"
+      ]
+    },
+    "sentences": [
+      "(CNN) -- As the Northeast digs out from a second major storm in little more than a week, experts say Internet scam artists are preying on generous Americans who want to donate to the victims of Superstorm Sandy.",
+      "According to a Maryland-based Internet watchdog company, more than 1,000 Internet domain sites with the words \"Sandy\" or \"relief\" were registered either as the storm was approaching the Caribbean last week or, in some cases, even before the hurricane hit.",
+      "\"We have no idea who these people are,\" Johannes Ulrich, president of SANS Security told CNN from his home in Jacksonville, Florida. \"And what we notice is that they do register hundreds of these domains, in part, trying to trick people who go to these domains and then donate the money.\"",
+      "8 ways to help after Sandy",
+      "Many of these types of domain sites are registered as soon as the National Weather Service announces the names of forthcoming hurricanes in the late spring, Ulrich explained.",
+      "Some of these websites were created by construction companies, lawyers or repair companies for potential business opportunities.",
+      "Others are more questionable.",
+      "In one instance, a website linking Sandy to the damage it caused on the island of Jamaica popped up as news accounts reported the growing intensity of the storm. The site urged people to donate and linked any would be donors to a Pay Pal account. Ulrich tracked down the registry to an individual in North Carolina.",
+      "\"I couldn't find out who's behind it,\" Ulrich told CNN. \"A person in North Carolina has it registered, but whether or not it's real, who knows?\"",
+      "CNN checked with the secretary of state's office in North Carolina, where the law requires charities to register. The site does not show up.",
+      "Other Internet sites serve as an aggregate location for individuals to ask for money for themselves or their businesses.",
+      "Indiegogo, an international crowd funding site, has more than 32 pages of pleas for cash donations from Sandy victims. One woman wrote that she needed money because \"We left the city and headed south towards family in Pennsylvania. We were finally let back into Salem and our home was destroyed.\"",
+      "CNN checked on that one as well but there was no information to prove or disprove the woman's posting.",
+      "Art Taylor, president of the Better Business Bureau's Wise Giving Alliance, says 70% of Americans donate money without ever really checking to find out where their money goes.",
+      "\"I worry that things are going to get worse,\" he said. \"People are going to continue to get duped by unscrupulous claims.\"",
+      "Earlier this week, the FBI took time to issue a public warning about scam artists in the wake of devastating storms.",
+      "\"The Department of Justice and the FBI remind the public to apply a critical eye and do due diligence before giving to anyone soliciting donations on behalf of hurricane victims,\" it said. \"Solicitations can originate as e-mails, websites, door-to-door collections, mailings, telephone calls, and similar methods.\"",
+      "On Tuesday, hundreds lined up at a Newark, New Jersey, church to receive food, water, blankets and cleaning supplies donated by Missouri-based Convoy of Hope.",
+      "Speaking of charities in general, a spokesman for Convoy of Hope said his organization was well aware that both individuals and even organizations sometimes prey on donors.",
+      "\"There are going to be others out there that do things wrong, that do things for the wrong reason,\" Jeff Nene said. \"But when you go in with the right heart in the first place, everything works out.\"",
+      "The American Red Cross, the largest national charity dealing with the effects of Sandy has raised $103 million so far for Sandy victims, and that contributions \"continue to pour in,\" according to spokeswoman Anne Marie Borrego. She said all of those funds are earmarked for dealing with the victims of Sandy.",
+      "Watch Anderson Cooper 360° weeknights 10pm ET. For the latest from AC360° click here."
+    ],
+    "generation": {
+      "raw_output": "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],\"edges\":[[0,1],[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[1,10],[1,11],[1,12],[1,13],[1,14],[1,15],[1,16],[1,17],[1,18],[1,19],[1,20]]}",
+      "attempts": [
+        "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],\"edges\":[[0,1],[1,2],[1,3],[1,4],[1,5],[1,6],[1,7],[1,8],[1,9],[1,10],[1,11],[1,12],[1,13],[1,14],[1,15],[1,16],[1,17],[1,18],[1,19],[1,20]]}"
+      ],
+      "mindmap": {
+        "root": 0,
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            11
+          ],
+          [
+            1,
+            12
+          ],
+          [
+            1,
+            13
+          ],
+          [
+            1,
+            14
+          ],
+          [
+            1,
+            15
+          ],
+          [
+            1,
+            16
+          ],
+          [
+            1,
+            17
+          ],
+          [
+            1,
+            18
+          ],
+          [
+            1,
+            19
+          ],
+          [
+            1,
+            20
+          ]
+        ]
+      },
+      "rendered": "[0] (CNN) -- As the Northeast digs out from a second major storm in little more than a week, experts say Internet scam artists are preying on generous Americans who want to donate to the victims of Superstorm Sandy.\n1. [1] According to a Maryland-based Internet watchdog company, more than 1,000 Internet domain sites with the words \"Sandy\" or \"relief\" were registered either as the storm was approaching the Caribbean last week or, in some cases, even before the hurricane hit.\n1.1. [2] \"We have no idea who these people are,\" Johannes Ulrich, president of SANS Security told CNN from his home in Jacksonville, Florida. \"And what we notice is that they do register hundreds of these domains, in part, trying to trick people who go to these domains and then donate the money.\"\n1.2. [3] 8 ways to help after Sandy\n1.3. [4] Many of these types of domain sites are registered as soon as the National Weather Service announces the names of forthcoming hurricanes in the late spring, Ulrich explained.\n1.4. [5] Some of these websites were created by construction companies, lawyers or repair companies for potential business opportunities.\n1.5. [6] Others are more questionable.\n1.6. [7] In one instance, a website linking Sandy to the damage it caused on the island of Jamaica popped up as news accounts reported the growing intensity of the storm. The site urged people to donate and linked any would be donors to a Pay Pal account. Ulrich tracked down the registry to an individual in North Carolina.\n1.7. [8] \"I couldn't find out who's behind it,\" Ulrich told CNN. \"A person in North Carolina has it registered, but whether or not it's real, who knows?\"\n1.8. [9] CNN checked with the secretary of state's office in North Carolina, where the law requires charities to register. The site does not show up.\n1.9. [10] Other Internet sites serve as an aggregate location for individuals to ask for money for themselves or their businesses.\n1.10. [11] Indiegogo, an international crowd funding site, has more than 32 pages of pleas for cash donations from Sandy victims. One woman wrote that she needed money because \"We left the city and headed south towards family in Pennsylvania. We were finally let back into Salem and our home was destroyed.\"\n1.11. [12] CNN checked on that one as well but there was no information to prove or disprove the woman's posting.\n1.12. [13] Art Taylor, president of the Better Business Bureau's Wise Giving Alliance, says 70% of Americans donate money without ever really checking to find out where their money goes.\n1.13. [14] \"I worry that things are going to get worse,\" he said. \"People are going to continue to get duped by unscrupulous claims.\"\n1.14. [15] Earlier this week, the FBI took time to issue a public warning about scam artists in the wake of devastating storms.\n1.15. [16] \"The Department of Justice and the FBI remind the public to apply a critical eye and do due diligence before giving to anyone soliciting donations on behalf of hurricane victims,\" it said. \"Solicitations can originate as e-mails, websites, door-to-door collections, mailings, telephone calls, and similar methods.\"\n1.16. [17] On Tuesday, hundreds lined up at a Newark, New Jersey, church to receive food, water, blankets and cleaning supplies donated by Missouri-based Convoy of Hope.\n1.17. [18] Speaking of charities in general, a spokesman for Convoy of Hope said his organization was well aware that both individuals and even organizations sometimes prey on donors.\n1.18. [19] \"There are going to be others out there that do things wrong, that do things for the wrong reason,\" Jeff Nene said. \"But when you go in with the right heart in the first place, everything works out.\"\n1.19. [20] The American Red Cross, the largest national charity dealing with the effects of Sandy has raised $103 million so far for Sandy victims, and that contributions \"continue to pour in,\" according to spokeswoman Anne Marie Borrego. She said all of those funds are earmarked for dealing with the victims of Sandy.",
+      "generation_status": "ok"
+    },
+    "evaluation": {
+      "article_id": "a29",
+      "num_reference_pairs": 20,
+      "scores": {
+        "rouge_1": 0.3608873966930734,
+        "rouge_2": 0.40619226200877084,
+        "rouge_l": 0.4444675171880735,
+        "rouge_mean": 0.37192720313336025
+      }
+    }
+  },
+  {
+    "article_id": "a3",
+    "original_path": "data/dev_full_original/a3.story",
+    "reference_path": "data/a_labeling_dev/a3.story",
+    "few_shot": {
+      "count": 2,
+      "article_ids": [
+        "a19",
+        "a28"
+      ]
+    },
+    "sentences": [
+      "(CNN) -- Since news first broke about the shooting at a Connecticut elementary school, people began wondering how something so horrible could happen.",
+      "Within a few hours, before the magnitude of the tragedy was fully known, reports began to surface that the shooter, Adam Lanza, was autistic or had Asperger's syndrome in addition to a possible personality or anxiety disorder such as obessive-compulsive disorder.",
+      "A relative told investigators that Lanza had a form of autism, according to a law enforcement official, who spoke under condition of anonymity due to the sensitive nature of the investigation. CNN has not been able to confirm independently whether Lanza was diagnosed with autism or Asperger's syndrome, a higher-functioning form of autism.",
+      "Russ Hanoman, a friend of Lanza's mother, told CNN that Lanza had Asperger's syndrome and that he was \"very withdrawn emotionally.\"",
+      "However, national autism organizations cautioned against speculation about a link between violence and autism or Asperger's.",
+      "While the motive for this crime is still unknown and may never be fully understood, what is clear, according to experts, is that autism cannot be blamed.",
+      "\"There is absolutely no evidence or any reliable research that suggests a linkage between autism and planned violence,\" the Autism Society said in a statement. \"To imply or suggest that some linkage exists is wrong and is harmful to more than 1.5 million law-abiding, nonviolent and wonderful individuals who live with autism each day.\"",
+      "Man with Asperger's shares thoughts on Sandy Hook shooting",
+      "Peter Bell of Autism Speaks said, \"Autism did not cause this horror.\" Bell, executive vice president for programs and services for the advocacy and research group, is also the father of a son with autism.",
+      "Bell said it's not unusual to want to figure out why someone would commit such a heinous crime, but he also cautioned people to do so responsibly.",
+      "And by definition, he said, people with a diagnosis of autism or Asperger's are not inclined to commit an act of violence. The likelihood of this happening would be no different than the rest of the population, he added.",
+      "With autism, no longer invisible",
+      "One in 88 children in the United States have autism, according to the latest estimates from the Centers for Disease Control and Prevention. Boys with autism outnumber girls 5 to 1, according to the CDC; 1 in 54 boys in the United States have autism.",
+      "Autism spectrum disorders, including Asperger's syndrome, are a range of developmental disorders of the brain.",
+      "They can cause significant social impairments, communication problems and restricted, repetitive and stereotyped patterns of behavior.",
+      "It's important for the public to know that the gunman's actions can't be linked with autism spectrum disorders, said Dr. Max Wiznitzer, a pediatric neurologist and autism expert at Rainbow Babies and Children's Hospital in Cleveland.",
+      "\"Aggression and violence in the ASD population is reactive, not preplanned and deliberate,\" he said.",
+      "For example, sometimes children with autism will get violent because they are sick or frustrated and unable to communicate how they feel.",
+      "Wiznitzer also said that violence among autism spectrum disorder patients is \"sometimes due to ASD features such as desire for sameness but usually related to a co-existing disorder such as anxiety or ADHD (attention-deficit hyperactive disorder).\"",
+      "Commenters and CNN iReporters also weighed in on the issue.",
+      "\"I have Asperger's, a very mild form of autism,\" said one comenter, oblivion328. \"Though as an adult I no longer exhibit any of the associated behaviors aside from some manageable social anxiety, I recall very well having tantrums as a child. I sincerely doubt if you put a gun in my hand during such an episode I'd start shooting people. Most autistics are more likely to harm themselves than anyone around them really.\"",
+      "\"When you talk about autism or anything on the autism spectrum, you're talking about a neural disorder,\" said CNN's Dr. Sanjay Gupta. \"I think the terms do matter here. Second of all, just this whole idea that it's linked with violence in some way and specifically pre-planned violence, I think we can dispense with that.\"",
+      "What concerns advocacy groups such as Autism Speaks, the Autism Society and the Autism Research Initiative is that linking autism with violence will once again stigmatize people with autism and turn back the clock on progress made so far.",
+      "\"Please do not judge any individual with autism based on what is being said about a killer of innocent children and teachers,\" the Autism Society said in its statement.",
+      "A blood test for autism?",
+      "Bell said he is concerned that linking autism to this crime could even endanger innocent people and that the community will begin to fear those with autism.",
+      "\"We worked so hard to try (integrate them) into our communities, give them opportunities to be employees, to be able to live in our neighborhoods, and if people do jump to conclusions, we really risk taking significant steps backward for people in this population,\" he said.",
+      "In a statement, Autistic Global Initiative Director Valerie Paradiz said, \"The autism community has long labored toward building understanding, awareness and trust within communities throughout the United States and the world.",
+      "\"As adults with autism living productive, peaceful lives, we urge the media and professionals who participate in speculative interviews about the motives of the accused shooter to refrain from misleading comments about autism and other neurodevelopmental disabilities. ... (M)isinformation could easily trigger increased prejudice and misunderstanding.\"",
+      "CNN's Dr. Sanjay Gupta and Danielle Dellorto contributed to this report."
+    ],
+    "generation": {
+      "raw_output": "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],\"edges\":[[0,1],[1,2],[0,3],[3,4],[0,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15],[15,16],[16,17],[17,18],[18,19],[19,20],[20,21],[21,22],[22,23],[23,24],[24,25],[25,26],[26,27],[27,28]]}",
+      "attempts": [
+        "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],\"edges\":[[0,1],[1,2],[0,3],[3,4],[0,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15],[15,16],[16,17],[17,18],[18,19],[19,20],[20,21],[21,22],[22,23],[23,24],[24,25],[25,26],[26,27],[27,28]]}"
+      ],
+      "mindmap": {
+        "root": 0,
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            22,
+            23
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            24,
+            25
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            26,
+            27
+          ],
+          [
+            27,
+            28
+          ]
+        ]
+      },
+      "rendered": "[0] (CNN) -- Since news first broke about the shooting at a Connecticut elementary school, people began wondering how something so horrible could happen.\n1. [1] Within a few hours, before the magnitude of the tragedy was fully known, reports began to surface that the shooter, Adam Lanza, was autistic or had Asperger's syndrome in addition to a possible personality or anxiety disorder such as obessive-compulsive disorder.\n1.1. [2] A relative told investigators that Lanza had a form of autism, according to a law enforcement official, who spoke under condition of anonymity due to the sensitive nature of the investigation. CNN has not been able to confirm independently whether Lanza was diagnosed with autism or Asperger's syndrome, a higher-functioning form of autism.\n2. [3] Russ Hanoman, a friend of Lanza's mother, told CNN that Lanza had Asperger's syndrome and that he was \"very withdrawn emotionally.\"\n2.1. [4] However, national autism organizations cautioned against speculation about a link between violence and autism or Asperger's.\n3. [5] While the motive for this crime is still unknown and may never be fully understood, what is clear, according to experts, is that autism cannot be blamed.\n3.1. [6] \"There is absolutely no evidence or any reliable research that suggests a linkage between autism and planned violence,\" the Autism Society said in a statement. \"To imply or suggest that some linkage exists is wrong and is harmful to more than 1.5 million law-abiding, nonviolent and wonderful individuals who live with autism each day.\"\n3.1.1. [7] Man with Asperger's shares thoughts on Sandy Hook shooting\n3.1.1.1. [8] Peter Bell of Autism Speaks said, \"Autism did not cause this horror.\" Bell, executive vice president for programs and services for the advocacy and research group, is also the father of a son with autism.\n3.1.1.1.1. [9] Bell said it's not unusual to want to figure out why someone would commit such a heinous crime, but he also cautioned people to do so responsibly.\n3.1.1.1.1.1. [10] And by definition, he said, people with a diagnosis of autism or Asperger's are not inclined to commit an act of violence. The likelihood of this happening would be no different than the rest of the population, he added.\n3.1.1.1.1.1.1. [11] With autism, no longer invisible\n3.1.1.1.1.1.1.1. [12] One in 88 children in the United States have autism, according to the latest estimates from the Centers for Disease Control and Prevention. Boys with autism outnumber girls 5 to 1, according to the CDC; 1 in 54 boys in the United States have autism.\n3.1.1.1.1.1.1.1.1. [13] Autism spectrum disorders, including Asperger's syndrome, are a range of developmental disorders of the brain.\n3.1.1.1.1.1.1.1.1.1. [14] They can cause significant social impairments, communication problems and restricted, repetitive and stereotyped patterns of behavior.\n3.1.1.1.1.1.1.1.1.1.1. [15] It's important for the public to know that the gunman's actions can't be linked with autism spectrum disorders, said Dr. Max Wiznitzer, a pediatric neurologist and autism expert at Rainbow Babies and Children's Hospital in Cleveland.\n3.1.1.1.1.1.1.1.1.1.1.1. [16] \"Aggression and violence in the ASD population is reactive, not preplanned and deliberate,\" he said.\n3.1.1.1.1.1.1.1.1.1.1.1.1. [17] For example, sometimes children with autism will get violent because they are sick or frustrated and unable to communicate how they feel.\n3.1.1.1.1.1.1.1.1.1.1.1.1.1. [18] Wiznitzer also said that violence among autism spectrum disorder patients is \"sometimes due to ASD features such as desire for sameness but usually related to a co-existing disorder such as anxiety or ADHD (attention-deficit hyperactive disorder).\"\n3.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [19] Commenters and CNN iReporters also weighed in on the issue.\n3.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [20] \"I have Asperger's, a very mild form of autism,\" said one comenter, oblivion328. \"Though as an adult I no longer exhibit any of the associated behaviors aside from some manageable social anxiety, I recall very well having tantrums as a child. I sincerely doubt if you put a gun in my hand during such an episode I'd start shooting people. Most autistics are more likely to harm themselves than anyone around them really.\"\n3.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [21] \"When you talk about autism or anything on the autism spectrum, you're talking about a neural disorder,\" said CNN's Dr. Sanjay Gupta. \"I think the terms do matter here. Second of all, just this whole idea that it's linked with violence in some way and specifically pre-planned violence, I think we can dispense with that.\"\n3.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [22] What concerns advocacy groups such as Autism Speaks, the Autism Society and the Autism Research Initiative is that linking autism with violence will once again stigmatize people with autism and turn back the clock on progress made so far.\n3.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [23] \"Please do not judge any individual with autism based on what is being said about a killer of innocent children and teachers,\" the Autism Society said in its statement.\n3.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [24] A blood test for autism?\n3.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [25] Bell said he is concerned that linking autism to this crime could even endanger innocent people and that the community will begin to fear those with autism.\n3.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [26] \"We worked so hard to try (integrate them) into our communities, give them opportunities to be employees, to be able to live in our neighborhoods, and if people do jump to conclusions, we really risk taking significant steps backward for people in this population,\" he said.\n3.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [27] In a statement, Autistic Global Initiative Director Valerie Paradiz said, \"The autism community has long labored toward building understanding, awareness and trust within communities throughout the United States and the world.\n3.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [28] \"As adults with autism living productive, peaceful lives, we urge the media and professionals who participate in speculative interviews about the motives of the accused shooter to refrain from misleading comments about autism and other neurodevelopmental disabilities. ... (M)isinformation could easily trigger increased prejudice and misunderstanding.\"",
+      "generation_status": "ok"
+    },
+    "evaluation": {
+      "article_id": "a3",
+      "num_reference_pairs": 26,
+      "scores": {
+        "rouge_1": 0.5191230400196226,
+        "rouge_2": 0.4408785205319155,
+        "rouge_l": 0.45663759450896146,
+        "rouge_mean": 0.5405125653010275
+      }
+    }
+  },
+  {
+    "article_id": "a30",
+    "original_path": "data/dev_full_original/a30.story",
+    "reference_path": "data/a_labeling_dev/a30.story",
+    "few_shot": {
+      "count": 2,
+      "article_ids": [
+        "a19",
+        "a28"
+      ]
+    },
+    "sentences": [
+      "It's official: U.S. President Barack Obama wants lawmakers to weigh in on whether to use military force in Syria.",
+      "Obama sent a letter to the heads of the House and Senate on Saturday night, hours after announcing that he believes military action against Syrian targets is the right step to take over the alleged use of chemical weapons.",
+      "The proposed legislation from Obama asks Congress to approve the use of military force \"to deter, disrupt, prevent and degrade the potential for future uses of chemical weapons or other weapons of mass destruction.\"",
+      "It's a step that is set to turn an international crisis into a fierce domestic political battle.",
+      "There are key questions looming over the debate: What did U.N. weapons inspectors find in Syria? What happens if Congress votes no? And how will the Syrian government react?",
+      "In a televised address from the White House Rose Garden earlier Saturday, the president said he would take his case to Congress, not because he has to -- but because he wants to.",
+      "\"While I believe I have the authority to carry out this military action without specific congressional authorization, I know that the country will be stronger if we take this course, and our actions will be even more effective,\" he said. \"We should have this debate, because the issues are too big for business as usual.\"",
+      "Obama said top congressional leaders had agreed to schedule a debate when the body returns to Washington on September 9. The Senate Foreign Relations Committee will hold a hearing over the matter on Tuesday, Sen. Robert Menendez said.",
+      "Transcript: Read Obama's full remarks",
+      "Syrian crisis: Latest developments",
+      "U.N. inspectors leave Syria",
+      "Obama's remarks came shortly after U.N. inspectors left Syria, carrying evidence that will determine whether chemical weapons were used in an attack early last week in a Damascus suburb.",
+      "\"The aim of the game here, the mandate, is very clear -- and that is to ascertain whether chemical weapons were used -- and not by whom,\" U.N. spokesman Martin Nesirky told reporters on Saturday.",
+      "But who used the weapons in the reported toxic gas attack in a Damascus suburb on August 21 has been a key point of global debate over the Syrian crisis.",
+      "Top U.S. officials have said there's no doubt that the Syrian government was behind it, while Syrian officials have denied responsibility and blamed jihadists fighting with the rebels.",
+      "British and U.S. intelligence reports say the attack involved chemical weapons, but U.N. officials have stressed the importance of waiting for an official report from inspectors.",
+      "The inspectors will share their findings with U.N. Secretary-General Ban Ki-moon Ban, who has said he wants to wait until the U.N. team's final report is completed before presenting it to the U.N. Security Council.",
+      "The Organization for the Prohibition of Chemical Weapons, which nine of the inspectors belong to, said Saturday that it could take up to three weeks to analyze the evidence they collected.",
+      "\"It needs time to be able to analyze the information and the samples,\" Nesirky said.",
+      "He noted that Ban has repeatedly said there is no alternative to a political solution to the crisis in Syria, and that \"a military solution is not an option.\"",
+      "Bergen: Syria is a problem from hell for the U.S.",
+      "Obama: 'This menace must be confronted'",
+      "Obama's senior advisers have debated the next steps to take, and the president's comments Saturday came amid mounting political pressure over the situation in Syria. Some U.S. lawmakers have called for immediate action while others warn of stepping into what could become a quagmire.",
+      "Some global leaders have expressed support, but the British Parliament's vote against military action earlier this week was a blow to Obama's hopes of getting strong backing from key NATO allies.",
+      "On Saturday, Obama proposed what he said would be a limited military action against Syrian President Bashar al-Assad. Any military attack would not be open-ended or include U.S. ground forces, he said.",
+      "Syria's alleged use of chemical weapons earlier this month \"is an assault on human dignity,\" the president said.",
+      "A failure to respond with force, Obama argued, \"could lead to escalating use of chemical weapons or their proliferation to terrorist groups who would do our people harm. In a world with many dangers, this menace must be confronted.\"",
+      "Syria missile strike: What would happen next?",
+      "Map: U.S. and allied assets around Syria",
+      "Obama decision came Friday night",
+      "On Friday night, the president made a last-minute decision to consult lawmakers.",
+      "What will happen if they vote no?",
+      "It's unclear. A senior administration official told CNN that Obama has the authority to act without Congress -- even if Congress rejects his request for authorization to use force.",
+      "Obama on Saturday continued to shore up support for a strike on the al-Assad government.",
+      "He spoke by phone with French President Francois Hollande before his Rose Garden speech.",
+      "\"The two leaders agreed that the international community must deliver a resolute message to the Assad regime -- and others who would consider using chemical weapons -- that these crimes are unacceptable and those who violate this international norm will be held accountable by the world,\" the White House said.",
+      "Meanwhile, as uncertainty loomed over how Congress would weigh in, U.S. military officials said they remained at the ready.",
+      "5 key assertions: U.S. intelligence report on Syria",
+      "Syria: Who wants what after chemical weapons horror",
+      "Reactions mixed to Obama's speech",
+      "A spokesman for the Syrian National Coalition said that the opposition group was disappointed by Obama's announcement.",
+      "\"Our fear now is that the lack of action could embolden the regime and they repeat his attacks in a more serious way,\" said spokesman Louay Safi. \"So we are quite concerned.\"",
+      "Some members of Congress applauded Obama's decision.",
+      "House Speaker John Boehner, Majority Leader Eric Cantor, Majority Whip Kevin McCarthy and Conference Chair Cathy McMorris Rodgers issued a statement Saturday praising the president.",
+      "\"Under the Constitution, the responsibility to declare war lies with Congress,\" the Republican lawmakers said. \"We are glad the president is seeking authorization for any military action in Syria in response to serious, substantive questions being raised.\"",
+      "More than 160 legislators, including 63 of Obama's fellow Democrats, had signed letters calling for either a vote or at least a \"full debate\" before any U.S. action.",
+      "British Prime Minister David Cameron, whose own attempt to get lawmakers in his country to support military action in Syria failed earlier this week, responded to Obama's speech in a Twitter post Saturday.",
+      "\"I understand and support Barack Obama's position on Syria,\" Cameron said.",
+      "An influential lawmaker in Russia -- which has stood by Syria and criticized the United States -- had his own theory.",
+      "\"The main reason Obama is turning to the Congress: the military operation did not get enough support either in the world, among allies of the US or in the United States itself,\" Alexei Pushkov, chairman of the international-affairs committee of the Russian State Duma, said in a Twitter post.",
+      "In the United States, scattered groups of anti-war protesters around the country took to the streets Saturday.",
+      "\"Like many other Americans...we're just tired of the United States getting involved and invading and bombing other countries,\" said Robin Rosecrans, who was among hundreds at a Los Angeles demonstration.",
+      "What do Syria's neighbors think?",
+      "Why Russia, China, Iran stand by Assad",
+      "Syria's government unfazed",
+      "After Obama's speech, a military and political analyst on Syrian state TV said Obama is \"embarrassed\" that Russia opposes military action against Syria, is \"crying for help\" for someone to come to his rescue and is facing two defeats -- on the political and military levels.",
+      "Syria's prime minister appeared unfazed by the saber-rattling.",
+      "\"The Syrian Army's status is on maximum readiness and fingers are on the trigger to confront all challenges,\" Wael Nader al-Halqi said during a meeting with a delegation of Syrian expatriates from Italy, according to a banner on Syria State TV that was broadcast prior to Obama's address.",
+      "An anchor on Syrian state television said Obama \"appeared to be preparing for an aggression on Syria based on repeated lies.\"",
+      "A top Syrian diplomat told the state television network that Obama was facing pressure to take military action from Israel, Turkey, some Arabs and right-wing extremists in the United States.",
+      "\"I think he has done well by doing what Cameron did in terms of taking the issue to Parliament,\" said Bashar Jaafari, Syria's ambassador to the United Nations.",
+      "Both Obama and Cameron, he said, \"climbed to the top of the tree and don't know how to get down.\"",
+      "The Syrian government has denied that it used chemical weapons in the August 21 attack, saying that jihadists fighting with the rebels used them in an effort to turn global sentiments against it.",
+      "British intelligence had put the number of people killed in the attack at more than 350.",
+      "On Saturday, Obama said \"all told, well over 1,000 people were murdered.\" U.S. Secretary of State John Kerry on Friday cited a death toll of 1,429, more than 400 of them children. No explanation was offered for the discrepancy.",
+      "Iran: U.S. military action in Syria would spark 'disaster'",
+      "Opinion: Why strikes in Syria are a bad idea"
+    ],
+    "generation": {
+      "raw_output": "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65],\"edges\":[[0,1],[1,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9],[0,10],[0,11],[0,12],[0,13],[0,14],[0,15],[0,16],[0,17],[0,18],[0,19],[0,20],[0,21],[0,22],[0,23],[0,24],[0,25],[0,26],[0,27],[0,28],[0,29],[0,30],[0,31],[0,32],[0,33],[0,34],[0,35],[0,36],[0,37],[0,38],[0,39],[0,40],[0,41],[0,42],[0,43],[0,44],[0,45],[0,46],[0,47],[0,48],[0,49],[0,50],[0,51],[0,52],[0,53],[0,54],[0,55],[0,56],[0,57],[0,58],[0,59],[0,60],[0,61],[0,62],[0,63],[0,64],[0,65]]}",
+      "attempts": [
+        "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65],\"edges\":[[0,1],[1,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9],[0,10],[0,11],[0,12],[0,13],[0,14],[0,15],[0,16],[0,17],[0,18],[0,19],[0,20],[0,21],[0,22],[0,23],[0,24],[0,25],[0,26],[0,27],[0,28],[0,29],[0,30],[0,31],[0,32],[0,33],[0,34],[0,35],[0,36],[0,37],[0,38],[0,39],[0,40],[0,41],[0,42],[0,43],[0,44],[0,45],[0,46],[0,47],[0,48],[0,49],[0,50],[0,51],[0,52],[0,53],[0,54],[0,55],[0,56],[0,57],[0,58],[0,59],[0,60],[0,61],[0,62],[0,63],[0,64],[0,65]]}"
+      ],
+      "mindmap": {
+        "root": 0,
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            0,
+            10
+          ],
+          [
+            0,
+            11
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            0,
+            13
+          ],
+          [
+            0,
+            14
+          ],
+          [
+            0,
+            15
+          ],
+          [
+            0,
+            16
+          ],
+          [
+            0,
+            17
+          ],
+          [
+            0,
+            18
+          ],
+          [
+            0,
+            19
+          ],
+          [
+            0,
+            20
+          ],
+          [
+            0,
+            21
+          ],
+          [
+            0,
+            22
+          ],
+          [
+            0,
+            23
+          ],
+          [
+            0,
+            24
+          ],
+          [
+            0,
+            25
+          ],
+          [
+            0,
+            26
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            28
+          ],
+          [
+            0,
+            29
+          ],
+          [
+            0,
+            30
+          ],
+          [
+            0,
+            31
+          ],
+          [
+            0,
+            32
+          ],
+          [
+            0,
+            33
+          ],
+          [
+            0,
+            34
+          ],
+          [
+            0,
+            35
+          ],
+          [
+            0,
+            36
+          ],
+          [
+            0,
+            37
+          ],
+          [
+            0,
+            38
+          ],
+          [
+            0,
+            39
+          ],
+          [
+            0,
+            40
+          ],
+          [
+            0,
+            41
+          ],
+          [
+            0,
+            42
+          ],
+          [
+            0,
+            43
+          ],
+          [
+            0,
+            44
+          ],
+          [
+            0,
+            45
+          ],
+          [
+            0,
+            46
+          ],
+          [
+            0,
+            47
+          ],
+          [
+            0,
+            48
+          ],
+          [
+            0,
+            49
+          ],
+          [
+            0,
+            50
+          ],
+          [
+            0,
+            51
+          ],
+          [
+            0,
+            52
+          ],
+          [
+            0,
+            53
+          ],
+          [
+            0,
+            54
+          ],
+          [
+            0,
+            55
+          ],
+          [
+            0,
+            56
+          ],
+          [
+            0,
+            57
+          ],
+          [
+            0,
+            58
+          ],
+          [
+            0,
+            59
+          ],
+          [
+            0,
+            60
+          ],
+          [
+            0,
+            61
+          ],
+          [
+            0,
+            62
+          ],
+          [
+            0,
+            63
+          ],
+          [
+            0,
+            64
+          ],
+          [
+            0,
+            65
+          ]
+        ]
+      },
+      "rendered": "[0] It's official: U.S. President Barack Obama wants lawmakers to weigh in on whether to use military force in Syria.\n1. [1] Obama sent a letter to the heads of the House and Senate on Saturday night, hours after announcing that he believes military action against Syrian targets is the right step to take over the alleged use of chemical weapons.\n1.1. [2] The proposed legislation from Obama asks Congress to approve the use of military force \"to deter, disrupt, prevent and degrade the potential for future uses of chemical weapons or other weapons of mass destruction.\"\n2. [3] It's a step that is set to turn an international crisis into a fierce domestic political battle.\n3. [4] There are key questions looming over the debate: What did U.N. weapons inspectors find in Syria? What happens if Congress votes no? And how will the Syrian government react?\n4. [5] In a televised address from the White House Rose Garden earlier Saturday, the president said he would take his case to Congress, not because he has to -- but because he wants to.\n5. [6] \"While I believe I have the authority to carry out this military action without specific congressional authorization, I know that the country will be stronger if we take this course, and our actions will be even more effective,\" he said. \"We should have this debate, because the issues are too big for business as usual.\"\n6. [7] Obama said top congressional leaders had agreed to schedule a debate when the body returns to Washington on September 9. The Senate Foreign Relations Committee will hold a hearing over the matter on Tuesday, Sen. Robert Menendez said.\n7. [8] Transcript: Read Obama's full remarks\n8. [9] Syrian crisis: Latest developments\n9. [10] U.N. inspectors leave Syria\n10. [11] Obama's remarks came shortly after U.N. inspectors left Syria, carrying evidence that will determine whether chemical weapons were used in an attack early last week in a Damascus suburb.\n11. [12] \"The aim of the game here, the mandate, is very clear -- and that is to ascertain whether chemical weapons were used -- and not by whom,\" U.N. spokesman Martin Nesirky told reporters on Saturday.\n12. [13] But who used the weapons in the reported toxic gas attack in a Damascus suburb on August 21 has been a key point of global debate over the Syrian crisis.\n13. [14] Top U.S. officials have said there's no doubt that the Syrian government was behind it, while Syrian officials have denied responsibility and blamed jihadists fighting with the rebels.\n14. [15] British and U.S. intelligence reports say the attack involved chemical weapons, but U.N. officials have stressed the importance of waiting for an official report from inspectors.\n15. [16] The inspectors will share their findings with U.N. Secretary-General Ban Ki-moon Ban, who has said he wants to wait until the U.N. team's final report is completed before presenting it to the U.N. Security Council.\n16. [17] The Organization for the Prohibition of Chemical Weapons, which nine of the inspectors belong to, said Saturday that it could take up to three weeks to analyze the evidence they collected.\n17. [18] \"It needs time to be able to analyze the information and the samples,\" Nesirky said.\n18. [19] He noted that Ban has repeatedly said there is no alternative to a political solution to the crisis in Syria, and that \"a military solution is not an option.\"\n19. [20] Bergen: Syria is a problem from hell for the U.S.\n20. [21] Obama: 'This menace must be confronted'\n21. [22] Obama's senior advisers have debated the next steps to take, and the president's comments Saturday came amid mounting political pressure over the situation in Syria. Some U.S. lawmakers have called for immediate action while others warn of stepping into what could become a quagmire.\n22. [23] Some global leaders have expressed support, but the British Parliament's vote against military action earlier this week was a blow to Obama's hopes of getting strong backing from key NATO allies.\n23. [24] On Saturday, Obama proposed what he said would be a limited military action against Syrian President Bashar al-Assad. Any military attack would not be open-ended or include U.S. ground forces, he said.\n24. [25] Syria's alleged use of chemical weapons earlier this month \"is an assault on human dignity,\" the president said.\n25. [26] A failure to respond with force, Obama argued, \"could lead to escalating use of chemical weapons or their proliferation to terrorist groups who would do our people harm. In a world with many dangers, this menace must be confronted.\"\n26. [27] Syria missile strike: What would happen next?\n27. [28] Map: U.S. and allied assets around Syria\n28. [29] Obama decision came Friday night\n29. [30] On Friday night, the president made a last-minute decision to consult lawmakers.\n30. [31] What will happen if they vote no?\n31. [32] It's unclear. A senior administration official told CNN that Obama has the authority to act without Congress -- even if Congress rejects his request for authorization to use force.\n32. [33] Obama on Saturday continued to shore up support for a strike on the al-Assad government.\n33. [34] He spoke by phone with French President Francois Hollande before his Rose Garden speech.\n34. [35] \"The two leaders agreed that the international community must deliver a resolute message to the Assad regime -- and others who would consider using chemical weapons -- that these crimes are unacceptable and those who violate this international norm will be held accountable by the world,\" the White House said.\n35. [36] Meanwhile, as uncertainty loomed over how Congress would weigh in, U.S. military officials said they remained at the ready.\n36. [37] 5 key assertions: U.S. intelligence report on Syria\n37. [38] Syria: Who wants what after chemical weapons horror\n38. [39] Reactions mixed to Obama's speech\n39. [40] A spokesman for the Syrian National Coalition said that the opposition group was disappointed by Obama's announcement.\n40. [41] \"Our fear now is that the lack of action could embolden the regime and they repeat his attacks in a more serious way,\" said spokesman Louay Safi. \"So we are quite concerned.\"\n41. [42] Some members of Congress applauded Obama's decision.\n42. [43] House Speaker John Boehner, Majority Leader Eric Cantor, Majority Whip Kevin McCarthy and Conference Chair Cathy McMorris Rodgers issued a statement Saturday praising the president.\n43. [44] \"Under the Constitution, the responsibility to declare war lies with Congress,\" the Republican lawmakers said. \"We are glad the president is seeking authorization for any military action in Syria in response to serious, substantive questions being raised.\"\n44. [45] More than 160 legislators, including 63 of Obama's fellow Democrats, had signed letters calling for either a vote or at least a \"full debate\" before any U.S. action.\n45. [46] British Prime Minister David Cameron, whose own attempt to get lawmakers in his country to support military action in Syria failed earlier this week, responded to Obama's speech in a Twitter post Saturday.\n46. [47] \"I understand and support Barack Obama's position on Syria,\" Cameron said.\n47. [48] An influential lawmaker in Russia -- which has stood by Syria and criticized the United States -- had his own theory.\n48. [49] \"The main reason Obama is turning to the Congress: the military operation did not get enough support either in the world, among allies of the US or in the United States itself,\" Alexei Pushkov, chairman of the international-affairs committee of the Russian State Duma, said in a Twitter post.\n49. [50] In the United States, scattered groups of anti-war protesters around the country took to the streets Saturday.\n50. [51] \"Like many other Americans...we're just tired of the United States getting involved and invading and bombing other countries,\" said Robin Rosecrans, who was among hundreds at a Los Angeles demonstration.\n51. [52] What do Syria's neighbors think?\n52. [53] Why Russia, China, Iran stand by Assad\n53. [54] Syria's government unfazed\n54. [55] After Obama's speech, a military and political analyst on Syrian state TV said Obama is \"embarrassed\" that Russia opposes military action against Syria, is \"crying for help\" for someone to come to his rescue and is facing two defeats -- on the political and military levels.\n55. [56] Syria's prime minister appeared unfazed by the saber-rattling.\n56. [57] \"The Syrian Army's status is on maximum readiness and fingers are on the trigger to confront all challenges,\" Wael Nader al-Halqi said during a meeting with a delegation of Syrian expatriates from Italy, according to a banner on Syria State TV that was broadcast prior to Obama's address.\n57. [58] An anchor on Syrian state television said Obama \"appeared to be preparing for an aggression on Syria based on repeated lies.\"\n58. [59] A top Syrian diplomat told the state television network that Obama was facing pressure to take military action from Israel, Turkey, some Arabs and right-wing extremists in the United States.\n59. [60] \"I think he has done well by doing what Cameron did in terms of taking the issue to Parliament,\" said Bashar Jaafari, Syria's ambassador to the United Nations.\n60. [61] Both Obama and Cameron, he said, \"climbed to the top of the tree and don't know how to get down.\"\n61. [62] The Syrian government has denied that it used chemical weapons in the August 21 attack, saying that jihadists fighting with the rebels used them in an effort to turn global sentiments against it.\n62. [63] British intelligence had put the number of people killed in the attack at more than 350.\n63. [64] On Saturday, Obama said \"all told, well over 1,000 people were murdered.\" U.S. Secretary of State John Kerry on Friday cited a death toll of 1,429, more than 400 of them children. No explanation was offered for the discrepancy.\n64. [65] Iran: U.S. military action in Syria would spark 'disaster'",
+      "generation_status": "ok"
+    },
+    "evaluation": {
+      "article_id": "a30",
+      "num_reference_pairs": 31,
+      "scores": {
+        "rouge_1": 0.5095775710437987,
+        "rouge_2": 0.46482873087275495,
+        "rouge_l": 0.49372528797894094,
+        "rouge_mean": 0.4938041393145445
+      }
+    }
+  },
+  {
+    "article_id": "a36",
+    "original_path": "data/dev_full_original/a36.story",
+    "reference_path": "data/a_labeling_dev/a36.story",
+    "few_shot": {
+      "count": 2,
+      "article_ids": [
+        "a19",
+        "a28"
+      ]
+    },
+    "sentences": [
+      "(CNN) -- The death toll mounted Thursday as survivors struggled to regain a semblance of the normalcy that Superstorm Sandy swept away this week when it struck the Northeast.",
+      "In some cases, tempers grew short.",
+      "\"We're gonna die down here!\" wailed Donna Solli to Sen. Chuck Schumer as he toured her waterlogged neighborhood in New York's Staten Island with a group of reporters. \"When is the government coming?\"",
+      "Solli said residents needed gas, food and clothes. \"We're gonna freeze,\" she said on a day when the 50-degree temperature was predicted to drop to the low 40s. \"We've got 90-year-old people!\"",
+      "The Democratic senator from New York said he understood and hugged her.",
+      "Solli said her basement was flooded and her refrigerator was upside down. \"I stayed here because I have an elderly dog,\" she told a reporter. \"We nearly drowned.\"",
+      "Solli added that she had had little to eat. \"One slice of pizza in 48 hours.\"",
+      "As he surveyed the damage in the neighborhood, the politician told a reporter, \"This is the worst thing I've ever seen, and it's killing me what these people have to go through. We'll get whatever federal help we can, that's for sure.\"",
+      "Afterward, a senior administration official told CNN that a convoy of 10 Red Cross trucks filled with food, water and medicine arrived Thursday evening on Staten Island.",
+      "Secretary of Homeland Security Janet Napolitano and FEMA Deputy Administrator Richard Serino were to travel Friday to Staten Island to meet with state and local officials and view the response and recovery efforts, the White House said.",
+      "Some people were not complaining.",
+      "About 90 miles north of Staten Island, the mayor of Danbury, Connecticut, Mark D. Boughton, was visiting a special-needs shelter on Wednesday night when he met a 106-year-old woman who had cancer and was in hospice.",
+      "\"She's happy to be alive,\" he tweeted. \"Every day is a gift.\"",
+      "Contacted by telephone, Boughton said the cheerfulness of the lifelong resident of Danbury had inspired him. \"The essence of it was, look, you gotta make each day count,\" he said. \"You don't know when your time comes.\"",
+      "In Sandy's wake, at least 157 people died, at least 88 of them in the United States, two in Canada and 67 in the Caribbean.",
+      "Among them were two children whose bodies were found Thursday. The boys, ages 2 and 4, had been riding with their mother, Glenda Moore, on Staten Island when the storm surge swamped their SUV, authorities said.",
+      "Police said Moore gave them this account: When her Ford Explorer was blown into a hole, she got out, took out her children and carried them to a nearby tree. There, she held on to the boys, Brandon and Connor, as rain poured and hurricane-strength winds gusted. After hours, she walked with her children to a nearby house to seek help. A man opened the door but refused to let them in. Desperate, she went to his back porch and threw a flower pot at the window in an attempt to get inside. But she was not able to do so. Meanwhile, her children were swept away.",
+      "Their bodies were found nearby on Thursday.",
+      "Relatives said Moore was too distraught to speak with CNN.",
+      "The owner of the house, who asked that he not be identified, disputed Moore's account, saying he saw only a man. \"He didn't come to the door, he came on the stairs at the back of the house, and he was standing at the bottom of the stairs,\" said the man. \"He took a concrete flower pot and threw it through the door.\"",
+      "The man at the door, he said, didn't ask to enter the house, but instead asked the owner of the house to leave it in order to help.",
+      "\"What could I do to help him?\" he asked. \"I'm wearing the same clothes ... the same shorts and flip-flops I had that night. And I was going to come out?\"",
+      "The man told CNN he sat up for the rest of the night, with his back against the door in the kitchen. He said the deaths were a tragedy, but that the woman was at fault. \"She shouldn't have been out,\" he continued. \"She shouldn't have been out on the road.\"",
+      "There was nothing he could have done, he added. \"I'm not a rescue worker ... If I would have been outside, I would have been dead.\"",
+      "Interactive: Remembering the victims",
+      "Sandy claimed at least 37 lives in New York City, Mayor Michael Bloomberg told reporters Thursday.",
+      "Victims fall to Mother Nature's wrath",
+      "Authorities in nine states worked to restore basic services such as public transit and electricity.",
+      "In New York City, nearly 500,000 customers were without power. In Manhattan, many of the 220,000 customers without electricity were south of Midtown's 34th Street. Parts of Queens and Staten Island also had no electricity Thursday. \"Restoring power will take a lot of time,\" the mayor said.",
+      "Gov. Andrew Cuomo, in a letter to utilities, warned of consequences if authorities discover that they failed to prepare properly. \"Under such circumstances, I would direct the Public Service Commission to commence a proceeding to revoke your certificates,\" he wrote.",
+      "That message was not lost on its intended targets. \"We're doing our damnedest to get our power back as quickly as possible,\" said John Miksad, senior vice president of electric operations at Con Ed.",
+      "New York's vast transit network remains hobbled. The Metropolitan Transit Authority said 14 of the city's 23 subway lines were running and a flotilla of 4,000 buses was attempting to take up the slack. For some, Thursday's commute into Manhattan from the outer boroughs took five hours.",
+      "Bloomberg predicted that would ease as tunnels are cleared of water, power is restored to subway lines and ferries resume service.",
+      "Electricity or not: Tale of two cities",
+      "Getting water out of the tunnels is \"one of the main orders of business right now,\" Cuomo said.",
+      "Broadway theaters reopened Thursday, and organizers vowed to hold the New York City Marathon as scheduled on Sunday. Event organizer Mary Wittenberg said the race wouldn't divert resources from the recovery.",
+      "Sandy's effects, state by state",
+      "Three days after Sandy barreled ashore in southern New Jersey, search-and-rescue crews were going door-to-door in some neighborhoods looking for people, particularly the elderly, who may have been stranded by the power outages, the debris and remaining floodwater.",
+      "Sandy killed at least six people in New Jersey, said Gov. Chris Christie, who had warned people in low-lying areas to evacuate.",
+      "Dangling crane secure, engineers say",
+      "Christie asked for patience as crews worked to restore electricity to more than 2 million power company customers.",
+      "The federal government shipped 1 million meals Thursday to New York, where National Guard troops were distributing them to people in need, Cuomo told reporters.",
+      "Mobile networks team up to help",
+      "The storm dumped up to 3 feet of snow in West Virginia and Maryland, leaving thousands without power.",
+      "Nearly 3.5 million customers across the eastern United States were still in the dark Thursday, down from nearly 8 million in its immediate aftermath.",
+      "How to help",
+      "By Thursday, Sandy's remnants had headed into Canada.",
+      "The National Weather Service predicted a nor'easter next week from the mid-Atlantic states into New England. But the forecast said the storm would be far weaker than Sandy.",
+      "CNN's Chelsea J. Carter, Tom Watkins, Joe Sterling and Melissa Gray contributed to this report."
+    ],
+    "generation": {
+      "raw_output": "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45],\"edges\":[[0,1],[1,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9],[0,10],[0,11],[0,12],[0,13],[0,14],[0,15],[0,16],[0,17],[0,18],[0,19],[0,20],[0,21],[0,22],[0,23],[0,24],[0,25],[0,26],[0,27],[0,28],[0,29],[0,30],[0,31],[0,32],[0,33],[0,34],[0,35],[0,36],[0,37],[0,38],[0,39],[0,40],[0,41],[0,42],[0,43]]}",
+      "attempts": [
+        "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48],\"edges\":[[0,1],[1,2],[0,8],[8,9],[8,10],[8,11],[8,12],[8,13],[8,14],[8,15],[8,16],[8,17],[8,18],[8,19],[8,20],[8,21],[8,22],[8,23],[8,24],[8,25],[8,26],[8,27],[8,28],[8,29],[8,30],[8,31],[8,32],[8,33],[8,34],[8,35],[8,36],[8,37],[8,38],[8,39],[8,40],[8,41],[8,42],[8,43],[8,44],[8,45],[8,46],[8,47],[8,48]]}",
+        "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45],\"edges\":[[0,1],[1,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9],[0,10],[0,11],[0,12],[0,13],[0,14],[0,15],[0,16],[0,17],[0,18],[0,19],[0,20],[0,21],[0,22],[0,23],[0,24],[0,25],[0,26],[0,27],[0,28],[0,29],[0,30],[0,31],[0,32],[0,33],[0,34],[0,35],[0,36],[0,37],[0,38],[0,39],[0,40],[0,41],[0,42],[0,43]]}",
+        "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45],\"edges\":[[0,1],[1,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[0,9],[0,10],[0,11],[0,12],[0,13],[0,14],[0,15],[0,16],[0,17],[0,18],[0,19],[0,20],[0,21],[0,22],[0,23],[0,24],[0,25],[0,26],[0,27],[0,28],[0,29],[0,30],[0,31],[0,32],[0,33],[0,34],[0,35],[0,36],[0,37],[0,38],[0,39],[0,40],[0,41],[0,42],[0,43]]}"
+      ],
+      "mindmap": {
+        "root": 0,
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            0,
+            10
+          ],
+          [
+            0,
+            11
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            0,
+            13
+          ],
+          [
+            0,
+            14
+          ],
+          [
+            0,
+            15
+          ],
+          [
+            0,
+            16
+          ],
+          [
+            0,
+            17
+          ],
+          [
+            0,
+            18
+          ],
+          [
+            0,
+            19
+          ],
+          [
+            0,
+            20
+          ],
+          [
+            0,
+            21
+          ],
+          [
+            0,
+            22
+          ],
+          [
+            0,
+            23
+          ],
+          [
+            0,
+            24
+          ],
+          [
+            0,
+            25
+          ],
+          [
+            0,
+            26
+          ],
+          [
+            0,
+            27
+          ],
+          [
+            0,
+            28
+          ],
+          [
+            0,
+            29
+          ],
+          [
+            0,
+            30
+          ],
+          [
+            0,
+            31
+          ],
+          [
+            0,
+            32
+          ],
+          [
+            0,
+            33
+          ],
+          [
+            0,
+            34
+          ],
+          [
+            0,
+            35
+          ],
+          [
+            0,
+            36
+          ],
+          [
+            0,
+            37
+          ],
+          [
+            0,
+            38
+          ],
+          [
+            0,
+            39
+          ],
+          [
+            0,
+            40
+          ],
+          [
+            0,
+            41
+          ],
+          [
+            0,
+            42
+          ],
+          [
+            0,
+            43
+          ],
+          [
+            0,
+            44
+          ],
+          [
+            0,
+            45
+          ]
+        ]
+      },
+      "rendered": "[0] (CNN) -- The death toll mounted Thursday as survivors struggled to regain a semblance of the normalcy that Superstorm Sandy swept away this week when it struck the Northeast.\n1. [1] In some cases, tempers grew short.\n1.1. [2] \"We're gonna die down here!\" wailed Donna Solli to Sen. Chuck Schumer as he toured her waterlogged neighborhood in New York's Staten Island with a group of reporters. \"When is the government coming?\"\n2. [3] Solli said residents needed gas, food and clothes. \"We're gonna freeze,\" she said on a day when the 50-degree temperature was predicted to drop to the low 40s. \"We've got 90-year-old people!\"\n3. [4] The Democratic senator from New York said he understood and hugged her.\n4. [5] Solli said her basement was flooded and her refrigerator was upside down. \"I stayed here because I have an elderly dog,\" she told a reporter. \"We nearly drowned.\"\n5. [6] Solli added that she had had little to eat. \"One slice of pizza in 48 hours.\"\n6. [7] As he surveyed the damage in the neighborhood, the politician told a reporter, \"This is the worst thing I've ever seen, and it's killing me what these people have to go through. We'll get whatever federal help we can, that's for sure.\"\n7. [8] Afterward, a senior administration official told CNN that a convoy of 10 Red Cross trucks filled with food, water and medicine arrived Thursday evening on Staten Island.\n8. [9] Secretary of Homeland Security Janet Napolitano and FEMA Deputy Administrator Richard Serino were to travel Friday to Staten Island to meet with state and local officials and view the response and recovery efforts, the White House said.\n9. [10] Some people were not complaining.\n10. [11] About 90 miles north of Staten Island, the mayor of Danbury, Connecticut, Mark D. Boughton, was visiting a special-needs shelter on Wednesday night when he met a 106-year-old woman who had cancer and was in hospice.\n11. [12] \"She's happy to be alive,\" he tweeted. \"Every day is a gift.\"\n12. [13] Contacted by telephone, Boughton said the cheerfulness of the lifelong resident of Danbury had inspired him. \"The essence of it was, look, you gotta make each day count,\" he said. \"You don't know when your time comes.\"\n13. [14] In Sandy's wake, at least 157 people died, at least 88 of them in the United States, two in Canada and 67 in the Caribbean.\n14. [15] Among them were two children whose bodies were found Thursday. The boys, ages 2 and 4, had been riding with their mother, Glenda Moore, on Staten Island when the storm surge swamped their SUV, authorities said.\n15. [16] Police said Moore gave them this account: When her Ford Explorer was blown into a hole, she got out, took out her children and carried them to a nearby tree. There, she held on to the boys, Brandon and Connor, as rain poured and hurricane-strength winds gusted. After hours, she walked with her children to a nearby house to seek help. A man opened the door but refused to let them in. Desperate, she went to his back porch and threw a flower pot at the window in an attempt to get inside. But she was not able to do so. Meanwhile, her children were swept away.\n16. [17] Their bodies were found nearby on Thursday.\n17. [18] Relatives said Moore was too distraught to speak with CNN.\n18. [19] The owner of the house, who asked that he not be identified, disputed Moore's account, saying he saw only a man. \"He didn't come to the door, he came on the stairs at the back of the house, and he was standing at the bottom of the stairs,\" said the man. \"He took a concrete flower pot and threw it through the door.\"\n19. [20] The man at the door, he said, didn't ask to enter the house, but instead asked the owner of the house to leave it in order to help.\n20. [21] \"What could I do to help him?\" he asked. \"I'm wearing the same clothes ... the same shorts and flip-flops I had that night. And I was going to come out?\"\n21. [22] The man told CNN he sat up for the rest of the night, with his back against the door in the kitchen. He said the deaths were a tragedy, but that the woman was at fault. \"She shouldn't have been out,\" he continued. \"She shouldn't have been out on the road.\"\n22. [23] There was nothing he could have done, he added. \"I'm not a rescue worker ... If I would have been outside, I would have been dead.\"\n23. [24] Interactive: Remembering the victims\n24. [25] Sandy claimed at least 37 lives in New York City, Mayor Michael Bloomberg told reporters Thursday.\n25. [26] Victims fall to Mother Nature's wrath\n26. [27] Authorities in nine states worked to restore basic services such as public transit and electricity.\n27. [28] In New York City, nearly 500,000 customers were without power. In Manhattan, many of the 220,000 customers without electricity were south of Midtown's 34th Street. Parts of Queens and Staten Island also had no electricity Thursday. \"Restoring power will take a lot of time,\" the mayor said.\n28. [29] Gov. Andrew Cuomo, in a letter to utilities, warned of consequences if authorities discover that they failed to prepare properly. \"Under such circumstances, I would direct the Public Service Commission to commence a proceeding to revoke your certificates,\" he wrote.\n29. [30] That message was not lost on its intended targets. \"We're doing our damnedest to get our power back as quickly as possible,\" said John Miksad, senior vice president of electric operations at Con Ed.\n30. [31] New York's vast transit network remains hobbled. The Metropolitan Transit Authority said 14 of the city's 23 subway lines were running and a flotilla of 4,000 buses was attempting to take up the slack. For some, Thursday's commute into Manhattan from the outer boroughs took five hours.\n31. [32] Bloomberg predicted that would ease as tunnels are cleared of water, power is restored to subway lines and ferries resume service.\n32. [33] Electricity or not: Tale of two cities\n33. [34] Getting water out of the tunnels is \"one of the main orders of business right now,\" Cuomo said.\n34. [35] Broadway theaters reopened Thursday, and organizers vowed to hold the New York City Marathon as scheduled on Sunday. Event organizer Mary Wittenberg said the race wouldn't divert resources from the recovery.\n35. [36] Sandy's effects, state by state\n36. [37] Three days after Sandy barreled ashore in southern New Jersey, search-and-rescue crews were going door-to-door in some neighborhoods looking for people, particularly the elderly, who may have been stranded by the power outages, the debris and remaining floodwater.\n37. [38] Sandy killed at least six people in New Jersey, said Gov. Chris Christie, who had warned people in low-lying areas to evacuate.\n38. [39] Dangling crane secure, engineers say\n39. [40] Christie asked for patience as crews worked to restore electricity to more than 2 million power company customers.\n40. [41] The federal government shipped 1 million meals Thursday to New York, where National Guard troops were distributing them to people in need, Cuomo told reporters.\n41. [42] Mobile networks team up to help\n42. [43] The storm dumped up to 3 feet of snow in West Virginia and Maryland, leaving thousands without power.\n43. [44] Nearly 3.5 million customers across the eastern United States were still in the dark Thursday, down from nearly 8 million in its immediate aftermath.\n44. [45] How to help",
+      "generation_status": "failed_validation"
+    },
+    "evaluation": {
+      "article_id": "a36",
+      "num_reference_pairs": 29,
+      "scores": {
+        "rouge_1": 0.3214730523479,
+        "rouge_2": 0.2617388877962023,
+        "rouge_l": 0.3290321513514643,
+        "rouge_mean": 0.31236314627988415
+      }
+    }
+  },
+  {
+    "article_id": "a38",
+    "original_path": "data/dev_full_original/a38.story",
+    "reference_path": "data/a_labeling_dev/a38.story",
+    "few_shot": {
+      "count": 2,
+      "article_ids": [
+        "a19",
+        "a28"
+      ]
+    },
+    "sentences": [
+      "(CNN) -- The tragic hot air balloon crash in Luxor on Tuesday comes at a time when Egypt's tourism industry has been struggling to prove that the country is still safe to visit in the wake of the 2011 revolution.",
+      "Nineteen people died when canisters aboard the balloon exploded over Luxor, a popular destination for tourists visiting its ancient temples and tombs.",
+      "Read more: Egypt balloon explosion probe could take two weeks",
+      "International tourism has long been a mainstay of the Egyptian economy, with United Nations World Tourism Organization (UNWTO) figures showing it generated $10.1B in 2012.",
+      "\"To give you an idea, international tourism generates more income to Egypt that the Suez Canal ($5.1B in 2011 as compared to $8.7B from tourism that same year),\" UNWTO chief of communications Sandra Carvao said. \"In terms of the impact on jobs, tourism employs directly nearly 18 million people.\"",
+      "In January -- two years after the start of the 2011 uprising that overthrew long-time Egyptian President Hosni Mubarak-- protests again took place in Egyptian cities. Official media reported that at least seven people were killed during clashes between anti-government protesters and those loyal to new President Mohamed Morsi.",
+      "Read more: What's behind the latest wave of violence in Egypt?",
+      "Nadejda Popova, senior travel and tourism analyst at market research company Euromonitor International, acknowledged that the ongoing political unrest -- as well as Europe's economic downturn -- had affected Egyptian tourism.",
+      "But she said Egypt remained a key Middle Eastern tourism destination and that there were indications that there had been a slight recovery in 2012. Euromonitor's preliminary figures suggested that there had been a 4% rise on 2011 to 9.4 million tourism arrivals -- as well as signs investors had not given up on Egypt's tourism market, she said.",
+      "The UNWTO's 2012 data also pointed to what Carvao described as \"a clear recovery in demand\", with a 17% increase in tourism arrivals, to 11.2 million.",
+      "How safe is hot air ballooning?",
+      "However, Popova said numbers were still down, with the political transition \"heavily impacting\" Egyptian tourism.",
+      "\"It is far away from the pre-crisis levels when we had 12 million, for example, in 2010 tourist arrivals in the country,\" she said. \"The political instability and the continuous uprising have been probably among the biggest threats to this recovery.\" Popova said she expected numbers to return to their pre-crisis levels by 2017.",
+      "Earlier this month Egypt's tourism minister, Hisham Zazou, told CNN that live webcams were being installed in holiday hotspots to prove that the country's tourism industry was healthy. Footage of holidaymakers \"basking in the sun\" would give Egypt's tourism industry more credibility, he said. \"When [tourists] see it, they will come.\"",
+      "Read more: Egypt's tourism minister -- Webcams will prove we're safe",
+      "Popova said the Egyptian authorities were developing strategies to strengthen tourism with a focus on diversifying the market. In 2012, Russia remained one of the leading countries in terms of arrivals, alongside travelers from the UK, Germany and Italy, but the tourism ministry was trying to lure in more travelers from other markets such as Asia and Latin America, she said.",
+      "Morsi's decision to host Mahmoud Ahmadinejad-- the first Iranian president to visit Egypt in more than 30 years -- was potentially another way of diversifying the consumer segment, she said.",
+      "Read more: Shoes hurled at Iranian President Ahmadinejad during trip to Cairo",
+      "Travel journalist and senior travel editor at Britain's The Independent newspaper Simon Calder said an increase in interest from Asia was unfortunately reflected in the list of the dead from the Luxor disaster. Officials said those on board included nine tourists from Hong Kong, four from Japan, three from Britain, two from France and one from Hungary.",
+      "The last thing post-revolutionary Egypt needed was \"a tragedy of this magnitude,\" Calder said.",
+      "\"Even though -- during the entire two years to my knowledge -- not a single tourist has been harmed, it gives the impression of a state unraveling where security cannot be guaranteed,\" he said. It's a tremendous thing and great tribute to the people in the country that they've managed to protect their guests, however this is possibly going to create a different image.\"",
+      "Popova said while she did not expect the crash to have \"major repercussions\" for Egypt's tourism industry as a whole, it had tarnished its image.",
+      "Egypt's temporary ban on balloon flights -- introduced after the crash -- was \"an indication the authorities are concerned not only about the safety of the people but also about their image and how people perceive them,\" she said. The disaster was a blow for an industry \"trying everything in their effort to bring people back to the country,\" she said."
+    ],
+    "generation": {
+      "raw_output": "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],\"edges\":[[0,1],[1,2],[0,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15],[15,16],[16,17],[17,18],[18,19],[19,20],[20,21]]}",
+      "attempts": [
+        "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],\"edges\":[[0,1],[1,2],[0,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15],[15,16],[16,17],[17,18],[18,19],[19,20],[20,21]]}"
+      ],
+      "mindmap": {
+        "root": 0,
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            20,
+            21
+          ]
+        ]
+      },
+      "rendered": "[0] (CNN) -- The tragic hot air balloon crash in Luxor on Tuesday comes at a time when Egypt's tourism industry has been struggling to prove that the country is still safe to visit in the wake of the 2011 revolution.\n1. [1] Nineteen people died when canisters aboard the balloon exploded over Luxor, a popular destination for tourists visiting its ancient temples and tombs.\n1.1. [2] Read more: Egypt balloon explosion probe could take two weeks\n2. [3] International tourism has long been a mainstay of the Egyptian economy, with United Nations World Tourism Organization (UNWTO) figures showing it generated $10.1B in 2012.\n2.1. [4] \"To give you an idea, international tourism generates more income to Egypt that the Suez Canal ($5.1B in 2011 as compared to $8.7B from tourism that same year),\" UNWTO chief of communications Sandra Carvao said. \"In terms of the impact on jobs, tourism employs directly nearly 18 million people.\"\n2.1.1. [5] In January -- two years after the start of the 2011 uprising that overthrew long-time Egyptian President Hosni Mubarak-- protests again took place in Egyptian cities. Official media reported that at least seven people were killed during clashes between anti-government protesters and those loyal to new President Mohamed Morsi.\n2.1.1.1. [6] Read more: What's behind the latest wave of violence in Egypt?\n2.1.1.1.1. [7] Nadejda Popova, senior travel and tourism analyst at market research company Euromonitor International, acknowledged that the ongoing political unrest -- as well as Europe's economic downturn -- had affected Egyptian tourism.\n2.1.1.1.1.1. [8] But she said Egypt remained a key Middle Eastern tourism destination and that there were indications that there had been a slight recovery in 2012. Euromonitor's preliminary figures suggested that there had been a 4% rise on 2011 to 9.4 million tourism arrivals -- as well as signs investors had not given up on Egypt's tourism market, she said.\n2.1.1.1.1.1.1. [9] The UNWTO's 2012 data also pointed to what Carvao described as \"a clear recovery in demand\", with a 17% increase in tourism arrivals, to 11.2 million.\n2.1.1.1.1.1.1.1. [10] How safe is hot air ballooning?\n2.1.1.1.1.1.1.1.1. [11] However, Popova said numbers were still down, with the political transition \"heavily impacting\" Egyptian tourism.\n2.1.1.1.1.1.1.1.1.1. [12] \"It is far away from the pre-crisis levels when we had 12 million, for example, in 2010 tourist arrivals in the country,\" she said. \"The political instability and the continuous uprising have been probably among the biggest threats to this recovery.\" Popova said she expected numbers to return to their pre-crisis levels by 2017.\n2.1.1.1.1.1.1.1.1.1.1. [13] Earlier this month Egypt's tourism minister, Hisham Zazou, told CNN that live webcams were being installed in holiday hotspots to prove that the country's tourism industry was healthy. Footage of holidaymakers \"basking in the sun\" would give Egypt's tourism industry more credibility, he said. \"When [tourists] see it, they will come.\"\n2.1.1.1.1.1.1.1.1.1.1.1. [14] Read more: Egypt's tourism minister -- Webcams will prove we're safe\n2.1.1.1.1.1.1.1.1.1.1.1.1. [15] Popova said the Egyptian authorities were developing strategies to strengthen tourism with a focus on diversifying the market. In 2012, Russia remained one of the leading countries in terms of arrivals, alongside travelers from the UK, Germany and Italy, but the tourism ministry was trying to lure in more travelers from other markets such as Asia and Latin America, she said.\n2.1.1.1.1.1.1.1.1.1.1.1.1.1. [16] Morsi's decision to host Mahmoud Ahmadinejad-- the first Iranian president to visit Egypt in more than 30 years -- was potentially another way of diversifying the consumer segment, she said.\n2.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [17] Read more: Shoes hurled at Iranian President Ahmadinejad during trip to Cairo\n2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [18] Travel journalist and senior travel editor at Britain's The Independent newspaper Simon Calder said an increase in interest from Asia was unfortunately reflected in the list of the dead from the Luxor disaster. Officials said those on board included nine tourists from Hong Kong, four from Japan, three from Britain, two from France and one from Hungary.\n2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [19] The last thing post-revolutionary Egypt needed was \"a tragedy of this magnitude,\" Calder said.\n2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [20] \"Even though -- during the entire two years to my knowledge -- not a single tourist has been harmed, it gives the impression of a state unraveling where security cannot be guaranteed,\" he said. It's a tremendous thing and great tribute to the people in the country that they've managed to protect their guests, however this is possibly going to create a different image.\"\n2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [21] Popova said while she did not expect the crash to have \"major repercussions\" for Egypt's tourism industry as a whole, it had tarnished its image.",
+      "generation_status": "ok"
+    },
+    "evaluation": {
+      "article_id": "a38",
+      "num_reference_pairs": 17,
+      "scores": {
+        "rouge_1": 0.42129780340616874,
+        "rouge_2": 0.3050964474206443,
+        "rouge_l": 0.3665179598894908,
+        "rouge_mean": 0.3807080435613765
+      }
+    }
+  },
+  {
+    "article_id": "a4",
+    "original_path": "data/dev_full_original/a4.story",
+    "reference_path": "data/a_labeling_dev/a4.story",
+    "few_shot": {
+      "count": 2,
+      "article_ids": [
+        "a19",
+        "a28"
+      ]
+    },
+    "sentences": [
+      "Hong Kong (CNN) -- When North Korea conducts an underground nuclear test, a vast array of global sensors will detect the detonation almost immediately.",
+      "But key questions about the size of the explosion, the number of bombs tested, or whether plutonium or uranium was used, may never be answered conclusively, analysts say.",
+      "North Korea appears to have conducted an underground nuclear bomb test Tuesday, as the U.S. Geological Survey reported a seismic disturbance centered near the site of the secretive regime's two previous nuclear tests.",
+      "The area around the reported epicenter of the magnitude 4.9 disturbance has little or no history of earthquakes or natural seismic hazards, according to U.S. Geological Survey maps.",
+      "Despite international condemnation, North Korea has said it would conduct its third underground nuclear test.",
+      "A third nuclear test could enable North Korea the technical data needed to miniaturize a warhead, according to a recent paper in the \"Bulletin of the Atomic Scientists.\"",
+      "Coming on the heels of December's successful launch of a satellite, the threat of an atomic test has raised concerns.",
+      "Pyongyang's efforts seemed hapless when a rocket launch failed earlier in 2012. But its spotty record changed in early December when North Korea launched the long-range Unha-3 rocket carrying a satellite, showing the world it had the technology to launch a long-range missile -- with analysts suggesting parts of the United States, Pyongyang's stated arch rival, were now within range.",
+      "Following the U.N. condemnation of the launch in January, Pyongyang says it plans a new nuclear test and further long-range rocket launches.",
+      "\"An additional nuclear test or two would greatly increase the likelihood that Pyongyang could fashion warheads to fit at least some of its missiles -- a circumstance that would vastly increase the threat its nuclear program poses to the security of Northeast Asia,\" wrote analyst Frank Pabian and Siegfried Hecker, a Stanford University professor who visited North Korean nuclear sites in 2010.",
+      "How does an underground test work?",
+      "Satellite photos showed the preparation of a third tunnel in Punggye-ri area, located 232 kilometers northeast of Pyongyang near the Sea of Japan, where the two previous tests were located. Work appeared to begin in 2009 and now is largely completed. Analysts estimate the new tunnel is one kilometer long and 380 meters deep.",
+      "Tests are typically conducted in vertical shafts, according to the Preparatory Commission for the Comprehensive Nuclear-Test-Ban Treaty (CTBTO). Holes are cut 1 to 3 meters wide and up to a kilometer deep. The atomic devices are assembled on site and placed in the hole, usually accompanied by lead-protected diagnostic canister that contains sensors to record the explosion. The tunnel is then filled with layers of pea gravel, sand and other materials to prevent radioactive material from being released into the atmosphere.",
+      "During a test, the explosion energy is released in less than a millionth of a second, according to CTBTO. The temperature will reach about a million degrees within a few microseconds, and shockwaves from the blast, depending on the size, can be detected by seismographs around the planet.",
+      "Is underground testing dangerous?",
+      "Of the more than 2,000 nuclear detonations since 1945, 75% of the explosions have been tests conducted underground, largely by the major nuclear powers of the United States, the former Soviet Union (now Russia), Britain, France and China, according to the CTBTO.",
+      "Underground testing is much safer than above-ground testing. \"With underground testing, you can contain the radiation,\" said Annika Thunborg, CTBTO spokesperson.",
+      "Still, nuclear particles can be accidentally released into the atmosphere. North Korea's first nuclear test in 2006 leaked radiation into the air which was picked up at a CTBTO monitoring station in Yellowknife, Canada -- more than 4,500 miles away.",
+      "There is always a danger of radiation seeping, hence the total test ban treaty, Thunborg said. \"The U.S. tried to control radiation release with its underground tests, but in 150 cases radiation was released into the atmosphere,\" Thunborg said.",
+      "But if Pyongyang plans to explode an even larger device, risks elevate as well. \"One of the risks Pyongyang takes in trying to demonstrate a test at a higher level is that they may produce fissures that allow radioactive seepage or possibly cause a major blowout from the tunnel,\" Hecker wrote in Foreign Policy on February 4. \"The U.S. testing program experienced such problems even after having conducted hundreds of tests. Unrecognized complex geological conditions apparently led to a blowout during the 1970 underground Baneberry nuclear test at the Nevada Test Site. The blowout released a radioactive cloud nearly 10,000 feet high.\"",
+      "Such a blowout would also release a lot more data on the test to outside observers, but \"spewing a radioactive cloud over the skies of Northeast Asia would create an enormous political storm from the nearby countries,\" Hecker wrote.",
+      "Why is underground testing controversial?",
+      "North Korea is the only country to have carried out atomic explosions on the planet since 1998, when Pyongyang conducted underground nuclear tests in 2006 and 2009. Before that, both India and Pakistan conducted underground tests in 1998, according to CTBTO.",
+      "The 1996 treaty, which has been signed by 183 nations, aims to ban all nuclear testing on the planet, whether in the atmosphere or underground.",
+      "While the comprehensive test ban treaty hasn't formally become law (it awaits ratification by China, Egypt, India, Iran Israel, North Korea, Pakistan and the U.S.), only North Korea, India and Pakistan have broken the moratorium on nuclear testing, according to the CTBTO.",
+      "Testing in the atmosphere and underwater was banned by the 1963 Partial Test Ban Treaty, after public concerns over radioactive fallout from tests. The U.S., the Soviet Union and Britain signed the treaty, but nuclear powers France and China did not. France conducted its last above ground nuclear test in 1974; China in 1980.",
+      "To develop the technology for its atomic weapons program, North Korea needs to conduct tests to perfect the ability to miniaturize a nuclear weapon so that it can be mounted on a missile, delivered without mishap and hit its intended target.",
+      "How will we know if North Korea carries out an underground test?",
+      "Once a nuclear device is exploded, seismographs around the world will detect the movement. \"Manmade explosions have a very different signature than natural events,\" Thunborg said.",
+      "\"Seismic technology is the core function of any monitoring system, and we are running the only international system that is dedicated to ensure that no nuclear explosion will go undetected in compliance with the comprehensive nuclear test ban treaty.\"",
+      "The CTBTO operates a global system of more than 300 monitors -- such as seismic, sonar or radiation sensors -- in 85 countries across the world. Even if no radiation escapes into the atmosphere, underground explosions leak noble gases into the atmosphere which CTBTO sensors can detect, Thunborg said."
+    ],
+    "generation": {
+      "raw_output": "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],\"edges\":[[0,1],[1,2],[0,3],[3,4],[4,5],[4,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15],[15,16],[16,17],[17,18],[18,19],[19,20],[20,21],[21,22],[22,23],[23,24],[24,25],[25,26],[26,27],[27,28]]}",
+      "attempts": [
+        "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],\"edges\":[[0,1],[1,2],[0,3],[3,4],[4,5],[4,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15],[15,16],[16,17],[17,18],[18,19],[19,20],[20,21],[21,22],[22,23],[23,24],[24,25],[25,26],[26,27],[27,28]]}"
+      ],
+      "mindmap": {
+        "root": 0,
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            22,
+            23
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            24,
+            25
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            26,
+            27
+          ],
+          [
+            27,
+            28
+          ]
+        ]
+      },
+      "rendered": "[0] Hong Kong (CNN) -- When North Korea conducts an underground nuclear test, a vast array of global sensors will detect the detonation almost immediately.\n1. [1] But key questions about the size of the explosion, the number of bombs tested, or whether plutonium or uranium was used, may never be answered conclusively, analysts say.\n1.1. [2] North Korea appears to have conducted an underground nuclear bomb test Tuesday, as the U.S. Geological Survey reported a seismic disturbance centered near the site of the secretive regime's two previous nuclear tests.\n2. [3] The area around the reported epicenter of the magnitude 4.9 disturbance has little or no history of earthquakes or natural seismic hazards, according to U.S. Geological Survey maps.\n2.1. [4] Despite international condemnation, North Korea has said it would conduct its third underground nuclear test.\n2.1.1. [5] A third nuclear test could enable North Korea the technical data needed to miniaturize a warhead, according to a recent paper in the \"Bulletin of the Atomic Scientists.\"\n2.1.2. [6] Coming on the heels of December's successful launch of a satellite, the threat of an atomic test has raised concerns.\n2.1.2.1. [7] Pyongyang's efforts seemed hapless when a rocket launch failed earlier in 2012. But its spotty record changed in early December when North Korea launched the long-range Unha-3 rocket carrying a satellite, showing the world it had the technology to launch a long-range missile -- with analysts suggesting parts of the United States, Pyongyang's stated arch rival, were now within range.\n2.1.2.1.1. [8] Following the U.N. condemnation of the launch in January, Pyongyang says it plans a new nuclear test and further long-range rocket launches.\n2.1.2.1.1.1. [9] \"An additional nuclear test or two would greatly increase the likelihood that Pyongyang could fashion warheads to fit at least some of its missiles -- a circumstance that would vastly increase the threat its nuclear program poses to the security of Northeast Asia,\" wrote analyst Frank Pabian and Siegfried Hecker, a Stanford University professor who visited North Korean nuclear sites in 2010.\n2.1.2.1.1.1.1. [10] How does an underground test work?\n2.1.2.1.1.1.1.1. [11] Satellite photos showed the preparation of a third tunnel in Punggye-ri area, located 232 kilometers northeast of Pyongyang near the Sea of Japan, where the two previous tests were located. Work appeared to begin in 2009 and now is largely completed. Analysts estimate the new tunnel is one kilometer long and 380 meters deep.\n2.1.2.1.1.1.1.1.1. [12] Tests are typically conducted in vertical shafts, according to the Preparatory Commission for the Comprehensive Nuclear-Test-Ban Treaty (CTBTO). Holes are cut 1 to 3 meters wide and up to a kilometer deep. The atomic devices are assembled on site and placed in the hole, usually accompanied by lead-protected diagnostic canister that contains sensors to record the explosion. The tunnel is then filled with layers of pea gravel, sand and other materials to prevent radioactive material from being released into the atmosphere.\n2.1.2.1.1.1.1.1.1.1. [13] During a test, the explosion energy is released in less than a millionth of a second, according to CTBTO. The temperature will reach about a million degrees within a few microseconds, and shockwaves from the blast, depending on the size, can be detected by seismographs around the planet.\n2.1.2.1.1.1.1.1.1.1.1. [14] Is underground testing dangerous?\n2.1.2.1.1.1.1.1.1.1.1.1. [15] Of the more than 2,000 nuclear detonations since 1945, 75% of the explosions have been tests conducted underground, largely by the major nuclear powers of the United States, the former Soviet Union (now Russia), Britain, France and China, according to the CTBTO.\n2.1.2.1.1.1.1.1.1.1.1.1.1. [16] Underground testing is much safer than above-ground testing. \"With underground testing, you can contain the radiation,\" said Annika Thunborg, CTBTO spokesperson.\n2.1.2.1.1.1.1.1.1.1.1.1.1.1. [17] Still, nuclear particles can be accidentally released into the atmosphere. North Korea's first nuclear test in 2006 leaked radiation into the air which was picked up at a CTBTO monitoring station in Yellowknife, Canada -- more than 4,500 miles away.\n2.1.2.1.1.1.1.1.1.1.1.1.1.1.1. [18] There is always a danger of radiation seeping, hence the total test ban treaty, Thunborg said. \"The U.S. tried to control radiation release with its underground tests, but in 150 cases radiation was released into the atmosphere,\" Thunborg said.\n2.1.2.1.1.1.1.1.1.1.1.1.1.1.1.1. [19] But if Pyongyang plans to explode an even larger device, risks elevate as well. \"One of the risks Pyongyang takes in trying to demonstrate a test at a higher level is that they may produce fissures that allow radioactive seepage or possibly cause a major blowout from the tunnel,\" Hecker wrote in Foreign Policy on February 4. \"The U.S. testing program experienced such problems even after having conducted hundreds of tests. Unrecognized complex geological conditions apparently led to a blowout during the 1970 underground Baneberry nuclear test at the Nevada Test Site. The blowout released a radioactive cloud nearly 10,000 feet high.\"\n2.1.2.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [20] Such a blowout would also release a lot more data on the test to outside observers, but \"spewing a radioactive cloud over the skies of Northeast Asia would create an enormous political storm from the nearby countries,\" Hecker wrote.\n2.1.2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [21] Why is underground testing controversial?\n2.1.2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [22] North Korea is the only country to have carried out atomic explosions on the planet since 1998, when Pyongyang conducted underground nuclear tests in 2006 and 2009. Before that, both India and Pakistan conducted underground tests in 1998, according to CTBTO.\n2.1.2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [23] The 1996 treaty, which has been signed by 183 nations, aims to ban all nuclear testing on the planet, whether in the atmosphere or underground.\n2.1.2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [24] While the comprehensive test ban treaty hasn't formally become law (it awaits ratification by China, Egypt, India, Iran Israel, North Korea, Pakistan and the U.S.), only North Korea, India and Pakistan have broken the moratorium on nuclear testing, according to the CTBTO.\n2.1.2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [25] Testing in the atmosphere and underwater was banned by the 1963 Partial Test Ban Treaty, after public concerns over radioactive fallout from tests. The U.S., the Soviet Union and Britain signed the treaty, but nuclear powers France and China did not. France conducted its last above ground nuclear test in 1974; China in 1980.\n2.1.2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [26] To develop the technology for its atomic weapons program, North Korea needs to conduct tests to perfect the ability to miniaturize a nuclear weapon so that it can be mounted on a missile, delivered without mishap and hit its intended target.\n2.1.2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [27] How will we know if North Korea carries out an underground test?\n2.1.2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [28] Once a nuclear device is exploded, seismographs around the world will detect the movement. \"Manmade explosions have a very different signature than natural events,\" Thunborg said.",
+      "generation_status": "ok"
+    },
+    "evaluation": {
+      "article_id": "a4",
+      "num_reference_pairs": 36,
+      "scores": {
+        "rouge_1": 0.21994923629664173,
+        "rouge_2": 0.14181978398850884,
+        "rouge_l": 0.2234154821907722,
+        "rouge_mean": 0.20146642922723695
+      }
+    }
+  },
+  {
+    "article_id": "a43",
+    "original_path": "data/dev_full_original/a43.story",
+    "reference_path": "data/a_labeling_dev/a43.story",
+    "few_shot": {
+      "count": 2,
+      "article_ids": [
+        "a19",
+        "a28"
+      ]
+    },
+    "sentences": [
+      "(CNN) -- Investigators have found evidence that Sandy Hook Elementary School gunman Adam Lanza \"was obsessed\" with other mass murderers, a source with knowledge of the investigation told CNN Tuesday.",
+      "This news follows an earlier report that Lanza may have been motivated by a desire to outdo Anders Behring Breivik, the Norwegian man who killed 77 people in July 2011, law enforcement sources told CBS Evening News.",
+      "The unnamed CBS sources said Lanza saw himself as being in direct competition with Breivik, who killed eight with a bombing in downtown Oslo before he moved to a nearby island where he hunted down and fatally shot 69 people.",
+      "According to the sources, the 20-year-old Lanza wanted to top Breivik's death toll and went to the Connecticut school on December 14 because it was the \"easiest target\" and had the \"largest cluster of people.\"",
+      "Video games to blame?",
+      "The same officials also linked Lanza's actions to violent video games.",
+      "The officials, who have been briefed on the Newtown, Connecticut, investigation, told CBS that evidence shows Lanza was likely acting out the fantasies of a video game in killing 20 children and six adults at the school.",
+      "Lanza's mother, Nancy, also was found shot dead at her Newtown home. Police believe Lanza killed his mother before beginning his school rampage.",
+      "He took his own life with a handgun as authorities closed in.",
+      "Police dismiss report",
+      "A spokesman for the Connecticut State Police dismissed the CBS report, calling it speculation.",
+      "\"It's inaccurate ... I talked with CBS and told them that,\" Lt. Paul Vance told CNN. \"We are dealing with a deceased shooter and trying to rebuild history.\"",
+      "Vance, however, did not dismiss the notion that investigators may have looked at the Norway shooting.",
+      "\"We'll look at everything,\" Vance said. \"One thing leads to another.\"",
+      "Authorities have been largely tight-lipped about their investigation.",
+      "Hundreds of state troopers, detectives and other law enforcement personnel are analyzing every round of ammunition fired, examining the gunman's medical history and computer use and talking to witnesses, Vance said previously.",
+      "A final report on the Newtown shooting is expected this summer.",
+      "Vance released a statement Tuesday afternoon that didn't refer to any specific news reports but denied that any information came from the state police.",
+      "\"The unfortunate origin of unsubstantiated details of this case are both hurtful and, many times, inaccurate,\" Vance said in the statement.",
+      "According to the news release, no information will be released until the investigation is finished, but detectives have no date when they will wrap up their interviews and evidence gathering.",
+      "The Norway attacks",
+      "July 22, 2011, will live long in the memory of all Norwegians after the carnage that unfolded that day.",
+      "After detonating a bomb outside the prime minister's office in Oslo, killing eight people, Breivik took a ferry to Utoya Island and embarked on a shooting spree that took the lives of another 69 people attending a youth camp.",
+      "Authorities said Breivik roamed the lake island shooting at campers, before members of an elite Norwegian police unit took him into custody.",
+      "In August 2012 Breivik, who boasted of being an ultranationalist who killed his victims to fight multiculturalism in Norway, was judged to be sane at the time of the attack.",
+      "He was convicted of voluntary homicide and committing acts of terror and sentenced to 21 years in prison.",
+      "CNN's Susan Candiotti contributed to this report."
+    ],
+    "generation": {
+      "raw_output": "{\"root\":0,\"selected\":[0,1,2,3,5,12,14,18],\"edges\":[[0,1],[1,2],[0,3],[0,12],[12,14],[12,18]]}",
+      "attempts": [
+        "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],\"edges\":[[0,1],[1,2],[0,3],[3,4],[3,5],[3,6],[3,7],[3,8],[10,11],[11,12],[11,13],[14,15],[15,16],[15,17],[15,18],[15,19]]}",
+        "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],\"edges\":[[0,1],[1,2],[0,3],[0,4],[0,5],[0,6],[0,7],[0,8],[1,10],[2,11],[3,12],[4,13],[5,14],[6,15],[7,16],[8,17],[9,18],[10,19],[11,20],[12,21],[13,22],[14,23],[15,24],[16,25],[17,26]]}",
+        "{\"root\":0,\"selected\":[0,1,2,3,5,12,14,18],\"edges\":[[0,1],[1,2],[0,3],[0,12],[12,14],[12,18]]}"
+      ],
+      "mindmap": {
+        "root": 0,
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          12,
+          14,
+          18
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            12
+          ],
+          [
+            12,
+            14
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            0,
+            5
+          ]
+        ]
+      },
+      "rendered": "[0] (CNN) -- Investigators have found evidence that Sandy Hook Elementary School gunman Adam Lanza \"was obsessed\" with other mass murderers, a source with knowledge of the investigation told CNN Tuesday.\n1. [1] This news follows an earlier report that Lanza may have been motivated by a desire to outdo Anders Behring Breivik, the Norwegian man who killed 77 people in July 2011, law enforcement sources told CBS Evening News.\n1.1. [2] The unnamed CBS sources said Lanza saw himself as being in direct competition with Breivik, who killed eight with a bombing in downtown Oslo before he moved to a nearby island where he hunted down and fatally shot 69 people.\n2. [3] According to the sources, the 20-year-old Lanza wanted to top Breivik's death toll and went to the Connecticut school on December 14 because it was the \"easiest target\" and had the \"largest cluster of people.\"\n3. [5] The same officials also linked Lanza's actions to violent video games.\n4. [12] Vance, however, did not dismiss the notion that investigators may have looked at the Norway shooting.\n4.1. [14] Authorities have been largely tight-lipped about their investigation.\n4.2. [18] \"The unfortunate origin of unsubstantiated details of this case are both hurtful and, many times, inaccurate,\" Vance said in the statement.",
+      "generation_status": "failed_validation"
+    },
+    "evaluation": {
+      "article_id": "a43",
+      "num_reference_pairs": 26,
+      "scores": {
+        "rouge_1": 0.08146800293773661,
+        "rouge_2": 0.0593956923135796,
+        "rouge_l": 0.0771102613203796,
+        "rouge_mean": 0.0726579855238986
+      }
+    }
+  },
+  {
+    "article_id": "hmt_88d_0fc40f2c1c962a73f02a32f7eceef673f0c291f1",
+    "original_path": "data/dev_full_original/hmt_88d_0fc40f2c1c962a73f02a32f7eceef673f0c291f1.story",
+    "reference_path": "data/a_labeling_dev/hmt_88d_0fc40f2c1c962a73f02a32f7eceef673f0c291f1.story",
+    "few_shot": {
+      "count": 2,
+      "article_ids": [
+        "a19",
+        "a28"
+      ]
+    },
+    "sentences": [
+      "(CNN) -- Track and field star Tyson Gay was handed a one-year ban by the U.S. Anti Doping Agency (USADA) Friday and has had to return the silver medal he won at the 2012 London Olympics.",
+      "Gay, a former world 100 and 200m champion, tested positive for a banned anabolic steroid at the U.S. Championships on June 23, 2013 and his suspension takes effect from that date -- making him eligible to compete later this summer.",
+      "The standard ban for a doping violation is two years, but Gay has been treated more leniently because he co-operated with USADA, it said.",
+      "\"We appreciate Tyson doing the right thing by immediately withdrawing from competition once he was notified, accepting responsibility for his decisions, and fully and truthfully cooperating with us in our ongoing investigation into the circumstances surrounding his case,\" USADA chief executive Travis T. Tygart told the organization's official website.",
+      "Gay, who has been one of Usain Bolt's main rivals over the past few years, also accepted the forfeiture of all results and prizes dated back to July 15, 2012, when he first admitted using a product that contained a banned substance.",
+      "That included his silver medal in the U.S. men's 4x100m relay squad at the London Games, where they finished second to Bolt's all-conquering Jamaican team.",
+      "The shortened suspension length is subject to appeal by the IAAF and the World Anti-Doping Agency (WADA) but the International Olympic Committee (IOC) said it was satisfied with the punishment meted out to Gay.",
+      "\"We note the athlete accepted responsibility for his actions and returned the medal from the London Olympic Games,\" it said in a statement.",
+      "\"The IOC supports clean athletes and defends the integrity of sport against those who cheat. We will take all necessary steps with regard to the Olympic Games in line with our zero tolerance policy, and our full commitment to the protection of the clean athletes.\"",
+      "Gay is the joint second fastest man over 100m in history behind Bolt, with a 9.69 seconds clocking.",
+      "He won the triple of 100, 200 and 4x100m relay gold at the 2007 world championships in Osaka.",
+      "News of his positive test came on the same day that a similar outcome was revealed for former world 100m record holder Asafa Powell, shocking followers of track and field.",
+      "Jamaica's Powell received an 18-month ban for his doping offense."
+    ],
+    "generation": {
+      "raw_output": "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12],\"edges\":[[0,1],[1,2],[0,3],[3,4],[4,5],[0,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12]]}",
+      "attempts": [
+        "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12],\"edges\":[[0,1],[1,2],[0,3],[3,4],[4,5],[0,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12]]}"
+      ],
+      "mindmap": {
+        "root": 0,
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ]
+        ]
+      },
+      "rendered": "[0] (CNN) -- Track and field star Tyson Gay was handed a one-year ban by the U.S. Anti Doping Agency (USADA) Friday and has had to return the silver medal he won at the 2012 London Olympics.\n1. [1] Gay, a former world 100 and 200m champion, tested positive for a banned anabolic steroid at the U.S. Championships on June 23, 2013 and his suspension takes effect from that date -- making him eligible to compete later this summer.\n1.1. [2] The standard ban for a doping violation is two years, but Gay has been treated more leniently because he co-operated with USADA, it said.\n2. [3] \"We appreciate Tyson doing the right thing by immediately withdrawing from competition once he was notified, accepting responsibility for his decisions, and fully and truthfully cooperating with us in our ongoing investigation into the circumstances surrounding his case,\" USADA chief executive Travis T. Tygart told the organization's official website.\n2.1. [4] Gay, who has been one of Usain Bolt's main rivals over the past few years, also accepted the forfeiture of all results and prizes dated back to July 15, 2012, when he first admitted using a product that contained a banned substance.\n2.1.1. [5] That included his silver medal in the U.S. men's 4x100m relay squad at the London Games, where they finished second to Bolt's all-conquering Jamaican team.\n3. [6] The shortened suspension length is subject to appeal by the IAAF and the World Anti-Doping Agency (WADA) but the International Olympic Committee (IOC) said it was satisfied with the punishment meted out to Gay.\n3.1. [7] \"We note the athlete accepted responsibility for his actions and returned the medal from the London Olympic Games,\" it said in a statement.\n3.1.1. [8] \"The IOC supports clean athletes and defends the integrity of sport against those who cheat. We will take all necessary steps with regard to the Olympic Games in line with our zero tolerance policy, and our full commitment to the protection of the clean athletes.\"\n3.1.1.1. [9] Gay is the joint second fastest man over 100m in history behind Bolt, with a 9.69 seconds clocking.\n3.1.1.1.1. [10] He won the triple of 100, 200 and 4x100m relay gold at the 2007 world championships in Osaka.\n3.1.1.1.1.1. [11] News of his positive test came on the same day that a similar outcome was revealed for former world 100m record holder Asafa Powell, shocking followers of track and field.\n3.1.1.1.1.1.1. [12] Jamaica's Powell received an 18-month ban for his doping offense.",
+      "generation_status": "ok"
+    },
+    "evaluation": {
+      "article_id": "hmt_88d_0fc40f2c1c962a73f02a32f7eceef673f0c291f1",
+      "num_reference_pairs": 6,
+      "scores": {
+        "rouge_1": 0.5000913057881152,
+        "rouge_2": 0.5881761662584641,
+        "rouge_l": 0.6178009694645022,
+        "rouge_mean": 0.6098417438747501
+      }
+    }
+  },
+  {
+    "article_id": "hmt_89d_6a6e43eb5d888a6efc06ad7dd5502df4ec4fe69f",
+    "original_path": "data/dev_full_original/hmt_89d_6a6e43eb5d888a6efc06ad7dd5502df4ec4fe69f.story",
+    "reference_path": "data/a_labeling_dev/hmt_89d_6a6e43eb5d888a6efc06ad7dd5502df4ec4fe69f.story",
+    "few_shot": {
+      "count": 2,
+      "article_ids": [
+        "a19",
+        "a28"
+      ]
+    },
+    "sentences": [
+      "(CNN) -- At the celebration of the 50th anniversary of the passage of the Civil Rights Act, four presidents remembered the battles and honored those who fought to form \"a more perfect union\" on the path to economic, educational and voting equality.",
+      "But, for one of those heroes, it was also a time to pause and acknowledge the progress. And for one president, it was a time to honor another.",
+      "The four presidents -- Jimmy Carter, Bill Clinton, George W. Bush and Barack Obama -- led the observances, appropriately, at the Lyndon B. Johnson Presidential Library in Austin. It was President Johnson who in 1964 secured the passage of the Civil Rights Act, and in 1965, the Voting Rights Act -- the latter eviscerated last year by the Roberts Court.",
+      "President Obama thanked \"the warriors for justice, the elected officials and community leaders who are here today.\" Those who ended segregation and ushered in the most significant change in America since the Civil War were indeed, \"warriors for justice.\"",
+      "One of the warriors present was Rep. John Lewis who was in his 20s when the battles for Civil Rights were raging across the South, and indeed, all America.",
+      "Lewis was attacked dozens of times. The bus he was riding was firebombed in Anniston, Alabama. He suffered a fractured skull from a policeman's club on the Selma Bridge and was beaten unconscious in a Montgomery bus station.",
+      "It was men and women warriors like Lewis who first moved Americans, and then moved the federal government, to guarantee the basic human rights they demanded. The rights were as simple as ordering a sandwich and drink at a lunch counter, and as profound as being able to vote.",
+      "Introducing the President, Lewis said, \"President Barack Obama was born into a dangerous and difficult time in American history, a time when people were arrested and taken to jail just for sitting beside each other on the bus.\"",
+      "\"When people say nothing has changed, I say come and walk in my shoes, and I will show you change.\"",
+      "President Obama keyed his theme to honor President Johnson. \"Because of the civil rights movement, because of the laws that Lyndon Johnson passed, new doors swung open,\" he said. \"I have lived out the promise of LBJ's efforts. ... Michelle has lived out the legacy of those efforts. ... My daughters have lived out the legacy of those efforts.\"",
+      "Doors swung open, Obama said, \"not all at once, but they swung open. Not just (for) blacks and whites, but also women and Latinos; and Asians and Native Americans.\"",
+      "\"In a time when cynicism is too often passed off as wisdom, it's perhaps easy to conclude that there are limits to change; that we are trapped by our own history; and politics is a fool's errand,\" he said, adding, \"I reject such cynicism.\"",
+      "We \"cannot be complacent,\" he said. \"Our rights, our freedoms -- they are not given. They must be won.\" Obama added, \"We remain locked in this same great debate about equality and opportunity.\"",
+      "Earlier in the week, former President Jimmy Carter struck a similar theme: \"We still have gross disparity between black and white people on employment (and) the quality of education,\" said Carter. \"But we feel like, you know, Lyndon Johnson did it -- we don't have to do anything anymore. I think too many people are at ease with the still existing disparity.\"",
+      "Former President George W. Bush, who spoke at the conclusion of the Summit said, \"I fear that the soft bigotry of low expectations is returning, and for the sake of America's children, that is something we cannot allow.\"",
+      "Former President Bill Clinton homed in on the erosion of the Voting Rights Act, and partisan divisions. \"We all know what this is about: This is a way of restricting the franchise after 50 years of expanding it,\" Clinton said. \"Is this what Martin Luther King, Jr. gave his life for? Is this what Lyndon Johnson employed his legendary skills for?\" he asked.",
+      "\"I am concerned that on this 50th anniversary, these divisions and the lack of a spirit of coming together put us back in the dustbin of old history,\" Clinton said.",
+      "Obama echoed Clinton, saying, \"One concern I have sometimes during these moments (is that) from a distance, sometimes ... they seem easy. All the pain and difficulty and struggle and doubt -- all that is rubbed away.\"",
+      "Bush reminded the audience about the importance of education in ensuring equality for all. \"It is not a coincidence that many of the defining struggles of the civil rights era -- from Little Rock Central to the University of Mississippi -- took place in educational settings. Those who engage in oppression and exploitation always deny real learning. Those who fight oppression always insist on equal education. Through civil rights laws, we assure justice in the present. Through education, we secure justice for the next generation.\"",
+      "There is still more work to do. More work by my generation, which includes the President. And more work by those coming up now.",
+      "Obama exhorted young people especially not to succumb to despair or cynicism because the struggle seems too hard. \"We've got a debt to pay,\" he said. President Johnson \"believed that together we can build an America that is more fair, more equal, and more free than the one we inherited. He believed we make our own destiny. And in part because of him, we must believe it as well.\"",
+      "If we still believe, we shall overcome one day.",
+      "Join us on Facebook.com/CNNOpinion."
+    ],
+    "generation": {
+      "raw_output": "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],\"edges\":[[0,1],[1,2],[2,3],[2,4],[4,5],[5,6],[6,7],[6,8],[6,9],[6,10],[6,11],[6,12],[6,13],[6,14],[6,15],[6,16],[6,17],[6,18],[6,19],[6,20],[6,21]]}",
+      "attempts": [
+        "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],\"edges\":[[0,1],[1,2],[2,3],[2,4],[4,5],[5,6],[6,7],[6,8],[6,9],[6,10],[6,11],[6,12],[6,13],[6,14],[6,15],[6,16],[6,17],[6,18],[6,19],[6,20],[6,21]]}"
+      ],
+      "mindmap": {
+        "root": 0,
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            6,
+            9
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            6,
+            13
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            6,
+            15
+          ],
+          [
+            6,
+            16
+          ],
+          [
+            6,
+            17
+          ],
+          [
+            6,
+            18
+          ],
+          [
+            6,
+            19
+          ],
+          [
+            6,
+            20
+          ],
+          [
+            6,
+            21
+          ]
+        ]
+      },
+      "rendered": "[0] (CNN) -- At the celebration of the 50th anniversary of the passage of the Civil Rights Act, four presidents remembered the battles and honored those who fought to form \"a more perfect union\" on the path to economic, educational and voting equality.\n1. [1] But, for one of those heroes, it was also a time to pause and acknowledge the progress. And for one president, it was a time to honor another.\n1.1. [2] The four presidents -- Jimmy Carter, Bill Clinton, George W. Bush and Barack Obama -- led the observances, appropriately, at the Lyndon B. Johnson Presidential Library in Austin. It was President Johnson who in 1964 secured the passage of the Civil Rights Act, and in 1965, the Voting Rights Act -- the latter eviscerated last year by the Roberts Court.\n1.1.1. [3] President Obama thanked \"the warriors for justice, the elected officials and community leaders who are here today.\" Those who ended segregation and ushered in the most significant change in America since the Civil War were indeed, \"warriors for justice.\"\n1.1.2. [4] One of the warriors present was Rep. John Lewis who was in his 20s when the battles for Civil Rights were raging across the South, and indeed, all America.\n1.1.2.1. [5] Lewis was attacked dozens of times. The bus he was riding was firebombed in Anniston, Alabama. He suffered a fractured skull from a policeman's club on the Selma Bridge and was beaten unconscious in a Montgomery bus station.\n1.1.2.1.1. [6] It was men and women warriors like Lewis who first moved Americans, and then moved the federal government, to guarantee the basic human rights they demanded. The rights were as simple as ordering a sandwich and drink at a lunch counter, and as profound as being able to vote.\n1.1.2.1.1.1. [7] Introducing the President, Lewis said, \"President Barack Obama was born into a dangerous and difficult time in American history, a time when people were arrested and taken to jail just for sitting beside each other on the bus.\"\n1.1.2.1.1.2. [8] \"When people say nothing has changed, I say come and walk in my shoes, and I will show you change.\"\n1.1.2.1.1.3. [9] President Obama keyed his theme to honor President Johnson. \"Because of the civil rights movement, because of the laws that Lyndon Johnson passed, new doors swung open,\" he said. \"I have lived out the promise of LBJ's efforts. ... Michelle has lived out the legacy of those efforts. ... My daughters have lived out the legacy of those efforts.\"\n1.1.2.1.1.4. [10] Doors swung open, Obama said, \"not all at once, but they swung open. Not just (for) blacks and whites, but also women and Latinos; and Asians and Native Americans.\"\n1.1.2.1.1.5. [11] \"In a time when cynicism is too often passed off as wisdom, it's perhaps easy to conclude that there are limits to change; that we are trapped by our own history; and politics is a fool's errand,\" he said, adding, \"I reject such cynicism.\"\n1.1.2.1.1.6. [12] We \"cannot be complacent,\" he said. \"Our rights, our freedoms -- they are not given. They must be won.\" Obama added, \"We remain locked in this same great debate about equality and opportunity.\"\n1.1.2.1.1.7. [13] Earlier in the week, former President Jimmy Carter struck a similar theme: \"We still have gross disparity between black and white people on employment (and) the quality of education,\" said Carter. \"But we feel like, you know, Lyndon Johnson did it -- we don't have to do anything anymore. I think too many people are at ease with the still existing disparity.\"\n1.1.2.1.1.8. [14] Former President George W. Bush, who spoke at the conclusion of the Summit said, \"I fear that the soft bigotry of low expectations is returning, and for the sake of America's children, that is something we cannot allow.\"\n1.1.2.1.1.9. [15] Former President Bill Clinton homed in on the erosion of the Voting Rights Act, and partisan divisions. \"We all know what this is about: This is a way of restricting the franchise after 50 years of expanding it,\" Clinton said. \"Is this what Martin Luther King, Jr. gave his life for? Is this what Lyndon Johnson employed his legendary skills for?\" he asked.\n1.1.2.1.1.10. [16] \"I am concerned that on this 50th anniversary, these divisions and the lack of a spirit of coming together put us back in the dustbin of old history,\" Clinton said.\n1.1.2.1.1.11. [17] Obama echoed Clinton, saying, \"One concern I have sometimes during these moments (is that) from a distance, sometimes ... they seem easy. All the pain and difficulty and struggle and doubt -- all that is rubbed away.\"\n1.1.2.1.1.12. [18] Bush reminded the audience about the importance of education in ensuring equality for all. \"It is not a coincidence that many of the defining struggles of the civil rights era -- from Little Rock Central to the University of Mississippi -- took place in educational settings. Those who engage in oppression and exploitation always deny real learning. Those who fight oppression always insist on equal education. Through civil rights laws, we assure justice in the present. Through education, we secure justice for the next generation.\"\n1.1.2.1.1.13. [19] There is still more work to do. More work by my generation, which includes the President. And more work by those coming up now.\n1.1.2.1.1.14. [20] Obama exhorted young people especially not to succumb to despair or cynicism because the struggle seems too hard. \"We've got a debt to pay,\" he said. President Johnson \"believed that together we can build an America that is more fair, more equal, and more free than the one we inherited. He believed we make our own destiny. And in part because of him, we must believe it as well.\"\n1.1.2.1.1.15. [21] If we still believe, we shall overcome one day.",
+      "generation_status": "ok"
+    },
+    "evaluation": {
+      "article_id": "hmt_89d_6a6e43eb5d888a6efc06ad7dd5502df4ec4fe69f",
+      "num_reference_pairs": 22,
+      "scores": {
+        "rouge_1": 0.22890835221702677,
+        "rouge_2": 0.16155121013929563,
+        "rouge_l": 0.24048204794548964,
+        "rouge_mean": 0.19145188138686553
+      }
+    }
+  },
+  {
+    "article_id": "hmt_90d_7e3969e836dbb180ed9dae6266d55596e746c0a7",
+    "original_path": "data/dev_full_original/hmt_90d_7e3969e836dbb180ed9dae6266d55596e746c0a7.story",
+    "reference_path": "data/a_labeling_dev/hmt_90d_7e3969e836dbb180ed9dae6266d55596e746c0a7.story",
+    "few_shot": {
+      "count": 2,
+      "article_ids": [
+        "a19",
+        "a28"
+      ]
+    },
+    "sentences": [
+      "Guantanamo Bay, Cuba (CNN) -- Silence and the odd outburst from accused 9/11 mastermind Khalid Sheikh Mohammed and four others turned an arraignment that could have lasted minutes into a 13-hour court session at Guantanamo Bay on Saturday.",
+      "It was the first appearance in a military courtroom for Mohammed and four others since they were charged last month for their alleged role in the planning and execution of the September 11, 2001, terror attacks that killed nearly 3,000 people.",
+      "The hearing, which wrapped just before 10:30 p.m., offered a rare glimpse of the five men who have not been seen publicly since 2008 when they were first charged by a military tribunal.",
+      "Mohammed and the others -- Walid Muhammad Salih, Mubarak bin 'Attash, Ramzi Binalshibh, Ali Abdul Aziz Ali, and Mustafa Ahmed Adam al Hawsawi -- appeared to work together to defy the judge's instruction, refusing to speak or cooperate with courtroom protocol.",
+      "The silence from the defendants -- some ignored the judge and others appeared to be reading -- slowed the proceedings to a crawl.",
+      "Bin 'Attash was wheeled into the courtroom in a restraining chair. It was unclear why he was the only defendant brought into court in that manner, though he was allowed out of restraints after he promised not to disrupt court proceedings.",
+      "Toward the end of the day, he took off his shirt while his attorney was describing injuries she alleged he sustained while in custody.",
+      "The judge told bin 'Attash, \"No!\" and warned that he would be removed from the courtroom if he did not follow directions.",
+      "At one point, bin 'Attash made a paper airplane and placed it on top of a microphone. It was removed after a translator complained about the sound the paper made against the microphone.",
+      "The judge, Col. James Pohl, needed the five to vocally confirm their desire to be represented by the attorneys who accompanied them to court. Because the defendants refused to cooperate, Pohl ruled the men would continue to be represented by their current military and civilian attorneys.",
+      "All five men are charged with terrorism, hijacking aircraft, conspiracy, murder in violation of the law of war, attacking civilians, attacking civilian objects, intentionally causing serious bodily injury and destruction of property in violation of the law of war.",
+      "If convicted, they face the death penalty.",
+      "There were so many allegations behind the charges, it took more than two hours for officers of the court just to read into the record the details of the 9/11 hijackings.",
+      "Earlier, the refusal of the defendants to speak caused an issue with the court translations.",
+      "Mohammed's lawyer said that his client \"will decline to communicate with the court.\"",
+      "Because the men wouldn't speak, the judge could not confirm that they could hear the translation of the proceedings. Time elapsed while they set up loudspeakers in the court to carry the translations. Some lawyers objected to this solution, too, and translation remained a problem at the outset of the hearing.",
+      "Pohl said he would enter a not guilty plea on Mohammed's behalf, if he refused to enter a plea. Later, the five men chose to defer entering a plea, a routine practice during military court proceedings.",
+      "The next hearing is scheduled for June 12. It will likely be at least a year before the case goes to trial, Pohl said.",
+      "Hours into Saturday's proceeding, one of the defendants broke his silence with an outburst.",
+      "Binalshibh shouted in heavily accented English: \"You may not see us anymore,\" he said. \"They are going to kill us.\"",
+      "During recesses, the five men talked amongst each other and appeared relaxed. They passed around a copy of The Economist.",
+      "Binalshibh appeared to lead the group twice in prayer in the courtroom, once delaying the resumption of the hearing.",
+      "Mohammed, whose long beard appeared to be dyed red by henna, was much thinner than the last time he was seen publicly in a courtroom.",
+      "He also appeared much smaller and paler than the man the world came to know through photos released after his capture in March 2003 in Pakistan.",
+      "The charges allege that the five are \"responsible for the planning and execution of the attacks of Sept. 11, 2001, in New York, Washington, D.C., and Shanksville, Pa., resulting in the killing of 2,976 people,\" the Defense Department said.",
+      "The military initially charged Mohammed in 2008, but President Barack Obama stopped the case as part of his effort to close the U.S. detention center at Guantanamo Bay, a U.S. naval base in Cuba.",
+      "Unable to close the center, Obama attempted to move the case to federal court in New York in 2009, only to run into a political firestorm. The plan was dropped after complaints about cost and security.",
+      "Last April, Attorney General Eric Holder announced the five would face a military trial at Guantanamo Bay.",
+      "The decision was met with some criticism, including from the American Civil Liberties Union.",
+      "ACLU Executive Director Anthony D. Romero said last month that the administration is making a \"terrible mistake by prosecuting the most important terrorism trials of our time in a second-tier system of justice.\""
+    ],
+    "generation": {
+      "raw_output": "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29],\"edges\":[[0,1],[1,2],[0,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15],[15,16],[16,17],[17,18],[18,19],[19,20],[20,21],[21,22],[22,23],[23,24],[24,25],[25,26],[26,27],[27,28],[28,29]]}",
+      "attempts": [
+        "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29],\"edges\":[[0,1],[1,2],[0,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15],[15,16],[16,17],[17,18],[18,19],[19,20],[20,21],[21,22],[22,23],[23,24],[24,25],[25,26],[26,27],[27,28],[28,29]]}"
+      ],
+      "mindmap": {
+        "root": 0,
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            22,
+            23
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            24,
+            25
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            26,
+            27
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            28,
+            29
+          ]
+        ]
+      },
+      "rendered": "[0] Guantanamo Bay, Cuba (CNN) -- Silence and the odd outburst from accused 9/11 mastermind Khalid Sheikh Mohammed and four others turned an arraignment that could have lasted minutes into a 13-hour court session at Guantanamo Bay on Saturday.\n1. [1] It was the first appearance in a military courtroom for Mohammed and four others since they were charged last month for their alleged role in the planning and execution of the September 11, 2001, terror attacks that killed nearly 3,000 people.\n1.1. [2] The hearing, which wrapped just before 10:30 p.m., offered a rare glimpse of the five men who have not been seen publicly since 2008 when they were first charged by a military tribunal.\n2. [3] Mohammed and the others -- Walid Muhammad Salih, Mubarak bin 'Attash, Ramzi Binalshibh, Ali Abdul Aziz Ali, and Mustafa Ahmed Adam al Hawsawi -- appeared to work together to defy the judge's instruction, refusing to speak or cooperate with courtroom protocol.\n2.1. [4] The silence from the defendants -- some ignored the judge and others appeared to be reading -- slowed the proceedings to a crawl.\n2.1.1. [5] Bin 'Attash was wheeled into the courtroom in a restraining chair. It was unclear why he was the only defendant brought into court in that manner, though he was allowed out of restraints after he promised not to disrupt court proceedings.\n2.1.1.1. [6] Toward the end of the day, he took off his shirt while his attorney was describing injuries she alleged he sustained while in custody.\n2.1.1.1.1. [7] The judge told bin 'Attash, \"No!\" and warned that he would be removed from the courtroom if he did not follow directions.\n2.1.1.1.1.1. [8] At one point, bin 'Attash made a paper airplane and placed it on top of a microphone. It was removed after a translator complained about the sound the paper made against the microphone.\n2.1.1.1.1.1.1. [9] The judge, Col. James Pohl, needed the five to vocally confirm their desire to be represented by the attorneys who accompanied them to court. Because the defendants refused to cooperate, Pohl ruled the men would continue to be represented by their current military and civilian attorneys.\n2.1.1.1.1.1.1.1. [10] All five men are charged with terrorism, hijacking aircraft, conspiracy, murder in violation of the law of war, attacking civilians, attacking civilian objects, intentionally causing serious bodily injury and destruction of property in violation of the law of war.\n2.1.1.1.1.1.1.1.1. [11] If convicted, they face the death penalty.\n2.1.1.1.1.1.1.1.1.1. [12] There were so many allegations behind the charges, it took more than two hours for officers of the court just to read into the record the details of the 9/11 hijackings.\n2.1.1.1.1.1.1.1.1.1.1. [13] Earlier, the refusal of the defendants to speak caused an issue with the court translations.\n2.1.1.1.1.1.1.1.1.1.1.1. [14] Mohammed's lawyer said that his client \"will decline to communicate with the court.\"\n2.1.1.1.1.1.1.1.1.1.1.1.1. [15] Because the men wouldn't speak, the judge could not confirm that they could hear the translation of the proceedings. Time elapsed while they set up loudspeakers in the court to carry the translations. Some lawyers objected to this solution, too, and translation remained a problem at the outset of the hearing.\n2.1.1.1.1.1.1.1.1.1.1.1.1.1. [16] Pohl said he would enter a not guilty plea on Mohammed's behalf, if he refused to enter a plea. Later, the five men chose to defer entering a plea, a routine practice during military court proceedings.\n2.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [17] The next hearing is scheduled for June 12. It will likely be at least a year before the case goes to trial, Pohl said.\n2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [18] Hours into Saturday's proceeding, one of the defendants broke his silence with an outburst.\n2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [19] Binalshibh shouted in heavily accented English: \"You may not see us anymore,\" he said. \"They are going to kill us.\"\n2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [20] During recesses, the five men talked amongst each other and appeared relaxed. They passed around a copy of The Economist.\n2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [21] Binalshibh appeared to lead the group twice in prayer in the courtroom, once delaying the resumption of the hearing.\n2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [22] Mohammed, whose long beard appeared to be dyed red by henna, was much thinner than the last time he was seen publicly in a courtroom.\n2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [23] He also appeared much smaller and paler than the man the world came to know through photos released after his capture in March 2003 in Pakistan.\n2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [24] The charges allege that the five are \"responsible for the planning and execution of the attacks of Sept. 11, 2001, in New York, Washington, D.C., and Shanksville, Pa., resulting in the killing of 2,976 people,\" the Defense Department said.\n2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [25] The military initially charged Mohammed in 2008, but President Barack Obama stopped the case as part of his effort to close the U.S. detention center at Guantanamo Bay, a U.S. naval base in Cuba.\n2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [26] Unable to close the center, Obama attempted to move the case to federal court in New York in 2009, only to run into a political firestorm. The plan was dropped after complaints about cost and security.\n2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [27] Last April, Attorney General Eric Holder announced the five would face a military trial at Guantanamo Bay.\n2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [28] The decision was met with some criticism, including from the American Civil Liberties Union.\n2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [29] ACLU Executive Director Anthony D. Romero said last month that the administration is making a \"terrible mistake by prosecuting the most important terrorism trials of our time in a second-tier system of justice.\"",
+      "generation_status": "ok"
+    },
+    "evaluation": {
+      "article_id": "hmt_90d_7e3969e836dbb180ed9dae6266d55596e746c0a7",
+      "num_reference_pairs": 15,
+      "scores": {
+        "rouge_1": 0.6254746466126858,
+        "rouge_2": 0.5859176270250904,
+        "rouge_l": 0.6174536436546386,
+        "rouge_mean": 0.6089982524778638
+      }
+    }
+  }
+]

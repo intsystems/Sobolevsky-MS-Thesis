@@ -1,0 +1,28 @@
+Few-shot count: 2
+Few-shot article IDs: ['a19', 'a28']
+ROUGE-1:    0.412707
+ROUGE-2:    0.355239
+ROUGE-L:    0.404985
+ROUGE-mean: 0.389856
+
+Few-shot count: 1
+Few-shot article IDs: ['a19']
+ROUGE-1:    0.440244
+ROUGE-2:    0.378595
+ROUGE-L:    0.428659
+ROUGE-mean: 0.413509
+
+Few-shot count: 3
+Few-shot article IDs: ['a19', 'a28', 'a29']
+ROUGE-1:    0.398436
+ROUGE-2:    0.328308
+ROUGE-L:    0.387120
+ROUGE-mean: 0.372823
+
+
+Few-shot count: 0
+Few-shot article IDs: []
+ROUGE-1:    0.338854
+ROUGE-2:    0.285030
+ROUGE-L:    0.331244
+ROUGE-mean: 0.316837

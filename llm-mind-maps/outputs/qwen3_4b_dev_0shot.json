@@ -1,0 +1,585 @@
+[
+  {
+    "article_id": "a19",
+    "original_path": "data/dev_full_original/a19.story",
+    "reference_path": "data/a_labeling_dev/a19.story",
+    "few_shot": {
+      "count": 0,
+      "article_ids": []
+    },
+    "sentences": [
+      "(CNN) -- Call it the Super Bowl MVP -- the most valuable power outage.",
+      "For 35 bewildering minutes Sunday night, the Super Bowl showdown between the Baltimore Ravens and the San Francisco 49ers ground to a halt when half of the lights in the New Orleans Superdome went out.",
+      "Players stretched on the field. The more than 71,000 fans in attendance did the wave.",
+      "And with no immediate explanation for the outage, social media lit up.",
+      "From Twitter to Facebook, from Tumblr to Flickr, it seemed just about everywhere in the social media-sphere somebody had something to say -- sometimes funny, sometimes not so much -- about what became known online as \"the blackout bowl.\"",
+      "There were even those who felt forced to say something about being, well, forced to say something.",
+      "\"The worst part about this power outage is that people at parties were forced to talk to each other,\" Fortune Feimster, a writer for the E! show \"Chelsea Lately,\" tweeted.",
+      "The brand bowl",
+      "Within four minutes of the outage, advertisers had sent out their first tweets.",
+      "The funniest tweets of the Super Bowl",
+      "Nabisco's Oreo cookie was among the first to jump on the Twitter brandwagon, with an ad featuring the cookie on a partially blacked out page.",
+      "\"You can still dunk in the dark,\" it read.",
+      "The people behind Tide laundry detergent went up with a Twitter ad that read: \"We can't get your #blackout, but we can get your stains out. #SuperBowl #TidePower.\"",
+      "Even Audi took a swipe at its competitor, tweeting that it was sending \"LED lights\" over to the dome, whose official name is the Mercedes-Benz Superdome.",
+      "In fact, the outage was the No. 1 Twitter-related moment of the Super Bowl, generating 231,000 tweets per minute.",
+      "The second big moment? The 108-yard kickoff return for a touchdown by Baltimore Ravens Jacoby Jones. But even that only generated merely 185,000 tweets per minute, according to the site.",
+      "Momentum shift",
+      "New Orleans Mayor Mitch Landrieu promised answers.",
+      "\"In the coming days, I expect a full after action report from all parties involved.\"",
+      "The power company said it wasn't to blame, and stadium officials apologized but said little else until well after the game.",
+      "And then, in a statement hours later, Superdome officials said a piece of equipment designed to monitor the electrical load \"sensed an abnormality in the system.\"",
+      "\"Once the issue was detected, the sensing equipment operated as designed and opened a breaker, causing power to be partially cut to the Superdome in order to isolate the issue,\" the statement said.",
+      "It still isn't clear what the \"abnormality\" was -- but more than a few people had their own suspicions.",
+      "A majority on social media blamed it on the fans of the 49ers, who were trailing 28-to-6 in the third quarter before the blackout.",
+      "Photos began quickly showing up on Flickr, Twitter and Facebook of the so-called hands of a 49ers' fan reaching into electrical power box to turn off the power, with the words: \"They not winning that easy.\"",
+      "Conspiracy, cried a Ravens fan on Facebook. \"If the 49ers win after this, you all know who's to blame.\"",
+      "Even Justin Timberlake had something to say about it, tweeting #momentumshift.",
+      "There may be something to it.",
+      "After the power was restored, the 49ers scored three times in just four minutes.",
+      "Then again, maybe not.",
+      "\"Whatever. Who hasn't blacked out in New Orleans,\" one person said on Twitter.",
+      "Or in San Francisco, for that matter.",
+      "In December 2011, the lights went out twice during the same game at Candlestick Park. The 49ers won that game against the Pittsburgh Steelers, 20-3.",
+      "Blame it on Bane",
+      "Some said it was the curse of the Superdome -- despite hosting seven Super Bowl games and its more than $300 million renovation following Hurricane Katrina. The stadium was built near a cemetery and New Orleans Saints fans have long said it was the reason the team had fared so poorly.",
+      "Some on Twitter and Facebook joked Saints quarterback Drew Brees was responsible, pulling the power plug to get even for the team failing to make football's big show.",
+      "Then there were those who pointed to Bane, the villain in the Batman movie \"The Dark Night Rises.\"",
+      "In the movie, Bane mines a football field in Pittsburgh that explodes after a great scoring run by Steeler Hines Ward.",
+      "\"Investigation confirms not even Bane's power outage attempt can save the 49ers,\" said one Twitter user with the handle The Batman.",
+      "Beyonce's wattage",
+      "The general consensus on social media appeared to be that Beyonce's high-wattage half-time performance was mostly likely to blame for the blackout.",
+      "\"Beyonce blew the fuse! Genius!\" tweeted singer Adam Lambert.",
+      "Matchbox Twenty guitarist Paul Doucette, who was at the game, tweeted a picture of the blackout.",
+      "\"Beyonce left and apparently took electricity with her,\" he said. \"Damn she's good.\"",
+      "In the end, the Ravens may have won Superbowl XLVII in New Orleans. But the power outage won its social media time slot.",
+      "CNN's Jethro Mullen contributed to this report."
+    ],
+    "generation": {
+      "raw_output": "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44],\"edges\":[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15],[15,16],[16,17],[17,18],[18,19],[19,20],[20,21],[21,22],[22,23],[23,24],[24,25],[25,26],[26,27],[27,28],[28,29],[29,30],[30,31],[31,32],[32,33],[33,34],[34,35],[35,36],[36,37],[37,38],[38,39],[39,40],[40,41],[41,42],[42,43],[43,44]]}",
+      "attempts": [
+        "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44],\"edges\":[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15],[15,16],[16,17],[17,18],[18,19],[19,20],[20,21],[21,22],[22,23],[23,24],[24,25],[25,26],[26,27],[27,28],[28,29],[29,30],[30,31],[31,32],[32,33],[33,34],[34,35],[35,36],[36,37],[37,38],[38,39],[39,40],[40,41],[41,42],[42,43],[43,44]]}"
+      ],
+      "mindmap": {
+        "root": 0,
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            22,
+            23
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            24,
+            25
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            26,
+            27
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            28,
+            29
+          ],
+          [
+            29,
+            30
+          ],
+          [
+            30,
+            31
+          ],
+          [
+            31,
+            32
+          ],
+          [
+            32,
+            33
+          ],
+          [
+            33,
+            34
+          ],
+          [
+            34,
+            35
+          ],
+          [
+            35,
+            36
+          ],
+          [
+            36,
+            37
+          ],
+          [
+            37,
+            38
+          ],
+          [
+            38,
+            39
+          ],
+          [
+            39,
+            40
+          ],
+          [
+            40,
+            41
+          ],
+          [
+            41,
+            42
+          ],
+          [
+            42,
+            43
+          ],
+          [
+            43,
+            44
+          ]
+        ]
+      },
+      "rendered": "[0] (CNN) -- Call it the Super Bowl MVP -- the most valuable power outage.\n1. [1] For 35 bewildering minutes Sunday night, the Super Bowl showdown between the Baltimore Ravens and the San Francisco 49ers ground to a halt when half of the lights in the New Orleans Superdome went out.\n1.1. [2] Players stretched on the field. The more than 71,000 fans in attendance did the wave.\n1.1.1. [3] And with no immediate explanation for the outage, social media lit up.\n1.1.1.1. [4] From Twitter to Facebook, from Tumblr to Flickr, it seemed just about everywhere in the social media-sphere somebody had something to say -- sometimes funny, sometimes not so much -- about what became known online as \"the blackout bowl.\"\n1.1.1.1.1. [5] There were even those who felt forced to say something about being, well, forced to say something.\n1.1.1.1.1.1. [6] \"The worst part about this power outage is that people at parties were forced to talk to each other,\" Fortune Feimster, a writer for the E! show \"Chelsea Lately,\" tweeted.\n1.1.1.1.1.1.1. [7] The brand bowl\n1.1.1.1.1.1.1.1. [8] Within four minutes of the outage, advertisers had sent out their first tweets.\n1.1.1.1.1.1.1.1.1. [9] The funniest tweets of the Super Bowl\n1.1.1.1.1.1.1.1.1.1. [10] Nabisco's Oreo cookie was among the first to jump on the Twitter brandwagon, with an ad featuring the cookie on a partially blacked out page.\n1.1.1.1.1.1.1.1.1.1.1. [11] \"You can still dunk in the dark,\" it read.\n1.1.1.1.1.1.1.1.1.1.1.1. [12] The people behind Tide laundry detergent went up with a Twitter ad that read: \"We can't get your #blackout, but we can get your stains out. #SuperBowl #TidePower.\"\n1.1.1.1.1.1.1.1.1.1.1.1.1. [13] Even Audi took a swipe at its competitor, tweeting that it was sending \"LED lights\" over to the dome, whose official name is the Mercedes-Benz Superdome.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1. [14] In fact, the outage was the No. 1 Twitter-related moment of the Super Bowl, generating 231,000 tweets per minute.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [15] The second big moment? The 108-yard kickoff return for a touchdown by Baltimore Ravens Jacoby Jones. But even that only generated merely 185,000 tweets per minute, according to the site.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [16] Momentum shift\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [17] New Orleans Mayor Mitch Landrieu promised answers.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [18] \"In the coming days, I expect a full after action report from all parties involved.\"\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [19] The power company said it wasn't to blame, and stadium officials apologized but said little else until well after the game.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [20] And then, in a statement hours later, Superdome officials said a piece of equipment designed to monitor the electrical load \"sensed an abnormality in the system.\"\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [21] \"Once the issue was detected, the sensing equipment operated as designed and opened a breaker, causing power to be partially cut to the Superdome in order to isolate the issue,\" the statement said.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [22] It still isn't clear what the \"abnormality\" was -- but more than a few people had their own suspicions.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [23] A majority on social media blamed it on the fans of the 49ers, who were trailing 28-to-6 in the third quarter before the blackout.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [24] Photos began quickly showing up on Flickr, Twitter and Facebook of the so-called hands of a 49ers' fan reaching into electrical power box to turn off the power, with the words: \"They not winning that easy.\"\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [25] Conspiracy, cried a Ravens fan on Facebook. \"If the 49ers win after this, you all know who's to blame.\"\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [26] Even Justin Timberlake had something to say about it, tweeting #momentumshift.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [27] There may be something to it.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [28] After the power was restored, the 49ers scored three times in just four minutes.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [29] Then again, maybe not.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [30] \"Whatever. Who hasn't blacked out in New Orleans,\" one person said on Twitter.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [31] Or in San Francisco, for that matter.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [32] In December 2011, the lights went out twice during the same game at Candlestick Park. The 49ers won that game against the Pittsburgh Steelers, 20-3.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [33] Blame it on Bane\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [34] Some said it was the curse of the Superdome -- despite hosting seven Super Bowl games and its more than $300 million renovation following Hurricane Katrina. The stadium was built near a cemetery and New Orleans Saints fans have long said it was the reason the team had fared so poorly.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [35] Some on Twitter and Facebook joked Saints quarterback Drew Brees was responsible, pulling the power plug to get even for the team failing to make football's big show.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [36] Then there were those who pointed to Bane, the villain in the Batman movie \"The Dark Night Rises.\"\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [37] In the movie, Bane mines a football field in Pittsburgh that explodes after a great scoring run by Steeler Hines Ward.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [38] \"Investigation confirms not even Bane's power outage attempt can save the 49ers,\" said one Twitter user with the handle The Batman.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [39] Beyonce's wattage\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [40] The general consensus on social media appeared to be that Beyonce's high-wattage half-time performance was mostly likely to blame for the blackout.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [41] \"Beyonce blew the fuse! Genius!\" tweeted singer Adam Lambert.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [42] Matchbox Twenty guitarist Paul Doucette, who was at the game, tweeted a picture of the blackout.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [43] \"Beyonce left and apparently took electricity with her,\" he said. \"Damn she's good.\"\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [44] In the end, the Ravens may have won Superbowl XLVII in New Orleans. But the power outage won its social media time slot.",
+      "generation_status": "ok"
+    },
+    "evaluation": {
+      "article_id": "a19",
+      "num_reference_pairs": 34,
+      "scores": {
+        "rouge_1": 0.44636993773497396,
+        "rouge_2": 0.43407507316144583,
+        "rouge_l": 0.4636734165442884,
+        "rouge_mean": 0.4224542269194304
+      }
+    }
+  },
+  {
+    "article_id": "a28",
+    "original_path": "data/dev_full_original/a28.story",
+    "reference_path": "data/a_labeling_dev/a28.story",
+    "few_shot": {
+      "count": 0,
+      "article_ids": []
+    },
+    "sentences": [
+      "(CNN) -- Dzhokhar Tsarnaev's Twitter account and VK Russian social networking profile have drawn heavy public scrutiny, but he left another, more hidden social media trail: a deleted Instagram account that sources close to him tell CNN once belonged to the accused Boston bomber.",
+      "The Instagram account, with the user name \"jmaister1,\" no longer exists, and friends of Tsarnaev's say it was deleted only recently. An Instagram spokesman declined to comment on the account or disclose when the account was deleted.",
+      "CNN National Security Analyst Juliette Kayyem says the account could be significant.",
+      "\"If I were an investigator right now, obviously the platform he deleted matters the most,\" she said.",
+      "Traces of the jmaister1 account were still visible this week in Google's Web cache and on other archiving sites. Digital sleuths often use those tools to find glimpses of deleted material.",
+      "When oversharing online can get you arrested",
+      "\"It's exactly like an archive,\" tech entrepreneur and programmer Sam Altman explained. \"So no matter what changes were made to the page today, on the current server, Google has this sort of imprint from a couple of weeks ago.\"",
+      "Tsarnaev's complete account could not be recovered with those tools. Google's cache stores the pages it indexes for variable lengths of time: sometimes days, sometimes weeks.",
+      "The digital traces that remain show that Tsarnaev added a \"like\" on several photos referring to Chechnya that were posted by other Instagram users. One shows Chechen warlord Shamil Basayev, a onetime government official who later masterminded terrorist attacks against Russia. Basayev was killed in 2006.",
+      "Another pro-Chechnya image that Tsarnaev \"liked\" carries a string of hashtags including #FreeChechenia #Jihad #Jannah #ALLAH #Jesus and #God. An academic Chechnya expert whom CNN consulted said the images illustrated a familiarity with Chechen politics and iconography.",
+      "Tsarnaev's Instagram account wasn't widely known; CNN spoke with several friends of his who said they were unaware of its existence. Two of his high-school classmates, however, spoke about the account and said he used it to keep in touch with a close-knit group of school friends.",
+      "The two classmates say they are shocked by -- and in some cases skeptical of -- the charges being levied at the friend they knew as \"Jahar.\" As one said, \"Jahar was the last person you'd expect to do this. I've honestly never heard anybody say anything bad about him.\"",
+      "Since Tsarnaev's account was deleted, little of what he wrote and posted remains publicly visible, but Kayyem expects investigators to take a closer look at whatever data they can reconstruct.",
+      "\"Were there clues embedded in the combination of images that can tell us something about what Dzhokhar was thinking?\" she asked. \"Some of those pictures are very benign. Some of them standing alone don't mean anything.\"",
+      "Instagram makes clear in its terms of service that it will turn its records over to law enforcement officials when it receives a valid subpoena or search warrant.",
+      "\"Given the volume of real-time content on Instagram, some information may only be stored for a short period of time,\" Instagram says on its site. \"We do not retain data for law enforcement purposes unless we receive a valid preservation request.\"",
+      "Dead Boston bomb suspect posted video of jihadist, analysis shows"
+    ],
+    "generation": {
+      "raw_output": "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],\"edges\":[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15],[15,16]]}",
+      "attempts": [
+        "{\"root\":0,\"selected\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],\"edges\":[[0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,10],[10,11],[11,12],[12,13],[13,14],[14,15],[15,16]]}"
+      ],
+      "mindmap": {
+        "root": 0,
+        "selected": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ]
+        ]
+      },
+      "rendered": "[0] (CNN) -- Dzhokhar Tsarnaev's Twitter account and VK Russian social networking profile have drawn heavy public scrutiny, but he left another, more hidden social media trail: a deleted Instagram account that sources close to him tell CNN once belonged to the accused Boston bomber.\n1. [1] The Instagram account, with the user name \"jmaister1,\" no longer exists, and friends of Tsarnaev's say it was deleted only recently. An Instagram spokesman declined to comment on the account or disclose when the account was deleted.\n1.1. [2] CNN National Security Analyst Juliette Kayyem says the account could be significant.\n1.1.1. [3] \"If I were an investigator right now, obviously the platform he deleted matters the most,\" she said.\n1.1.1.1. [4] Traces of the jmaister1 account were still visible this week in Google's Web cache and on other archiving sites. Digital sleuths often use those tools to find glimpses of deleted material.\n1.1.1.1.1. [5] When oversharing online can get you arrested\n1.1.1.1.1.1. [6] \"It's exactly like an archive,\" tech entrepreneur and programmer Sam Altman explained. \"So no matter what changes were made to the page today, on the current server, Google has this sort of imprint from a couple of weeks ago.\"\n1.1.1.1.1.1.1. [7] Tsarnaev's complete account could not be recovered with those tools. Google's cache stores the pages it indexes for variable lengths of time: sometimes days, sometimes weeks.\n1.1.1.1.1.1.1.1. [8] The digital traces that remain show that Tsarnaev added a \"like\" on several photos referring to Chechnya that were posted by other Instagram users. One shows Chechen warlord Shamil Basayev, a onetime government official who later masterminded terrorist attacks against Russia. Basayev was killed in 2006.\n1.1.1.1.1.1.1.1.1. [9] Another pro-Chechnya image that Tsarnaev \"liked\" carries a string of hashtags including #FreeChechenia #Jihad #Jannah #ALLAH #Jesus and #God. An academic Chechnya expert whom CNN consulted said the images illustrated a familiarity with Chechen politics and iconography.\n1.1.1.1.1.1.1.1.1.1. [10] Tsarnaev's Instagram account wasn't widely known; CNN spoke with several friends of his who said they were unaware of its existence. Two of his high-school classmates, however, spoke about the account and said he used it to keep in touch with a close-knit group of school friends.\n1.1.1.1.1.1.1.1.1.1.1. [11] The two classmates say they are shocked by -- and in some cases skeptical of -- the charges being levied at the friend they knew as \"Jahar.\" As one said, \"Jahar was the last person you'd expect to do this. I've honestly never heard anybody say anything bad about him.\"\n1.1.1.1.1.1.1.1.1.1.1.1. [12] Since Tsarnaev's account was deleted, little of what he wrote and posted remains publicly visible, but Kayyem expects investigators to take a closer look at whatever data they can reconstruct.\n1.1.1.1.1.1.1.1.1.1.1.1.1. [13] \"Were there clues embedded in the combination of images that can tell us something about what Dzhokhar was thinking?\" she asked. \"Some of those pictures are very benign. Some of them standing alone don't mean anything.\"\n1.1.1.1.1.1.1.1.1.1.1.1.1.1. [14] Instagram makes clear in its terms of service that it will turn its records over to law enforcement officials when it receives a valid subpoena or search warrant.\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [15] \"Given the volume of real-time content on Instagram, some information may only be stored for a short period of time,\" Instagram says on its site. \"We do not retain data for law enforcement purposes unless we receive a valid preservation request.\"\n1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1. [16] Dead Boston bomb suspect posted video of jihadist, analysis shows",
+      "generation_status": "ok"
+    },
+    "evaluation": {
+      "article_id": "a28",
+      "num_reference_pairs": 22,
+      "scores": {
+        "rouge_1": 0.21436732014587404,
+        "rouge_2": 0.10162315895159729,
+        "rouge_l": 0.2305408137686604,
+        "rouge_mean": 0.18879249947243715
+      }
+    }
+  },
+  {
+    "article_id": "a29",
+    "original_path": "data/dev_full_original/a29.story",
+    "reference_path": "data/a_labeling_dev/a29.story",
+    "few_shot": {
+      "count": 0,
+      "article_ids": []
+    },
+    "sentences": [
+      "(CNN) -- As the Northeast digs out from a second major storm in little more than a week, experts say Internet scam artists are preying on generous Americans who want to donate to the victims of Superstorm Sandy.",
+      "According to a Maryland-based Internet watchdog company, more than 1,000 Internet domain sites with the words \"Sandy\" or \"relief\" were registered either as the storm was approaching the Caribbean last week or, in some cases, even before the hurricane hit.",
+      "\"We have no idea who these people are,\" Johannes Ulrich, president of SANS Security told CNN from his home in Jacksonville, Florida. \"And what we notice is that they do register hundreds of these domains, in part, trying to trick people who go to these domains and then donate the money.\"",
+      "8 ways to help after Sandy",
+      "Many of these types of domain sites are registered as soon as the National Weather Service announces the names of forthcoming hurricanes in the late spring, Ulrich explained.",
+      "Some of these websites were created by construction companies, lawyers or repair companies for potential business opportunities.",
+      "Others are more questionable.",
+      "In one instance, a website linking Sandy to the damage it caused on the island of Jamaica popped up as news accounts reported the growing intensity of the storm. The site urged people to donate and linked any would be donors to a Pay Pal account. Ulrich tracked down the registry to an individual in North Carolina.",
+      "\"I couldn't find out who's behind it,\" Ulrich told CNN. \"A person in North Carolina has it registered, but whether or not it's real, who knows?\"",
+      "CNN checked with the secretary of state's office in North Carolina, where the law requires charities to register. The site does not show up.",
+      "Other Internet sites serve as an aggregate location for individuals to ask for money for themselves or their businesses.",
+      "Indiegogo, an international crowd funding site, has more than 32 pages of pleas for cash donations from Sandy victims. One woman wrote that she needed money because \"We left the city and headed south towards family in Pennsylvania. We were finally let back into Salem and our home was destroyed.\"",
+      "CNN checked on that one as well but there was no information to prove or disprove the woman's posting.",
+      "Art Taylor, president of the Better Business Bureau's Wise Giving Alliance, says 70% of Americans donate money without ever really checking to find out where their money goes.",
+      "\"I worry that things are going to get worse,\" he said. \"People are going to continue to get duped by unscrupulous claims.\"",
+      "Earlier this week, the FBI took time to issue a public warning about scam artists in the wake of devastating storms.",
+      "\"The Department of Justice and the FBI remind the public to apply a critical eye and do due diligence before giving to anyone soliciting donations on behalf of hurricane victims,\" it said. \"Solicitations can originate as e-mails, websites, door-to-door collections, mailings, telephone calls, and similar methods.\"",
+      "On Tuesday, hundreds lined up at a Newark, New Jersey, church to receive food, water, blankets and cleaning supplies donated by Missouri-based Convoy of Hope.",
+      "Speaking of charities in general, a spokesman for Convoy of Hope said his organization was well aware that both individuals and even organizations sometimes prey on donors.",
+      "\"There are going to be others out there that do things wrong, that do things for the wrong reason,\" Jeff Nene said. \"But when you go in with the right heart in the first place, everything works out.\"",
+      "The American Red Cross, the largest national charity dealing with the effects of Sandy has raised $103 million so far for Sandy victims, and that contributions \"continue to pour in,\" according to spokeswoman Anne Marie Borrego. She said all of those funds are earmarked for dealing with the victims of Sandy.",
+      "Watch Anderson Cooper 360° weeknights 10pm ET. For the latest from AC360° click here."
+    ],
+    "generation": {
+      "raw_output": "{\"root\":0,\"selected\":[0,1,2,4,5,6,7,8,10,11,13,14,15,16,17,18,19,20],\"edges\":[[0,1],[0,2],[2,4],[2,5],[5,6],[6,7],[7,8],[2,10],[10,11],[13,14],[14,15],[15,16],[16,17],[17,18],[18,19],[19,20]]}",
+      "attempts": [
+        "{\"root\":0,\"selected\":[0,1,2,4,5,6,7,8,10,11,13,14,15,16,17,18,19,20],\"edges\":[[0,1],[0,2],[2,4],[2,5],[5,6],[6,7],[7,8],[10,11],[13,14],[14,15],[15,16],[16,17],[17,18],[18,19],[19,20]]}",
+        "{\"root\":0,\"selected\":[0,1,2,4,5,6,7,8,10,11,13,14,15,16,17,18,19,20],\"edges\":[[0,1],[0,2],[2,4],[2,5],[5,6],[6,7],[7,8],[2,10],[10,11],[13,14],[14,15],[15,16],[16,17],[17,18],[18,19],[19,20]]}",
+        "{\"root\":0,\"selected\":[0,1,2,4,5,6,7,8,10,11,13,14,15,16,17,18,19,20],\"edges\":[[0,1],[0,2],[2,4],[2,5],[5,6],[6,7],[7,8],[2,10],[10,11],[13,14],[14,15],[15,16],[16,17],[17,18],[18,19],[19,20]]}"
+      ],
+      "mindmap": {
+        "root": 0,
+        "selected": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            0,
+            13
+          ]
+        ]
+      },
+      "rendered": "[0] (CNN) -- As the Northeast digs out from a second major storm in little more than a week, experts say Internet scam artists are preying on generous Americans who want to donate to the victims of Superstorm Sandy.\n1. [1] According to a Maryland-based Internet watchdog company, more than 1,000 Internet domain sites with the words \"Sandy\" or \"relief\" were registered either as the storm was approaching the Caribbean last week or, in some cases, even before the hurricane hit.\n2. [2] \"We have no idea who these people are,\" Johannes Ulrich, president of SANS Security told CNN from his home in Jacksonville, Florida. \"And what we notice is that they do register hundreds of these domains, in part, trying to trick people who go to these domains and then donate the money.\"\n2.1. [4] Many of these types of domain sites are registered as soon as the National Weather Service announces the names of forthcoming hurricanes in the late spring, Ulrich explained.\n2.2. [5] Some of these websites were created by construction companies, lawyers or repair companies for potential business opportunities.\n2.2.1. [6] Others are more questionable.\n2.2.1.1. [7] In one instance, a website linking Sandy to the damage it caused on the island of Jamaica popped up as news accounts reported the growing intensity of the storm. The site urged people to donate and linked any would be donors to a Pay Pal account. Ulrich tracked down the registry to an individual in North Carolina.\n2.2.1.1.1. [8] \"I couldn't find out who's behind it,\" Ulrich told CNN. \"A person in North Carolina has it registered, but whether or not it's real, who knows?\"\n2.3. [10] Other Internet sites serve as an aggregate location for individuals to ask for money for themselves or their businesses.\n2.3.1. [11] Indiegogo, an international crowd funding site, has more than 32 pages of pleas for cash donations from Sandy victims. One woman wrote that she needed money because \"We left the city and headed south towards family in Pennsylvania. We were finally let back into Salem and our home was destroyed.\"\n3. [13] Art Taylor, president of the Better Business Bureau's Wise Giving Alliance, says 70% of Americans donate money without ever really checking to find out where their money goes.\n3.1. [14] \"I worry that things are going to get worse,\" he said. \"People are going to continue to get duped by unscrupulous claims.\"\n3.1.1. [15] Earlier this week, the FBI took time to issue a public warning about scam artists in the wake of devastating storms.\n3.1.1.1. [16] \"The Department of Justice and the FBI remind the public to apply a critical eye and do due diligence before giving to anyone soliciting donations on behalf of hurricane victims,\" it said. \"Solicitations can originate as e-mails, websites, door-to-door collections, mailings, telephone calls, and similar methods.\"\n3.1.1.1.1. [17] On Tuesday, hundreds lined up at a Newark, New Jersey, church to receive food, water, blankets and cleaning supplies donated by Missouri-based Convoy of Hope.\n3.1.1.1.1.1. [18] Speaking of charities in general, a spokesman for Convoy of Hope said his organization was well aware that both individuals and even organizations sometimes prey on donors.\n3.1.1.1.1.1.1. [19] \"There are going to be others out there that do things wrong, that do things for the wrong reason,\" Jeff Nene said. \"But when you go in with the right heart in the first place, everything works out.\"\n3.1.1.1.1.1.1.1. [20] The American Red Cross, the largest national charity dealing with the effects of Sandy has raised $103 million so far for Sandy victims, and that contributions \"continue to pour in,\" according to spokeswoman Anne Marie Borrego. She said all of those funds are earmarked for dealing with the victims of Sandy.",
+      "generation_status": "failed_validation"
+    },
+    "evaluation": {
+      "article_id": "a29",
+      "num_reference_pairs": 20,
+      "scores": {
+        "rouge_1": 0.3249478215022022,
+        "rouge_2": 0.35615831472254167,
+        "rouge_l": 0.3265024779128177,
+        "rouge_mean": 0.32275438988165095
+      }
+    }
+  }
+]
